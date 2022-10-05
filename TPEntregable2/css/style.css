@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    background-color: black;
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+}
+.logoYmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo img{
+    display: none;
+}
+
+/*Efecto Hover para el boton menu*/
+.menu {
+    display: flex;
+    background-color: black;
+    color: #0DFF34;
+    font-size: 50px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.menu:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.menu:active {
+    color: #000
+}
+
+.menu:active:after {
+    background: transparent;
+}
+
+.menu:hover:before {
+    opacity: 1;
+}
+
+.menu:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/**************************************************************/
+/*--------------------Menu extendido--------------------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.301); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 360px;
+    height: 500px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*******************************************************/
+.namePage{
+    color: ghostwhite;
+    font-size: 57px;
+}
+nav{
+    display: none;
+}
+h1{
+    margin: 0;
+}
+
+
+
+@media (min-width: 700px){
+    header{
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo img{
+        display: block;
+        height: 60px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .fotoPerfil{
+        height: 50px;
+    }
+    .nav-link{
+        color: #EE0382;
+        font-size: 35px;
+        padding-right: 10px;
+    }
+    .nav-link:hover{
+       color:plum;
+    }
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 0px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.301); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 0;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 360px;
+        height: 500px;
+      }
+    
+}
