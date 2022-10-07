@@ -96,6 +96,7 @@ header{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(180, 168, 168, 0.425); /* Black w/ opacity */
+    z-index: 9;
     
   }
   
@@ -108,6 +109,7 @@ header{
     border: 1px solid #888;
     width: 410px;
     height: 660px;
+    z-index: 10;
     
   }
   
@@ -135,6 +137,7 @@ h1{
 }
 .fotoPerfil{
     height: 50px;
+    
 }
 .fotoPerfilOpen{
     display: flex;
@@ -146,7 +149,6 @@ h1{
 .perfil{
     display: flex;
     flex-direction: row;
-    /*justify-content: center;*/
     padding-left: 20px;
     height: 75px;
     margin: 45px 0px 30px 10px;
@@ -331,7 +333,6 @@ a.cat:hover:before{
     position: absolute;
     width: 100%;
     height: 100%;
-    /*background: #111;*/
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -342,9 +343,128 @@ a.cat:hover:before{
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+/*************SlideBanners***********************/
+.slideBanner{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+}
+.mySlides{
+    position: absolute; 
+    z-index: 2;
+    color: white;
+    width: 75%;
+   
+}
+.text{
+    position:absolute;
+    display: flex;
+    justify-content: space-around; 
+    color: white;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+.titulo{
+    position: absolute;
+    z-index: 4;
+    font-size: 20px;
+    margin-top: 8%;
+    margin-right: 43%;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    line-height: 2em;
+    letter-spacing: 0.4em;
+    
+}
+
+.frase{
+    position: absolute;
+    z-index: 5;
+    margin-top: 15%;
+    font-size: 13px;
+    margin-right: 43%;
+    width:150px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    line-height: 2em;
+    
+}
+
+.new{
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(97.6deg, rgba(11, 20, 237, 0.2) 38.47%, rgba(247, 14, 223, 0.2) 61.13%), rgba(64, 54, 176, 0.99);
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    width: 110px;
+    height: 43px;
+    margin-top: 35%;
+    margin-right: 45%;
+    padding-left: 0px;
+    border: 4px solid #F8EFEF
+}
+.new:hover {
+  /*box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;*/
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2dbd09, 0 0 25px #2ec236;
+    
+}
+/********************Countdown del Banner*************/
+#clock{
+    text-align: end;
+    z-index: 7;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    /*width: 350px;*/
+    margin-top: 30%;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    margin-right: 0%; 
+    margin-left: 30%;  
+    padding: 10px;
+   /* text-shadow: 0 1px 1px rgba(0,0,0,0.5); */
+    
+        letter-spacing:1px;
+        color: #fff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2dbd09, 0 0 25px #2ec236;
+        -webkit-text-fill-color: #060507;
+        -webkit-text-stroke-color:#e3dce6;
+        -webkit-text-stroke-width:0.5px; 
+      
+}
+#el{
+    position: absolute;
+    text-align:center;
+    z-index: 7;
+    color: white;
+    font-size: 16px;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    width: 350px; 
+    margin-top: 25%;
+    margin-right: 0%; 
+    margin-left: 35%; 
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    line-height: 2em;
+    text-decoration: none;
+    padding-bottom: 7px;
+    letter-spacing: 0.4em;
+}
 
         
 /****************************************************************************/
+
 @media (min-width: 700px){
     header{
         display: flex;
@@ -353,8 +473,11 @@ a.cat:hover:before{
         padding: 10px;
     }
     .logo img{
-        display: block;
+        display: flex;
+        justify-content: space-between;
         height: 60px;
+        margin: 12px;
+
     }
     nav{
         display: flex;
@@ -364,15 +487,15 @@ a.cat:hover:before{
     }
     .fotoPerfil{
         height: 50px;
+        width: 50px;
+        
     }
     .nav-link{
         color: #EE0382;
         font-size: 35px;
-        padding-right: 10px;
+        margin-right: 15px;
     }
-    .nav-link:hover{
-       color:plum;
-    }
+    
     .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -385,12 +508,98 @@ a.cat:hover:before{
         overflow: auto; /* Enable scroll if needed */
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(241, 235, 235, 0.438); /* Black w/ opacity */
+        z-index: 8;
       }
       
       /* Modal Content */
       .modal-content {
         margin: 0;
         width: 564px;
+        z-index: 9;
       }
+
+      /*************SlideBanners***********************/
+.titulo{
+    font-size: 25px;    
+}
+
+.frase{
+    font-size: 15px;
+    width:200px;
+}
+.new{
+    font-size: 20px;
+    border-radius: 20px;
+    width: 190px;
+    height: 75px;
+    margin-top: 35%;
+}
+#clock{
+    font-size: 25px;
+    font-weight: bold;
+    /*width: 450px;  */
+}
+#el{
+    font-size: 20px;
+    width: 350px; 
+}
     
+}
+
+@media (min-width: 900px){
+    /*************SlideBanners***********************/
+    .titulo{
+      font-size: 30px;    
+  }
+  
+  .frase{
+      font-size: 20px;
+      width:300px;
+  }
+  .new{
+      font-size: 25px;
+      border-radius: 30px;
+      width: 230px;
+      height: 90px;
+      margin-top: 35%;
+  }
+  #clock{
+    font-size: 30px;
+    /*width: 500px;  */
+ }
+    #el{
+        font-size: 25px;
+        width: 350px; 
+    }
+      
+}
+@media (min-width: 1200px){
+    /*************SlideBanners***********************/
+    .titulo{
+      font-size: 50px;    
+  }
+  
+  .frase{
+      font-size: 30px;
+      width:400px;
+  }
+  .new{
+      font-size: 30px;
+      border-radius: 40px;
+      width: 330px;
+      height: 125px;
+      margin-top: 35%;
+  }
+  #clock{
+    font-size: 45px;
+    font-weight: bold;
+    /*width: 500px;  */
+    }
+    #el{
+        font-size: 50px;
+        width: 350px; 
+        font-weight: bold;
+        margin-left: 30%;
+    }
+      
 }
