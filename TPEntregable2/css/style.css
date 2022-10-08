@@ -492,13 +492,13 @@ a.cat:hover:before{
     flex-wrap: wrap;
 }
 .footer li{
-    padding: 2% 3% ;
+    padding: 1%;
 }
 
 footer div nav ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
    
@@ -567,14 +567,18 @@ footer main .transp{
     width: 100%;
 }
 
-
-
-
 .idioma{
     display: none;
 }
 
+/******************************* 4 en linea *************************/
+.juego4{
+    display: flex;
+    justify-content: center;
+}
 
+
+/*******************************fin 4 en linea *************************/
 @media (min-width: 700px){
     /*footer*/
     
