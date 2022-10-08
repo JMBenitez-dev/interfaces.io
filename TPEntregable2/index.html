@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>GameStore</title>
+    <link rel="icon" href="LogoSinFondo.ico">
 </head>
+
 <body>
+    <a name="top"></a>
     <header>
         <nav>
-            <a href="" class="nav-link"><iconify-icon icon="material-symbols:favorite"></iconify-icon></a>
-            <a href="" class="nav-link"><iconify-icon icon="material-symbols:notifications-rounded"></iconify-icon></a>
+            <a href="" class="nav-link">
+                <iconify-icon icon="material-symbols:favorite"></iconify-icon>
+            </a>
+            <a href="" class="nav-link">
+                <iconify-icon icon="material-symbols:notifications-rounded"></iconify-icon>
+            </a>
             <a href="" class="nav-link"><img class="fotoPerfil" src="img/Iconos/fotoPerfil.png" alt="imagen Logo"></a>
-        </nav> 
+        </nav>
         <h1 class="namePage">GameStore</h1>
         <section class="logoYmenu">
             <a href="" class="logo">
-                <img src="img/LogoSinFondo.png" alt="imagen Logo"> 
-            </a>    
+                <img src="img/LogoSinFondo.png" alt="imagen Logo">
+            </a>
             <button id="myBtn" class="menu">
                 <iconify-icon icon="heroicons-solid:menu"></iconify-icon>
-            </button>    
-        </section> 
+            </button>
+        </section>
         <!-- The Modal -->
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
             </div>
-        
-        </div>  
-    
+
+        </div>
+
     </header>
     <main>
-    <div class="contenido">
-        este div se puede borrar, cambiar de clase o usar
-    </div>    
+        <div class="contenido">
+            este div se puede borrar, cambiar de clase o usar
+        </div>
     </main>
     <footer>
         <main>
-            <img src="./img/footerImgBG.jpg" alt="Heroes de algun juego en pose">
+            <!--<img src="./img/footerImgBG.jpg" alt="Heroes de algun juego en pose">-->
+
 
             <div class="transp">
+                <div class="suscribir">
+                    <h2>Suscribirse</h2>
+                    <li><a href="http://"> Foros </a></li>
+                    <li><a href="http://"> Ofertas </a></li>
+                </div>
+
+                <div class="favoritos">
+                    <h2>Favoritos</h2>
+                    <li><a href="http://"> Deportes </a></li>
+                    <li><a href="http://"> Estrategia </a></li>
+                    <li><a href="http://"> Aventuras </a></li>
+                </div>
+
+
+                <div class="ayuda">
+                    <h2>Ayuda</h2>
+                    <li><a href="http://"> Reglas de la comunidad </a></li>
+                    <li><a href="http://"> Cómo comprar un juego </a></li>
+                    <li><a href="http://"> Recursos </a></li>
+                </div>
+
+
+                <div class="redes">
+                    <h2>Nuestras Redes</h2>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="akar-icons:facebook-fill"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="mdi:instagram"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="mdi:twitter"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="mdi:twitch"></iconify-icon>
+                        </a></li>
+                </div>
+
+                <div class="select">
+                    <select name="idioma" id="idioma">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="nl">Dutch</option>
+                        <option value="pl">Polish</option>
+                        <option value="it">Italian</option>
+                        <option value="fr">French</option>
+                        <option value="ru">Russian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="tr">Turkish</option>
+                        <option value="de">German</option>
+                    </select>
+                </div>
+
+                <div class="contacto">
+                    <h2>Contáctanos</h2>
+                    <a href="mailto:contacto@gamestore.com">contacto@gamestore.com</a>
+
+                </div>
+
+                <div class="logof">
+                    <a href="#top"><img src="./img/NombrePagina.png" alt="Marca de la página"></a>
+
+                </div>
 
             </div>
 
@@ -61,7 +133,8 @@
         </div>
     </footer>
 
-<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script> 
-<script src="js/scriptHome.js"></script>  
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="js/scriptHome.js"></script>
 </body>
+
 </html>

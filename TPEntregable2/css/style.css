@@ -146,6 +146,87 @@ h1{
 
 
 
+
+
+.contenido{
+    width: 400px;
+    height: 600px;
+}
+
+/***********************seccion footer************************/
+
+
+div nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 15%;
+}
+
+div nav ul li {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: smaller;/* 11px segun figma , preguntar */
+}
+
+footer main {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+footer main .transp{    
+    width: 98vw;
+    height: 80%;
+    background-color:rgba(240, 240, 240, 0.6);
+}
+
+.redes{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.redes h2{
+    width: 100%;
+}
+.iconRed{
+    color: #ee0382;
+    font-size: 24px;
+}
+
+
+.transp div li a{
+ text-decoration: none;
+ color: #272222;
+ cursor: pointer;
+}
+
+
+.transp div.redes li a{
+    padding:  0 10px;
+   }
+
+.transp div li a:hover{
+    text-decoration: none;
+    color: #6b6666;
+    cursor: pointer;
+   }
+
+.transp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.suscribir, .favoritos, .ayuda, .redes, .contacto, .logof, .select{
+    text-align: center;
+    width: 100%;
+}
+
+
 @media (min-width: 700px){
     
     header{
@@ -199,62 +280,15 @@ h1{
         height: 500px;
       }
 
-      footer img{
-        visibility: hidden;
-      }
-      footer main .transp{
-        width: 98vw;
+      /*vista del footer pantalla grande*/
+      footer main {
+        height: 2%;
+        display: flex;
+        justify-content: center;
     }
-}
 
-
-.contenido{
-    width: 400px;
-    height: 500px;
-}
-
-/***********************seccion footer************************/
-
-
-div nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 15%;
-}
-
-div nav ul li {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    font-size: smaller;/* 11px segun figma , preguntar */
-    padding: 1vh 0;
-}
-
-
-
-footer main {
-    overflow: hidden;
-    height: 150px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer main .transp{    
-    width: 98vw;
-    height: 90%;
-    background-color:rgba(240, 240, 240, 0.6);
-    position: absolute;
-}
-
-footer img{
-    padding-top: 100px;
-    filter: blur(5px);
-  }
-.footer{
-    background-color: #000;
+      footer main .transp{    
+        width: 98vw;
+        height: 100px;
+    }
 }
