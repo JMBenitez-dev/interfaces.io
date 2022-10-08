@@ -138,7 +138,7 @@ section.logoYmenu a{
     color: ghostwhite;
     font-size: 57px;
 }
-nav{
+header>nav{
     display: none;
 }
 h1{
@@ -478,11 +478,22 @@ a.cat:hover:before{
 
 .contenido{
     width: 400px;
-    height: 200px;
+    height: 300px;
 }
 
 /***********************seccion footer************************/
 
+.footer{
+    width: 100%;
+    height: 4%;
+    background-color: black;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer li{
+    padding: 2% 3% ;
+}
 
 footer div nav ul {
     width: 100%;
@@ -490,7 +501,7 @@ footer div nav ul {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 15%;
+   
 }
 
 footer div nav ul li {
@@ -500,15 +511,17 @@ footer div nav ul li {
     font-size: smaller;/* 11px segun figma , preguntar */
 }
 
+
+
+
 footer main {
-    height: 800px;
+    height: 30%;
     display: flex;
     justify-content: center;
 }
 
 footer main .transp{    
     width: 98vw;
-    height: 80%;
     background-color:rgba(240, 240, 240, 0.6);
 }
 
@@ -536,7 +549,7 @@ footer main .transp{
 
 
 .transp div.redes2 li a{
-    padding:  0 10px;
+    padding:  0 0.4vw;
    }
 
 .transp div li a:hover{
@@ -549,13 +562,46 @@ footer main .transp{
     display: flex;
     flex-wrap: wrap;
 }
-.suscribir, .favoritos, .ayuda, .redes2, .contacto, .logof, .select{
+.suscribir, .favoritos, .ayuda, .redes2, .contacto, .logof, .select, .cyl{
     text-align: center;
     width: 100%;
 }
 
 
+
+
+.idioma{
+    display: none;
+}
+
+
 @media (min-width: 700px){
+    /*footer*/
+    
+    .suscribir, .favoritos, .ayuda, .redes2,  .select, .cyl{
+        text-align: center;
+        width: 16%;
+    }
+    .select{
+        display: none;
+    }
+
+    .idioma{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .idioma li{
+        list-style: none;
+    }
+    .idioma>h2{
+        width: 100%;
+    } 
+    .idioma ul{
+        padding: 0 5%;
+    }
+    /*footer fin*/
     
     header{
         display: flex;
