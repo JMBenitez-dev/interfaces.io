@@ -518,7 +518,7 @@ a.cat:hover:before{
     transition: all 0.25s;
     padding-bottom: 20px;
     background: #000000;
-    border: 1px solid #141313;
+    border: 1px solid #14131300;/* borde de las cardes*/
     box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
