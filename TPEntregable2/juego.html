@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GameStore</title>
+    <link rel="icon" href="LogoSinFondo.ico">
+</head>
+
+<body>
+    <a name="top" id="top"></a>
+    <header>
+        <nav>
+            <a href="" class="nav-link redIcon">
+                <iconify-icon icon="material-symbols:favorite"></iconify-icon>
+            </a>
+            <a href="" class="nav-link redIcon">
+                <iconify-icon icon="material-symbols:notifications-rounded"></iconify-icon>
+            </a>
+            <a href="" class="nav-link redIcon"><img class="fotoPerfil" src="img/Iconos/fotoPerfil.png"
+                    alt="imagen Logo"></a>
+        </nav>
+        <h1 class="namePage">GameStore</h1>
+        <section class="logoYmenu">
+            <a href="" class="logo">
+                <img src="img/LogoSinFondo.png" alt="imagen Logo">
+            </a>
+            <button id="myBtn" class="menu">
+                <iconify-icon icon="heroicons-solid:menu"></iconify-icon>
+            </button>
+        </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <aside class="modal-content">
+                <button class="menu" id="close">
+                    <iconify-icon icon="mingcute:close-fill"></iconify-icon>
+                </button>
+                <div class="perfil">
+                    <a class="redIcon" href=""><img class="fotoPerfilOpen" src="img/Iconos/fotoPerfil.png"
+                            alt="imagen Logo"></a>
+                    <div class="datos">
+                        <h2 class="name">Rocío Correa</h2>
+                        <h6 class="mail">rociocorrea@gmail.com</h6>
+                        <h5 class="salir">Salir</h5>
+                    </div>
+                </div>
+                <div class="buscador">
+                    <iconify-icon class="lupa" icon="fa6-solid:magnifying-glass"></iconify-icon>
+                </div>
+
+                <nav class="nav">
+                    <ul class="menuOpen">
+                        <li class="cat"><a href="" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:house-rounded"></iconify-icon> Inicio
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:favorite"></iconify-icon> Favoritos
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:notifications-rounded"></iconify-icon>
+                                Notificaciones
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="ic:baseline-fiber-new"></iconify-icon> Lanzamiento
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:sports-esports"></iconify-icon> Juegos
+                                de Aventura
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:sports-esports"></iconify-icon> Juegos
+                                de Deporte
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:sports-esports"></iconify-icon> Juegos
+                                de Mesa
+                            </a></li>
+                        <li class="cat"><a href="#" class="cat">
+                                <iconify-icon class="icon" icon="material-symbols:sports-esports"></iconify-icon> Juegos
+                                de Rol
+                            </a></li>
+                    </ul>
+                </nav>
+                <div class="redes">
+                    <a class="redIcon" href="">
+                        <iconify-icon icon="fe:facebook"></iconify-icon>
+                    </a>
+                    <a class="redIcon" href="">
+                        <iconify-icon icon="fontisto:instagram"></iconify-icon>
+                    </a>
+                    <a class="redIcon" href="">
+                        <iconify-icon icon="fa:twitter-square"></iconify-icon>
+                    </a>
+                    <a class="redIcon" href="">
+                        <iconify-icon icon="teenyicons:twitch-solid"></iconify-icon>
+                    </a>
+                </div>
+            </aside>
+        </div>
+
+    </header>
+    <div class="tanques">
+        <p>Tanques en Línea de fuego</p>
+    </div>
+    <main>
+        <div class="transparente">
+
+
+            <div class="bread">
+                <a href="./index.html">Inicio</a>
+                <a href="./index.html/#Juegos_de_mesa">Juegos de mesa</a>
+            </div>
+            <div class="contenedorJuego">
+                <div class="turno">
+                    <h2>Turno del jugador 1</h2>
+                </div>
+                <aside class="izq">
+                    <a id="jugar" href="" class="comprarBtn">Jugar</a>
+                    <a id="reiniciar" href="http://" class="jugarBtn">Reiniciar</a>
+
+                    <div class="contador">
+                        <p>Tiempo restante</p>
+                        <p id="countdown">10:00</p>
+                    </div>
+                </aside>
+                <div class="juego4">
+                    <img src="./img/juego2.png" alt="Juego 4 en línea">
+                </div>
+                <aside class="der">
+                    <h2>Instrucciones</h2>
+                    <h3>Posición inicial y objetivo del juego</h3>
+                    <p>El objetivo de este juego consiste en colocar cuatro fichas en una fila contínua vertical,
+                        horizontal
+                        o diagonalmente. </p>
+                    <h3>Colocar las fichas</h3>
+                    <p>La regla para colocarlas consiste en Arrastrar la ficha hasta la parte superior y soltarlapara
+                        que
+                        caiga “hasta abajo".</p>
+                    <h3>Finalizar partida</h3>
+                    <p>Gana el jugador que coloca 4 fichas en linea.Es empate si se acaban las posicioneso si el
+                        contador de
+                        tiempo llega a cero.</p>
+                </aside>
+                <div class="estrellas">
+                    <form id="form">
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <!--
+                      --><label for="radio1">★</label>
+                            <!--
+                      --><input id="radio2" type="radio" name="estrellas" value="4">
+                            <!--
+                      --><label for="radio2">★</label>
+                            <!--
+                      --><input id="radio3" type="radio" name="estrellas" value="3">
+                            <!--
+                      --><label for="radio3">★</label>
+                            <!--
+                      --><input id="radio4" type="radio" name="estrellas" value="2">
+                            <!--
+                      --><label for="radio4">★</label>
+                            <!--
+                      --><input id="radio5" type="radio" name="estrellas" value="1">
+                            <!--
+                      --><label for="radio5">★</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="captsJuego">
+                    <img src="./img/fakeVideo.png" alt="Imagen que parece un video">
+                    <img src="./img/tablero1.png" alt="Ilustra una forma de ganar">
+                    <img src="./img/tablero2.png" alt="Ilustra una forma de ganar">
+                    <img src="./img/tablero3.png" alt="Ilustra una forma de ganar">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="links">
+        <iconify-icon class="mano" icon="bxs:hand-right"></iconify-icon>
+        <a href="https://web.archive.org/web/20131023004851/http://homepages.cwi.nl/~tromp/c4.html">Manual del experto
+            en 4 en Linea aquí</a>
+        <p>¿Te gustó? Comparte con tus amigos!! </p>
+        <div class="redes2">
+            <li><a href="http://">
+                    <iconify-icon class="iconRed menu" icon="akar-icons:facebook-fill"></iconify-icon>
+                </a></li>
+            <li><a href="http://">
+                    <iconify-icon class="iconRed menu" icon="mdi:instagram"></iconify-icon>
+                </a></li>
+            <li><a href="http://">
+                    <iconify-icon class="iconRed menu" icon="mdi:twitter"></iconify-icon>
+                </a></li>
+            <li><a href="http://">
+                    <iconify-icon class=" iconRed menu " icon="mdi:twitch"></iconify-icon>
+                </a></li>
+        </div>
+    </div>
+
+    <div class="contCom">
+        <div class="comentarios">
+            <h2>Comentarios</h2>
+            <div class="contenedorCom">
+                <div class="comentar">
+                    <h3>Comentanos que te pareció este juego</h3>
+                    <div class="imgPerf">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <input type="text" name="comPrincipal" id="comPrincipal" placeholder="Di lo que estás pensando...">
+                    <div class="cancEnv">
+                        <a id="cancelar" href="" class="cancelar">Cancelar</a>
+                        <a id="comentar" href="" class="coment">Comentar</a>
+
+                    </div>
+                </div>
+
+                <div class="cometarioSimple">
+                    <div class="imgPerf">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div>
+                        <p class="nombre">Andres<span class="fecha">00/00/0000</span><span class="hora">00:00</span></p>
+                        <p class="comentado">No creí que fuera tan dificil ganar!</p>
+                        <a href="" class="responder">Responder</a>
+                    </div>
+
+                </div>
+
+                <div class="respuesta">
+                    <div class="imgPerfResp">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div>
+                        <p class="nombre">Rocio<span class="fecha">00/00/0000</span><span class="hora">00:00</span></p>
+                        <p class="comentadoResp">Andres a mi me resultó fácil :) |</p>
+                        <a href="" class="responder">Responder</a>
+                    </div>
+                </div>
+
+                <div class="respuesta">
+                    <div class="imgPerfResp">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div>
+                        <p class="nombre">Marcos<span class="fecha">00/00/0000</span><span class="hora">00:00</span></p>
+                        <p class="comentadoResp">A mi me costó al principio pero despues pude ganar varias veces</p>
+                        <a href="" class="responder">Responder</a>
+                    </div>
+                </div>
+
+                <div class="respuesta">
+                    <div class="imgPerfResp">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div>
+                        <p class="nombre">Julieta<span class="fecha">00/00/0000</span><span class="hora">00:00</span></p>
+                        <p class="comentadoResp">El manual ayuda un monton, explica varias estrategias muy buenas.</p>
+                        <a href="" class="responder">Responder</a>
+                    </div>
+                </div>
+
+                <div class="cometarioSimple">
+                    <div class="imgPerf">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div>
+                        <p class="nombre">Julian<span class="fecha">00/00/0000</span><span class="hora">00:00</span></p>
+                        <p class="comentado">yo tampoco creí que fuera tan difícil ganar...</p>
+                        <a href="" class="responder">Responder</a>
+                    </div>
+
+                </div>
+
+                <div class="respuesta">
+                    <div class="imgPerfResp">
+                        <img src="./img/Iconos/fotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div>
+                        <p class="nombre">Ricky<span class="fecha">00/00/0000</span><span class="hora">00:00</span></p>
+                        <p class="comentadoResp">Entré a probarlo y terminé jugando 3 horas, difícil pero entretenido. </p>
+                        <a href="" class="responder">Responder</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--
+    </div>
+
+    </header>
+    <main>
+        <div class="contenido">
+            este div se puede borrar, cambiar de clase o usar
+        </div>
+    </main>
+    -->
+    <footer>
+        <main>
+            <!--<img src="./img/footerImgBG.jpg" alt="Heroes de algun juego en pose">-->
+
+
+            <div class="transp">
+                <div class="suscribir">
+                    <h2>Suscribirse</h2>
+
+                    <li><a href="http://"> Foros </a></li>
+                    <li><a href="http://"> Ofertas </a></li>
+
+                </div>
+
+                <div class="favoritos">
+                    <h2>Favoritos</h2>
+
+                    <li><a href="http://"> Deportes </a></li>
+                    <li><a href="http://"> Estrategia </a></li>
+                    <li><a href="http://"> Aventuras </a></li>
+
+                </div>
+
+
+                <div class="ayuda">
+                    <h2>Ayuda</h2>
+
+                    <li><a href="http://"> Reglas de la comunidad </a></li>
+                    <li><a href="http://"> Cómo comprar un juego </a></li>
+                    <li><a href="http://"> Recursos </a></li>
+
+                </div>
+
+
+                <div class="redes2">
+                    <h2>Nuestras Redes</h2>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed menu" icon="akar-icons:facebook-fill"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed menu" icon="mdi:instagram"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed menu" icon="mdi:twitter"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class=" iconRed menu " icon="mdi:twitch"></iconify-icon>
+                        </a></li>
+                </div>
+
+                <div class="select">
+                    <select name="idioma" id="idioma">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="nl">Dutch</option>
+                        <option value="pl">Polish</option>
+                        <option value="it">Italian</option>
+                        <option value="fr">French</option>
+                        <option value="ru">Russian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="tr">Turkish</option>
+                        <option value="de">German</option>
+                    </select>
+                </div>
+
+                <div class="idioma">
+                    <h2>Idiomas</h2>
+                    <ul>
+                        <li><a href="http://"> Español </a></li>
+                        <li><a href="http://"> English </a></li>
+                        <li><a href="http://"> Dutch </a></li>
+                        <li><a href="http://"> Polish </a></li>
+                        <li><a href="http://"> Italian </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="http://"> French </a></li>
+                        <li><a href="http://"> Rusian </a></li>
+                        <li><a href="http://"> Portuguese </a></li>
+                        <li><a href="http://"> Turkish </a></li>
+                        <li><a href="http://"> German </a></li>
+                    </ul>
+                </div>
+                <div class="cyl">
+                    <div class="contacto">
+                        <h2>Contáctanos</h2>
+                        <a href="mailto:contacto@gamestore.com">contacto@gamestore.com</a>
+
+                    </div>
+
+                    <div class="logof">
+                        <a href="#top"><img src="./img/NombrePagina.png" alt="Marca de la página"></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <div>
+            <nav>
+                <ul class="footer">
+                    <li>Acerca de</li>
+                    <li>Soporte</li>
+                    <li>Comunidad</li>
+                    <li>@ 2022 Todos los derechos reservados</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="js/juego.js"></script>
+</body>
+
+</html>
