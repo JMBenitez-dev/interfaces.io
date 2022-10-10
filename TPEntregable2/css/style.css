@@ -424,7 +424,7 @@ a.cat:hover:before{
 }
 .new:hover {
   /*box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;*/
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2dbd09, 0 0 25px #2ec236;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fdfdfd, 0 0 25px #2ec236;
     
 }
 /********************Countdown del Banner*************/
@@ -480,6 +480,10 @@ a.cat:hover:before{
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     margin: 0;
+}
+
+.suge{
+    margin-top: 30px;
 }
 .container{
     position: relative;
@@ -756,6 +760,10 @@ a.jugarBtn:hover:before{
         padding: 0;
         margin: 0;
         border: none;
+    }
+
+    button.boton, button.boton2, button.boton3, button.boton4, button.boton5:hover{
+        color: plum;
     }
    
     .boton .right{
