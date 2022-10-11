@@ -1,6 +1,6 @@
 /*************Mobile First*************/
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -8,12 +8,12 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 body {
     margin: 0;
-   /* background-color: rgb(186, 156, 104);*/
+    /* background-color: rgb(186, 156, 104);*/
     background-color: rgb(0, 0, 0);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -464,7 +464,7 @@ a.cat:hover:before {
     z-index: 6;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background: linear-gradient(97.6deg, rgba(11, 20, 237, 0.2) 38.47%, rgba(247, 14, 223, 0.2) 61.13%), rgba(64, 54, 176, 0.99);
     border-radius: 10px;
     font-size: 12px;
@@ -478,13 +478,13 @@ a.cat:hover:before {
     padding-left: 0px;
     border: 6px solid #f8efef81;
     text-decoration: none;
-    
+
 }
 
 .new:hover {
-  /*box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;*/
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fdfdfd, 0 0 25px #2ec236;
-    
+    /*box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;*/
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fdfdfd, 0 0 25px #2ec236;
+
 }
 
 /********************Countdown del Banner*************/
@@ -533,9 +533,9 @@ a.cat:hover:before {
 }
 
 /************* Cards y Slide de Cards**************************/
-.categoria{
+.categoria {
     color: white;
-    padding: 14% 0px 0px 0px ;
+    padding: 14% 0px 0px 0px;
     text-align: center;
     font-family: 'Birthstone Bounce', cursive;
     font-family: 'Noto Sans', sans-serif;
@@ -543,29 +543,30 @@ a.cat:hover:before {
     margin: 0;
 }
 
-.suge{
+.suge {
     margin-top: 30px;
 }
-.container{
+
+.container {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 450px;
     display: flex;
     flex-direction: row;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     padding-top: 20px;
 }
 
- /*.contCard2{
+/*.contCard2{
     position: absolute;
     z-index: 2;
     
 }*/
-.container .card{
-    
+.container .card {
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -579,33 +580,36 @@ a.cat:hover:before {
     transition: all 0.25s;
     padding-bottom: 20px;
     background: #000000;
-    border: 1px solid #14131300;/* borde de las cardes*/
+    border: 1px solid #14131300;
+    /* borde de las cardes*/
     box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.container .card:hover{
+.container .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(236, 230, 230, 0.295);
 }
 
-.container .card img{
+.container .card img {
     width: 300px;
     height: 300px;
-    
+
 }
-.container .card .triangulo{
+
+.container .card .triangulo {
     position: relative;
     display: flex;
     align-items: center;
     width: 300px;
     height: 300px;
-    
-    }
-.container .card .triangulo .banderin{
+
+}
+
+.container .card .triangulo .banderin {
     width: 0;
     height: 0;
     border-right: 76px solid transparent;
-    border-top: 76px solid  #EE0382;
+    border-top: 76px solid #EE0382;
     box-sizing: border-box;
     position: absolute;
     left: 0%;
@@ -613,10 +617,10 @@ a.cat:hover:before {
     top: 0%;
     bottom: 83.02%;
     box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.25);
-    
+
 }
 
-.container .card .triangulo .star{
+.container .card .triangulo .star {
     position: absolute;
     left: 0.3%;
     right: 84.11%;
@@ -624,29 +628,30 @@ a.cat:hover:before {
     bottom: 88.95%;
     color: #FFF50A;
     font-size: 43px;
-    
-}
-    .container .card .triangulo .nStar{
-        position: absolute;
-        padding: 0 1rem;
-        font-size: 16px;
-        font-weight: 300;
-        font-family: 'Birthstone Bounce', cursive;
-        font-family: 'Noto Sans', sans-serif;
-        color: black;
-        left: 2.67%;
-        right: 86.11%;
-        top: 0%;
-        bottom: 92%;
-        padding: 2px;
-        margin-top: 12px;
-       
-    }
 
-.container .card h4{
+}
+
+.container .card .triangulo .nStar {
+    position: absolute;
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    left: 2.67%;
+    right: 86.11%;
+    top: 0%;
+    bottom: 92%;
+    padding: 2px;
+    margin-top: 12px;
+
+}
+
+.container .card h4 {
     display: flex;
     justify-content: center;
-    font-weight:bold;
+    font-weight: bold;
     font-family: 'Birthstone Bounce', cursive;
     font-family: 'Noto Sans', sans-serif;
     letter-spacing: 0.2em;
@@ -655,15 +660,17 @@ a.cat:hover:before {
     margin-bottom: 10px;
     width: 80%;
 }
-.textG{
+
+.textG {
     font-size: 12px;
 }
-.textC{
+
+.textC {
     padding: 3px;
 }
 
 
-.container .card p{
+.container .card p {
     padding: 0 0.5rem;
     font-size: 20px;
     font-weight: 300;
@@ -672,7 +679,7 @@ a.cat:hover:before {
     letter-spacing: 0.4em;
     color: white;
     margin: 5px;
-   
+
 }
 
 .container .card .jugarBtn {
@@ -690,6 +697,7 @@ a.cat:hover:before {
     border-radius: 10px;
     text-align: center;
 }
+
 .container .card .comprarBtn {
     font-weight: bold;
     text-decoration: none;
@@ -705,145 +713,153 @@ a.cat:hover:before {
     border-radius: 10px;
     text-align: center;
 }
-.btn{
+
+.btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /*******efecto Hover Botones Cards*********/
 
-a.comprarBtn{
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	color:rgba(255,255,255,1);
-	cursor: pointer;
-	text-decoration: none;
-	transition: all ease 0.4s;
-    background: #2E2E2E;
+a.comprarBtn {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease 0.4s;
+    /*background: #2E2E2E;*/
 }
- 
+
 a.comprarBtn:after,
-a.comprarBtn:before{
-	width: 80px;
-	height: 200px;
-	content: '';
-	display: block;
-	background: rgba(255,255,255,0.5);
-	transform: rotate(45deg);
-	top: -60px;
-	position: absolute;
-	transition: none;
-	right:-45%;
-	cursor: pointer;
+a.comprarBtn:before {
+    width: 80px;
+    height: 200px;
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    top: -60px;
+    position: absolute;
+    transition: none;
+    right: -45%;
+    cursor: pointer;
 }
- 
-a.comprarBtn:before{
-	left: -48%;
+
+a.comprarBtn:before {
+    left: -48%;
 }
- 
-a.comprarBtn:hover{
-	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-	background: #898989;
+
+a.comprarBtn:hover {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background: #898989;
 }
- 
+
 a.comprarBtn:hover:after,
-a.comprarBtn:hover:before{
-	transform: rotate(45deg), scaleX(130%);
-	background: rgba(255,255,255,0.1);
-	transition: all ease 0.5s;
+a.comprarBtn:hover:before {
+    transform: rotate(45deg), scaleX(130%);
+    background: rgba(255, 255, 255, 0.1);
+    transition: all ease 0.5s;
 }
- 
-a.comprarBtn:hover:after{
-	right: 130%;
+
+a.comprarBtn:hover:after {
+    right: 130%;
 }
- 
-a.comprarBtn:hover:before{
-	left: 130%;
+
+a.comprarBtn:hover:before {
+    left: 130%;
 }
+
 /**********************/
-a.jugarBtn{
-	position: relative;
-	/*width: 100%;*/
-	overflow: hidden;
-	color:rgba(255,255,255,1);
-	cursor: pointer;
-	text-decoration: none;
-	transition: all ease 0.4s;
-    background: #2E2E2E;
+a.jugarBtn {
+    position: relative;
+    /*width: 100%;*/
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease 0.4s;
+    /*background: #2E2E2E;*/
 }
- 
+
 a.jugarBtn:after,
-a.jugarBtn:before{
-	width: 80px;
-	height: 200px;
-	content: '';
-	display: block;
-	background: rgba(255,255,255,0.5);
-	transform: rotate(45deg);
-	top: -60px;
-	position: absolute;
-	transition: none;
-	right:-45%;
-	cursor: pointer;
+a.jugarBtn:before {
+    width: 80px;
+    height: 200px;
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(45deg);
+    top: -60px;
+    position: absolute;
+    transition: none;
+    right: -45%;
+    cursor: pointer;
 }
- 
-a.jugarBtn:before{
-	left: -48%;
+
+a.jugarBtn:before {
+    left: -48%;
 }
- 
-a.jugarBtn:hover{
-	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-	background: #898989;
+
+a.jugarBtn:hover {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background: #898989;
 }
- 
+
 a.jugarBtn:hover:after,
-a.jugarBtn:hover:before{
-	transform: rotate(45deg), scaleX(130%);
-	background: rgba(255,255,255,0.1);
-	transition: all ease 0.5s;
+a.jugarBtn:hover:before {
+    transform: rotate(45deg), scaleX(130%);
+    background: rgba(255, 255, 255, 0.1);
+    transition: all ease 0.5s;
 }
- 
-a.jugarBtn:hover:after{
-	right: 130%;
+
+a.jugarBtn:hover:after {
+    right: 130%;
 }
- 
-a.jugarBtn:hover:before{
-	left: 130%;
+
+a.jugarBtn:hover:before {
+    left: 130%;
 }
+
 /*************ahora si Slider******************/
 
-    button.boton{
-        background: none;
-        padding: 0;
-        margin: 0;
-        border: none;
-    }
+button.boton {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
 
-    button.boton, button.boton2, button.boton3, button.boton4, button.boton5:hover{
-        color: plum;
-    }
-   
-    .boton .right{
-        position: absolute;
-        right: 1em;
-        top:4em;
-        background: none;
-        color: #EE0382;
-        font-size: 60px;
-        padding-right: 35px;
-        padding-top: 20px;
-        text-align: center;
-        border: none;
-    
-        }
-    .boton .left{
+button.boton,
+button.boton2,
+button.boton3,
+button.boton4,
+button.boton5:hover {
+    color: plum;
+}
+
+.boton .right {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    background: none;
+    color: #EE0382;
+    font-size: 60px;
+    padding-right: 35px;
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+
+}
+
+.boton .left {
     position: absolute;
     left: 1em;
-    top:4em;
+    top: 4em;
     background: none;
     color: #EE0382;
     font-size: 60px;
@@ -851,32 +867,33 @@ a.jugarBtn:hover:before{
     text-align: center;
     border: none;
 
-    }
+}
 
-    button{
-        background: none;
-        padding: 0;
-        margin: 0;
-        border: none;
-    }
-   
-    .boton2 .right2{
-        position: absolute;
-        right: 1em;
-        top:4em;
-        background: none;
-        color: #EE0382;
-        font-size: 60px;
-        padding-right: 35px;
-        padding-top: 20px;
-        text-align: center;
-        border: none;
-    
-        }
-    .boton2 .left2{
+button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.boton2 .right2 {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    background: none;
+    color: #EE0382;
+    font-size: 60px;
+    padding-right: 35px;
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+
+}
+
+.boton2 .left2 {
     position: absolute;
     left: 1em;
-    top:4em;
+    top: 4em;
     background: none;
     color: #EE0382;
     font-size: 60px;
@@ -884,24 +901,26 @@ a.jugarBtn:hover:before{
     text-align: center;
     border: none;
 
-    }
-    .boton3 .right3{
-        position: absolute;
-        right: 1em;
-        top:4em;
-        background: none;
-        color: #EE0382;
-        font-size: 60px;
-        padding-right: 35px;
-        padding-top: 20px;
-        text-align: center;
-        border: none;
-    
-        }
-    .boton3 .left3{
+}
+
+.boton3 .right3 {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    background: none;
+    color: #EE0382;
+    font-size: 60px;
+    padding-right: 35px;
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+
+}
+
+.boton3 .left3 {
     position: absolute;
     left: 1em;
-    top:4em;
+    top: 4em;
     background: none;
     color: #EE0382;
     font-size: 60px;
@@ -909,24 +928,26 @@ a.jugarBtn:hover:before{
     text-align: center;
     border: none;
 
-    }
-    .boton4 .right4{
-        position: absolute;
-        right: 1em;
-        top:4em;
-        background: none;
-        color: #EE0382;
-        font-size: 60px;
-        padding-right: 35px;
-        padding-top: 20px;
-        text-align: center;
-        border: none;
-    
-        }
-    .boton4 .left4{
+}
+
+.boton4 .right4 {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    background: none;
+    color: #EE0382;
+    font-size: 60px;
+    padding-right: 35px;
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+
+}
+
+.boton4 .left4 {
     position: absolute;
     left: 1em;
-    top:4em;
+    top: 4em;
     background: none;
     color: #EE0382;
     font-size: 60px;
@@ -934,25 +955,26 @@ a.jugarBtn:hover:before{
     text-align: center;
     border: none;
 
-    }
-    
-    .boton5 .right5{
-        position: absolute;
-        right: 1em;
-        top:4em;
-        background: none;
-        color: #EE0382;
-        font-size: 60px;
-        padding-right: 35px;
-        padding-top: 20px;
-        text-align: center;
-        border: none;
-    
-        }
-    .boton5 .left5{
+}
+
+.boton5 .right5 {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    background: none;
+    color: #EE0382;
+    font-size: 60px;
+    padding-right: 35px;
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+
+}
+
+.boton5 .left5 {
     position: absolute;
     left: 1em;
-    top:4em;
+    top: 4em;
     background: none;
     color: #EE0382;
     font-size: 60px;
@@ -960,27 +982,31 @@ a.jugarBtn:hover:before{
     text-align: center;
     border: none;
 
-    }
-    
-    
- .container .cards{
-      display: none;
-  }
-  .container .cards2{
+}
+
+
+.container .cards {
     display: none;
 }
-.container .cards3{
+
+.container .cards2 {
     display: none;
 }
-.container .cards4{
-  display: none;
+
+.container .cards3 {
+    display: none;
 }
-.container .cards5{
+
+.container .cards4 {
+    display: none;
+}
+
+.container .cards5 {
     display: none;
 }
 
 
-        
+
 /****************************************************************************/
 
 
@@ -1094,7 +1120,7 @@ footer main .transp {
 
 /******************************* 4 en linea *************************/
 
-div.tanques{
+div.tanques {
     width: 100vw;
     height: 10vw;
     background-image: url("../img/headerTanques.png");
@@ -1103,25 +1129,28 @@ div.tanques{
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
-div.tanques p{
-font-size: 70px;
-font-weight: 500;
-color: #000;
-text-shadow:white 5px 5px 3px,white -5px -5px 3px,white 5px -5px 3px,white -5px 5px 3px ;
+div.tanques p {
+    font-size: 70px;
+    font-weight: 500;
+    color: #000;
+    text-shadow: white 5px 5px 3px, white -5px -5px 3px, white 5px -5px 3px, white -5px 5px 3px;
 }
-main{
-    background-image: url("/interfaces.io/TPEntregable2/img/campo.png");
- 
+
+.campo {
+    background-image: url("/img/campo.png");
+
 }
-.transparente{
+
+.transparente {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.138);
- 
+
 }
+
 .juego4 {
     display: flex;
     justify-content: center;
@@ -1256,7 +1285,7 @@ a.jugarBtn:hover:before {
     background: #EE0382;
 }
 
-.contador{
+.contador {
     color: white;
     background-color: #002bff;
     text-align: center;
@@ -1265,185 +1294,321 @@ a.jugarBtn:hover:before {
     border-radius: 10px;
     -webkit-text-stroke: 1px black;
 }
-.contador>p{
-    font-weight:bold;
-}
-p#countdown{
-    color: #000;
-    font-size:38px;
+
+.contador>p {
     font-weight: bold;
 }
 
-  /***********estrellas************/
-  #form {
+p#countdown {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/***********estrellas************/
+#form {
     width: 250px;
     margin: 0 auto;
     height: 50px;
-  }
-  
-  #form p {
+}
+
+#form p {
     text-align: center;
-  }
-  
-  #form label {
+}
+
+#form label {
     font-size: 50px;
-  }
-  
-  input[type="radio"] {
+}
+
+input[type="radio"] {
     display: none;
-  }
-  
-  label {
+}
+
+label {
     color: rgb(46, 46, 46);
-  }
-  
-  .clasificacion {
+}
+
+.clasificacion {
     direction: rtl;
     unicode-bidi: bidi-override;
-  }
-  
-  label:hover,
-  label:hover ~ label {
-    color: orange;
-  }
-  
-  input[type="radio"]:checked ~ label {
-    color: orange;
-  }
+}
 
-  /***********fin estrellas************/
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+/***********fin estrellas************/
 /*********capturas*********/
-  .captsJuego{
+.captsJuego {
     color: white;
     width: 90%;
     height: 50%;
 }
-.captsJuego img{
+
+.captsJuego img {
     width: 20%;
     padding: 2%;
     min-width: 250px;
-} 
+}
+
 /*********fin capturas*********/
 /******************links******************/
-.mano{
+.mano {
     color: white;
 }
-.links{
+
+.links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
+    justify-content: center;
 }
-.links p{
+
+.links p {
     color: white;
     padding: 0 0.1vw 0 10vw;
 }
+
 /****************** fin links******************/
 
 /**************** chat *******************/
-.contCom{
+.contCom {
     display: flex;
     justify-content: center;
 }
-.comentarios{
+
+.comentarios {
     background-color: #d9d9d94d;
     width: 70%;
     align-self: center;
     min-width: 500px;
     margin: 0 0 1% 0;
 }
-.imgPerf img, .imgPerfResp img{
+
+.imgPerf img,
+.imgPerfResp img {
     width: 70px;
     padding: 2vh;
 }
-.imgPerf, .imgPerfResp{
+
+.imgPerf,
+.imgPerfResp {
     border-radius: 100%;
 }
-.imgPerfResp{
+
+.imgPerfResp {
     margin-left: 6vw;
 }
-.comentar h3, .cancEnv{
+
+.comentar h3,
+.cancEnv {
     color: white;
     width: 100%;
     text-align: center;
 }
-.comentarios h2{
+
+.comentarios h2 {
     background-color: #000;
     color: white;
 }
-.comentar{
+
+.comentar {
     display: flex;
     flex-wrap: wrap;
-    align-items: center ;
+    align-items: center;
 }
-.comentar input{
+
+.comentar input {
     width: 90%;
     height: 5vh;
     border-radius: 15px;
 }
-.coment, .cancelar{
-   text-decoration: none;
-   padding: 0 1%;
+
+.coment,
+.cancelar {
+    text-decoration: none;
+    padding: 0 1%;
 }
-.cancelar{
-    color:#6b6666;
+
+.cancelar {
+    color: #6b6666;
 }
-.cancelar:hover{
+
+.cancelar:hover {
     color: whitesmoke;
 }
 
 
-.coment{
-    color:#b4f2bf;
+.coment {
+    color: #b4f2bf;
 }
-.coment:hover{
+
+.coment:hover {
     color: #0DFF34;
 }
-.cancEnv{
+
+.cancEnv {
     display: flex;
     justify-content: end;
-    padding-right:5% ;
+    padding-right: 5%;
 }
-.cometarioSimple{
+
+.cometarioSimple {
     display: flex;
     flex-wrap: wrap;
 }
-.fecha{
+
+.fecha {
     padding: 0 2vw 0 4vw;
 }
-p.comentado, p.comentadoResp{
+
+p.comentado,
+p.comentadoResp {
     border-radius: 10px;
     width: 50.6vw;
     height: 30px;
     align-content: center;
-    padding: 10px 0 0 10px ;
+    padding: 10px 0 0 10px;
 }
-p.comentadoResp{
+
+p.comentadoResp {
     width: 40vw;
 }
-.cometarioSimple span,p{
+
+.cometarioSimple span,
+p {
     color: white;
 }
-.cometarioSimple div ~ div{
+
+.cometarioSimple div~div {
     padding-top: 15px;
 }
-.responder{
+
+.responder {
     text-decoration: none;
     color: #b4f2bf;
 }
-.responder:hover{
+
+.responder:hover {
     text-decoration: none;
     color: #0DFF34;
 }
 
-.respuesta{
+.respuesta {
     width: 20%;
     display: flex;
-    
+
 }
 
 
 /**************** fin chat *****************/
+
 /*******************************fin 4 en linea *************************/
+
+
+
+
+/***********loader************/
+.contLoader {
+
+    position: fixed;
+    width: 100%;
+    height: 300vh;
+    background-color: rgba(255, 255, 255, 0.667);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    top: -900px;
+
+    z-index: 100;
+}
+
+.modalLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.modal-contentt {
+    /* display: none;*/
+    width: 200px;
+    height: auto;
+
+}
+
+.loader {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFF;
+    -webkit-text-stroke: 2px black;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.loader:after {
+    content: 'GameStore';
+    position: relative;
+    z-index: 5;
+}
+
+.loader:before {
+    content: '';
+    height: 6px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(#FF3D00 100%, transparent 0) no-repeat;
+    background-size: 0% auto;
+    animation: 10s lineGrow linear;
+    animation-duration: 5s;
+}
+
+@keyframes lineGrow {
+    to {
+        background-size: 100% auto
+    }
+}
+
+.loader2 {
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modalLoader,
+.contLoader,
+.modal-contentt {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+/**************fin loader ***********/
+
+
 @media (min-width: 700px) {
     /*footer*/
 
@@ -1548,206 +1713,235 @@ p.comentadoResp{
         z-index: 9;
     }
 
-      /*************SlideBanners***********************/
-.titulo{
-    font-size: 25px;    
-}
-
-.frase{
-    font-size: 15px;
-    width:200px;
-}
-.new{
-    font-size: 20px;
-    border-radius: 20px;
-    width: 190px;
-    height: 75px;
-    margin-top: 35%;
-}
-#clock{
-    font-size: 25px;
-    font-weight: bold;
-    /*width: 450px;  */
-}
-#el{
-    font-size: 20px;
-    width: 350px; 
-}
-/**************slide card*************/
-.categoria{
-    text-align: left;
-    padding-left: 12%;
-    font-size: 26px;
-    letter-spacing: 0.37em;
-}
-
-.mesa{
-    padding-top: 20px;
-}
-.container .cards{
-    position: absolute;
-     width: 100%;
-     height: 420px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .container .cards2{
-    position: absolute;
-     width: 100%;
-     height: 420px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .container .cards3{
-    position: absolute;
-     width: 100%;
-     height: 420px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .container .cards4{
-    position: absolute;
-     width: 100%;
-     height: 420px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .container .cards5{
-    position: absolute;
-     width: 100%;
-     height: 420px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
-.container .card{
-    width: 280px;
-    height: 400px;
-}
-.container .card img{
-    width: 260px;
-    height: 260px;
-    
-}
-.container .card .triangulo{
-    width: 260px;
-    height: 260px;
-    
-}
-.container .card .comprarBtn {
-    font-size: 15px;
-    letter-spacing: 0.2em;
-    padding: 13px 14px 13px 14px;
-    margin-top: 10px;
-}
-.container .card .triangulo .nStar{
-    padding: 0 1rem;
-    font-weight: bold;
-    left: 4.67%;
-    right: 86.11%;
-    top: -0.5%;
-    bottom: 92%;
-    padding: 2px;
-    margin-top: 12px;
-   
-}
-.contCard{
-    display: none;
-}
-
-.contCard2{
-    display: none;
-}
-.contCard3{
-    display: none;
-}
-.contCard4{
-    display: none;
-}
-.contCard5{
-    display: none;
-}
-
-.boton{
-    display: none;
-}
-.boton2{
-    display: none;
-}
-.boton3{
-    display: none;
-}
-.boton4{
-    display: none;
-}
-.boton5{
-    display: none;
-}
-
-
-}
-
-@media (min-width: 900px){
     /*************SlideBanners***********************/
-    .titulo{
-      font-size: 30px;    
-  }
-  
-  .frase{
-      font-size: 20px;
-      width:300px;
-  }
-  .new{
-      font-size: 25px;
-      border-radius: 30px;
-      width: 230px;
-      height: 90px;
-      margin-top: 35%;
-  }
-  #clock{
-    font-size: 30px;
-    /*width: 500px;  */
- }
-    #el{
+    .titulo {
         font-size: 25px;
-        width: 350px; 
+    }
+
+    .frase {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .new {
+        font-size: 20px;
+        border-radius: 20px;
+        width: 190px;
+        height: 75px;
+        margin-top: 35%;
+    }
+
+    #clock {
+        font-size: 25px;
+        font-weight: bold;
+        /*width: 450px;  */
+    }
+
+    #el {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    /**************slide card*************/
+    .categoria {
+        text-align: left;
+        padding-left: 12%;
+        font-size: 26px;
+        letter-spacing: 0.37em;
+    }
+
+    .mesa {
+        padding-top: 20px;
+    }
+
+    .container .cards {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .container .cards2 {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .container .cards3 {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .container .cards4 {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .container .cards5 {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .container .card {
+        width: 280px;
+        height: 400px;
+    }
+
+    .container .card img {
+        width: 260px;
+        height: 260px;
+
+    }
+
+    .container .card .triangulo {
+        width: 260px;
+        height: 260px;
+
+    }
+
+    .container .card .comprarBtn {
+        font-size: 15px;
+        letter-spacing: 0.2em;
+        padding: 13px 14px 13px 14px;
+        margin-top: 10px;
+    }
+
+    .container .card .triangulo .nStar {
+        padding: 0 1rem;
+        font-weight: bold;
+        left: 4.67%;
+        right: 86.11%;
+        top: -0.5%;
+        bottom: 92%;
+        padding: 2px;
+        margin-top: 12px;
+
+    }
+
+    .contCard {
+        display: none;
+    }
+
+    .contCard2 {
+        display: none;
+    }
+
+    .contCard3 {
+        display: none;
+    }
+
+    .contCard4 {
+        display: none;
+    }
+
+    .contCard5 {
+        display: none;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    .boton2 {
+        display: none;
+    }
+
+    .boton3 {
+        display: none;
+    }
+
+    .boton4 {
+        display: none;
+    }
+
+    .boton5 {
+        display: none;
+    }
+
+
 }
 
-.container .card{
-    width: 280px;
-    height: 400px;
+@media (min-width: 900px) {
+
+    /*************SlideBanners***********************/
+    .titulo {
+        font-size: 30px;
+    }
+
+    .frase {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .new {
+        font-size: 25px;
+        border-radius: 30px;
+        width: 230px;
+        height: 90px;
+        margin-top: 35%;
+    }
+
+    #clock {
+        font-size: 30px;
+        /*width: 500px;  */
+    }
+
+    #el {
+        font-size: 25px;
+        width: 350px;
+    }
+
+    .container .card {
+        width: 280px;
+        height: 400px;
+    }
+
+    .container .card img {
+        width: 260px;
+        height: 260px;
+
+    }
+
+    .container .card .triangulo {
+        width: 260px;
+        height: 260px;
+
+    }
+
 }
-.container .card img{
-    width: 260px;
-    height: 260px;
-    
-}
-.container .card .triangulo{
-    width: 260px;
-    height: 260px;
-    
-} 
-     
-}
+
 @media (min-width: 1200px) {
 
     /*************SlideBanners***********************/
@@ -1780,76 +1974,82 @@ p.comentadoResp{
         font-weight: bold;
         margin-left: 30%;
     }
- 
-.container .card{
-    width: 260px;
-    height: 380px;
-}
-.container .card img{
-    width: 240px;
-    height: 240px;
-    
-}
-.container .card .triangulo{
-    width: 240px;
-    height: 240px;
-    
-}
-.cards{
-    position: absolute;
-     width: 100%;
-     height: 400px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .cards2{
-    position: absolute;
-     width: 100%;
-     height: 400px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- 
- .cards3{
-    position: absolute;
-     width: 100%;
-     height: 400px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .cards4{
-    position: absolute;
-     width: 100%;
-     height: 400px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- }
- .cards5{
-    position: absolute;
-     width: 100%;
-     height: 400px;
-     overflow: hidden;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     flex-wrap: wrap;
-     
- } 
-      
+
+    .container .card {
+        width: 260px;
+        height: 380px;
+    }
+
+    .container .card img {
+        width: 240px;
+        height: 240px;
+
+    }
+
+    .container .card .triangulo {
+        width: 240px;
+        height: 240px;
+
+    }
+
+    .cards {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cards2 {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cards3 {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cards4 {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cards5 {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
 }

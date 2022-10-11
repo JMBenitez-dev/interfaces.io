@@ -40,3 +40,5 @@ function secondsToString(seconds) {
 }
 
 /*********************fin cuenta regresiva *************************** */
+
+
