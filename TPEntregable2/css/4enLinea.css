@@ -1,0 +1,129 @@
+body{
+    overflow-x: hidden;
+}
+#canvas {
+    border: solid black 1px;
+    
+}
+
+.divCanvas{
+    /*width: 50rem;*/
+    margin-left: 3rem;
+}
+/*p.instrucciones{
+    text-align: center;
+}*/
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 10, 3, 0);
+    width: 90%;
+}
+
+.integrantes {
+    width: 20rem;
+    align-items: center;
+}
+
+.botones {
+    width: 190px;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background-color: turquoise !important;
+    color: rgb(0, 8, 8) !important;
+    font-size: 15px !important;
+    padding: 0px !important;
+}
+
+.btn-success {
+    background-color: orange !important;
+    color: #000 !important;
+    font-size: 15px !important;
+    padding: 0px !important;
+}
+
+#countdown {
+    font-size: 20px !important;
+    color: rgb(7, 5, 0);
+}
+
+h1,
+h4,
+#cuatro,
+#cinco,
+#seis,
+#siete,
+#inicio,
+#partida,
+#tipo,
+#reset {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: rgb(10, 1, 1);
+    /*font-family: 'IM Fell English SC', serif;*/
+    
+    
+}
+
+h1,
+h4{
+    color: white;
+}
+
+#sticky-footer {
+    height: 70px !important;
+    background-color: black;
+}
+
+
+
+/*img {
+    border-radius: 50%;
+}*/
+
+
+/*estilo de fichas*/
+
+.casino {
+    background-image: url(../img/Img4enLinea/fichaAzul.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cartas {
+    background-image: url(../img/Img4enLinea/cartas.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.color {
+    background-image: url(../img/Img4enLinea/fichaVerde.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 62px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.swal-footer {
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
