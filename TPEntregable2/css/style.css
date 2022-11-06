@@ -844,7 +844,7 @@ button.boton5:hover {
 
 .boton .right {
     position: absolute;
-    right: 1em;
+    right: -0.4em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -858,7 +858,7 @@ button.boton5:hover {
 
 .boton .left {
     position: absolute;
-    left: 1em;
+    left: -0.1em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -878,7 +878,7 @@ button {
 
 .boton2 .right2 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -892,7 +892,7 @@ button {
 
 .boton2 .left2 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -905,7 +905,7 @@ button {
 
 .boton3 .right3 {
     position: absolute;
-    right: 1em;
+    right: 0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -919,7 +919,7 @@ button {
 
 .boton3 .left3 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -932,7 +932,7 @@ button {
 
 .boton4 .right4 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -946,7 +946,7 @@ button {
 
 .boton4 .left4 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -959,7 +959,7 @@ button {
 
 .boton5 .right5 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -973,7 +973,7 @@ button {
 
 .boton5 .left5 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
