@@ -104,16 +104,16 @@ p.nombre{
 /*estilo de fichas*/
 
 .casino {
-    background-image: url(../img/Img4enLinea/fichaAzul.png);
+    background-image: url(../img/Img4enLinea/tanke4.png);
     background-repeat: no-repeat;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
 }
 
 .cartas {
-    background-image: url(../img/Img4enLinea/cartas.png);
+    background-image: url(../img/Img4enLinea/tanke14-m.png);
     background-repeat: no-repeat;
     display: block;
     width: 62px;
@@ -122,14 +122,37 @@ p.nombre{
 }
 
 .color {
-    background-image: url(../img/Img4enLinea/fichaVerde.png);
+    background-image: url(../img/Img4enLinea/tanke17-m.png);
     background-repeat: no-repeat;
     display: block;
     width: 62px;
-    height: 60px;
+    height: 62px;
     border-radius: 50%;
 }
 
+.swal-button{
+    padding: 10px;
+    background-color:black;
+    margin: 10px;
+
+}
+
+.swal-button:hover{
+    color: #5A5A5A !important;
+}
+
+.swal-modal {
+    background-color:#5A5A5A ;
+    border: solid black 2px;
+}
+
+.swal-title{
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.11em;
+}
 .swal-footer {
     text-align: center;
     padding-top: 13px;
@@ -141,4 +164,13 @@ p.nombre{
 }
 span.hora, span.fecha{
     font-size: 15px;
+}
+h4#turno{
+    text-align: center;
+    font-size: 20px;
+}
+
+h4#countdown{
+    text-align: center;
+    color: white;
 }

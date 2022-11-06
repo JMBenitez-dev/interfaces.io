@@ -36,7 +36,7 @@ document.querySelector('#reset').addEventListener('click', function() {
         })
 });
 
-//El siguiente codigo hablita o deshablita los botones en una seueni preestableida
+//El siguiente codigo hablita o deshablita los botones en una secuencia preestablecida
 
 let partida = document.querySelector('#partida')
 partida.disabled = false;
@@ -89,11 +89,11 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 //esribe los nombres de los jugadores en el canvas
 function drawTxT() {
-    ctx.font = "25pt Verdana";
-    ctx.strokeStyle = "black";
+    ctx.font = "23pt Verdana";
+    ctx.strokeStyle = "white";
     ctx.lineWidth = 2;
-    ctx.strokeText(jugador1, textX - 22, textY, 250);
-    ctx.strokeText(jugador2, textX + 700, textY, 250);
+    ctx.strokeText(jugador1, textX + 40, textY, 250);
+    ctx.strokeText(jugador2, textX + 750, textY, 250);
 }
 //definicion de los distintos tableros (modos de juego)
 let tablero1 = new Tablero(tableroW, tableroH, ctx);
@@ -213,20 +213,20 @@ function cargarTipo(value) {
     casW = 7;
     cant = 21;
     if (tipo == "casino") {
-        imagen1 = "img/img4enLinea/fichaRoja.png";
-        imagen2 = "img/img4enLinea/fichaAzul.png";
+        imagen1 = "img/img4enLinea/tanke4.png";
+        imagen2 = "img/img4enLinea/tanque1.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
     if (tipo == "cartas") {
-        imagen1 = "img/img4enLinea/cartas.png";
-        imagen2 = "img/img4enLinea/corazon.png";
+        imagen1 = "img/img4enLinea/tanke14-m.png";
+        imagen2 = "img/img4enLinea/tanque12-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
     if (tipo == "color") {
-        imagen1 = "img/img4enLinea/fichaAmarilla.png";
-        imagen2 = "img/img4enLinea/fichaVerde.png";
+        imagen1 = "img/img4enLinea/tanke15-m.png";
+        imagen2 = "img/img4enLinea/tanke17-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 }
@@ -389,7 +389,8 @@ function mostrarTablero(casW) {
 
 //pone en blanco todo el canvas
 function clearCanvas() {
-    ctx.fillStyle = '#98ff96';
+    //ctx.fillStyle = '#98ff96';
+    ctx.fillStyle = "#5A5A5A";
     ctx.fillRect(0, 0, canvasW, canvasH);
 }
 //se ejecuta al arrastrar una ficha
