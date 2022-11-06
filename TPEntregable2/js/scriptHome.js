@@ -237,3 +237,19 @@ var slideIndex5= 1;
 
 }
 
+document.querySelector(".suscribir .desk").addEventListener("click",()=>{
+    document.querySelectorAll(".suscribir .mob").forEach(el =>{
+      el.classList.toggle("ocultar")
+    })
+  });
+
+  document.querySelector(".favoritos .desk").addEventListener("click",()=>{
+    document.querySelectorAll(".favoritos .mob").forEach(el =>{
+      el.classList.toggle("ocultar")
+    })
+  });
+  document.querySelector(".ayuda .desk").addEventListener("click",()=>{
+    document.querySelectorAll(".ayuda .mob").forEach(el =>{
+      el.classList.toggle("ocultar")
+    })
+  });
