@@ -7,6 +7,7 @@ let canvasH = 850;
 let tableroW;
 let tableroH;
 let casW;
+let cantFichasEnLinea;
 let cant;
 let tipo;
 let radius = 26;
@@ -106,17 +107,21 @@ function cargarParametros(value) {
 
     if (casW == 7) {
         cant = 21; //cantidad de fichas de cada jugador
+        cantFichasEnLinea=4;
         drawTipo(casW, cant, imagen1, imagen2);
     }
     if (casW == 8) {
+        cantFichasEnLinea=5;
         cant = 28;
         drawTipo(casW, cant, imagen1, imagen2);
     }
     if (casW == 9) {
+        cantFichasEnLinea=6;
         cant = 36;
         drawTipo(casW, cant, imagen1, imagen2);
     }
     if (casW == 10) {
+        cantFichasEnLinea=7;
         cant = 45;
         drawTipo(casW, cant, imagen1, imagen2);
     }

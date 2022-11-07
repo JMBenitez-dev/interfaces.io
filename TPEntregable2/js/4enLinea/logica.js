@@ -48,24 +48,25 @@ function actualizarMatriz(fil, col, ficha, cantCasillerosw, radius, e) {
 }
 //verifica si hay 4 en linea en alguna posicion
 function verificarGanador(fil, col, uFicha) {
+
     let tamMatFila = matriz[fil].length;
     let tamMatCol = matriz.length;
 
-    if ((contadorOeste(fil, col, uFicha) + contadorEste(fil, col, tamMatFila, uFicha) + 1) >= 4) { //mas 1 porque se tiene que contar a si misma
+    if ((contadorOeste(fil, col, uFicha) + contadorEste(fil, col, tamMatFila, uFicha) + 1) >= cantFichasEnLinea) { //mas 1 porque se tiene que contar a si misma
         ganador = true;
         return uFicha;
     }
-    if ((contadorSur(fil, col, tamMatCol, uFicha) + 1) == 4) {
-        ganador = true;
-        return uFicha;
-    }
-
-    if (((contadorNoreste(fil, col, tamMatFila, uFicha) + (contadorSuroeste(fil, col, tamMatCol, uFicha)) + 1) >= 4)) {
+    if ((contadorSur(fil, col, tamMatCol, uFicha) + 1) == cantFichasEnLinea) {
         ganador = true;
         return uFicha;
     }
 
-    if ((contadorSurEste(fil, col, tamMatCol, tamMatFila, uFicha) + contadorNoroeste(fil, col, uFicha) + 1) >= 4) {
+    if (((contadorNoreste(fil, col, tamMatFila, uFicha) + (contadorSuroeste(fil, col, tamMatCol, uFicha)) + 1) >= cantFichasEnLinea)) {
+        ganador = true;
+        return uFicha;
+    }
+
+    if ((contadorSurEste(fil, col, tamMatCol, tamMatFila, uFicha) + contadorNoroeste(fil, col, uFicha) + 1) >= cantFichasEnLinea) {
         ganador = true;
         return uFicha;
     }
