@@ -177,31 +177,31 @@ function mostrarBotones() {
             title: "Seleccione tipo de fichas",
             closeOnClickOutside: false,
             buttons: {
-                casino: {
+                tanque1: {
                     text: " ",
-                    className: 'casino'
+                    className: 'tanque1'
                 },
-                cartas: {
+                tanque2: {
                     text: " ",
-                    className: 'cartas'
+                    className: 'tanque2'
                 },
-                color: {
+                tanque3: {
                     text: " ",
-                    className: 'color'
+                    className: 'tanque3'
                 },
             },
         })
         .then((value) => {
             switch (value) {
 
-                case "casino":
+                case "tanque1":
                     cargarTipo(value);
                     break;
 
-                case "cartas":
+                case "tanque2":
                     cargarTipo(value);
                     break;
-                case "color":
+                case "tanque3":
                     cargarTipo(value);
                     break;
             }
@@ -212,19 +212,19 @@ function cargarTipo(value) {
     tipo = value;
     casW = 7;
     cant = 21;
-    if (tipo == "casino") {
+    if (tipo == "tanque1") {
         imagen1 = "img/img4enLinea/tanke4.png";
         imagen2 = "img/img4enLinea/tanque1.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
-    if (tipo == "cartas") {
+    if (tipo == "tanque2") {
         imagen1 = "img/img4enLinea/tanqueMs.png";
         imagen2 = "img/img4enLinea/tanque12-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
-    if (tipo == "color") {
+    if (tipo == "tanque3") {
         imagen1 = "img/img4enLinea/tanke15-m.png";
         imagen2 = "img/img4enLinea/tanke17-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
