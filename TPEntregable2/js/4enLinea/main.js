@@ -25,6 +25,7 @@ let jugador1 = document.querySelector('#jugador1').innerHTML;
 let jugador2 = document.querySelector('#jugador2').innerHTML;
 
 document.querySelector('#reset').addEventListener('click', function() {
+    
     swal("", {
             title: "Desea iniciar una nueva partida?",
             buttons: ["cancel", true],
@@ -63,7 +64,7 @@ botTablero.forEach(element => {
         inicio.disabled = false;
         document.querySelector('#tipo').disabled = true;
         botTablero.forEach(elemento => {
-            elemento.disabled = true;
+            /*elemento.disabled = true;*/
         });
     })
 });
@@ -79,7 +80,7 @@ inicio.addEventListener('click', function() {
         fichas[i].setColocada(false);
         fichas2[i].setColocada(false);
     }
-    document.querySelector('#turno').innerHTML = "Turno del jugador: " + jugador1;
+    document.querySelector('#turno').innerHTML = "Turno de: " + jugador1;
 })
 
 //definicion del canvas
@@ -131,6 +132,7 @@ function cargarParametros(value) {
 partida.addEventListener("click", borrarPartida);
 
 function borrarPartida() {
+    document.querySelector(".iniciarAqui p").classList.add("oculto");
     swal("", {
             title: "Ingrese nombre del Jugador 1: ",
             closeOnClickOutside: false,
@@ -159,7 +161,7 @@ function borrarPartida() {
                     clearCanvas();
                     drawTipo();
                     drawTablero();
-                    partida.disabled = true;
+                    
                 })
         })
 
@@ -177,7 +179,7 @@ drawTablero();
 document.querySelector('#tipo').addEventListener('click', mostrarBotones)
 
 function mostrarBotones() {
-
+    partida.disabled = true;
     swal({
             title: "Seleccione tipo de fichas",
             closeOnClickOutside: false,
@@ -218,20 +220,20 @@ function cargarTipo(value) {
     casW = 7;
     cant = 21;
     if (tipo == "tanque1") {
-        imagen1 = "img/img4enLinea/tanke4.png";
-        imagen2 = "img/img4enLinea/tanque1.png";
+        imagen1 = "./img/img4enLinea/tanke4.png";
+        imagen2 = "./img/img4enLinea/tanque1.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
     if (tipo == "tanque2") {
-        imagen1 = "img/img4enLinea/tanqueMs.png";
-        imagen2 = "img/img4enLinea/tanque12-m.png";
+        imagen1 = "./img/img4enLinea/tanqueMs.png";
+        imagen2 = "./img/img4enLinea/tanque12-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
     if (tipo == "tanque3") {
-        imagen1 = "img/img4enLinea/tanke15-m.png";
-        imagen2 = "img/img4enLinea/tanke17-m.png";
+        imagen1 = "./img/img4enLinea/tanke15-m.png";
+        imagen2 = "./img/img4enLinea/tanke17-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
 }
@@ -379,15 +381,19 @@ function mostrarTablero(casW) {
     tableroW = radius * (3 * casW);
     tableroH = radius * (3 * (casW - 1));
     if (casW == 7) {
+        clearCanvas();//esto sirve para poder cambiar de tablero cuando todavia no empezó el juego
         tablero1.draw(tableroW, tableroH, canvasW, canvasH, radius);
     }
     if (casW == 8) {
+        clearCanvas();
         tablero2.draw(tableroW, tableroH, canvasW, canvasH, radius);
     }
     if (casW == 9) {
+        clearCanvas();
         tablero3.draw(tableroW, tableroH, canvasW, canvasH, radius);
     }
     if (casW == 10) {
+        clearCanvas();
         tablero4.draw(tableroW, tableroH, canvasW, canvasH, radius);
     }
 }

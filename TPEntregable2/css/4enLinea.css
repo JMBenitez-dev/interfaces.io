@@ -23,16 +23,17 @@ body{
 }
 
 .integrantes {
-    width: 20rem;
+    width: 200px;
     align-items: center;
 }
 
 .botones {
-    width: 300px;
+    width: 200px;
     display: flex;
     padding-top: 40px;
     justify-content: center;
     flex-direction: column;
+    margin-left: 30px;
 }
 
 .btn-primary {
@@ -54,12 +55,12 @@ body{
     color: rgb(7, 5, 0);
 }
 .botones h4{
-    text-align: center;
+    text-align: left;
     margin-bottom: -10px;
     -webkit-text-stroke: 1px black;
     font-size: large;
-    margin-top: 22px;
-    margin-left: 28px;
+   
+    margin-left: 18px;
 }
 
 h1,
@@ -168,9 +169,25 @@ span.hora, span.fecha{
 h4#turno{
     text-align: center;
     font-size: 20px;
+    background-color: rgba(71, 158, 109, 0.532);
+    color: #000;
 }
 
 h4#countdown{
     text-align: center;
     color: white;
+    background-color: blue;
+}
+h4#turno,h4#countdown{
+    margin: 0 0 0 55px;
+}
+
+
+.iniciarAqui p{
+    text-align: center;
+    background-color: black;
+    border: 2px dashed;
+}
+.oculto{
+    display: none;
 }

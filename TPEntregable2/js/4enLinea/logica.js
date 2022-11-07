@@ -160,14 +160,14 @@ function iniciarPartida() {
         segundos = secondsToString(timeleft)
         if (timeleft <= 0) {
 
-            document.getElementById("countdown").innerHTML = "Se acabó el tiempo.";
+            document.getElementById("countdown").innerHTML = "Se acabó el tiempo";
             for (let i = 0; i < fichas.length; i++) {
                 fichas[i].setColocada(true);
                 fichas2[i].setColocada(true);
             }
             clearInterval(downloadTimer);
         } else {
-            document.getElementById("countdown").innerHTML = segundos + " tiempo restante de la partida.";
+            document.getElementById("countdown").innerHTML = " Tiempo restante "+segundos ;
         }
         timeleft -= 1;
     }, 1000);

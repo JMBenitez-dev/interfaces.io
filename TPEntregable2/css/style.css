@@ -697,6 +697,10 @@ a.cat:hover:before {
     border-radius: 10px;
     text-align: center;
 }
+.jugarBtn:disabled, .comprarBtn:disabled{
+    background-color: #2E2E2E;
+}
+
 
 .container .card .comprarBtn {
     font-weight: bold;
@@ -746,13 +750,15 @@ a.comprarBtn:before {
     top: -60px;
     position: absolute;
     transition: none;
-    right: -45%;
+    right: -65%;
     cursor: pointer;
 }
 
+
 a.comprarBtn:before {
-    left: -48%;
+    left: -92%;
 }
+
 
 a.comprarBtn:hover {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -766,12 +772,14 @@ a.comprarBtn:hover:before {
     transition: all ease 0.5s;
 }
 
+
+
 a.comprarBtn:hover:after {
-    right: 130%;
+    right: 70%;
 }
 
 a.comprarBtn:hover:before {
-    left: 130%;
+    left: 70%;
 }
 
 /**********************/
@@ -797,12 +805,12 @@ a.jugarBtn:before {
     top: -60px;
     position: absolute;
     transition: none;
-    right: -45%;
+    right: -65%;
     cursor: pointer;
 }
 
 a.jugarBtn:before {
-    left: -48%;
+    left: -92%;
 }
 
 a.jugarBtn:hover {
@@ -1139,14 +1147,15 @@ div.tanques {
 }
 
 div.tanques p {
-    font-size: 70px;
+    margin-top: -10px;
+    font-size: 60px;
     font-weight: 500;
     color: #000;
     text-shadow: white 5px 5px 3px, white -5px -5px 3px, white 5px -5px 3px, white -5px 5px 3px;
 }
 
 .campo {
-    background-image: url("../img/campo.jpg");
+    background-image: url("../img/Img4enLinea/campo.png");
     background-size: cover;
     margin-left: 4rem;
     width: 100%;
@@ -1217,6 +1226,7 @@ aside.izq {
 
 
 
+
 /*********************************************************/
 
 .comprarBtn,
@@ -1240,7 +1250,7 @@ aside.izq {
 button.comprarBtn,
 button.jugarBtn {
     position: relative;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     /*color:rgba(255,255,255,1);*/
     color: #000000;
@@ -1263,13 +1273,13 @@ button.jugarBtn:before {
     top: -13px;
     position: absolute;
     transition: none;
-    right: -45%;
+    right: -105%;
     cursor: pointer;
 }
 
 button.comprarBtn:before,
 button.jugarBtn:before {
-    left: -48%;
+    left: -105%;
 }
 
 button.comprarBtn:hover {
@@ -1277,11 +1287,17 @@ button.comprarBtn:hover {
     background: #0DFF34;
 }
 
+
+button.comprarBtn:hover:disabled,button.jugarBtn:hover:disabled  {
+    background: #2E2E2E;
+}
+
 button.jugarBtn:hover {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     background: #898989;
     background: #EE0382;
 }
+
 
 button.comprarBtn:hover:after,
 button.comprarBtn:hover:before,
