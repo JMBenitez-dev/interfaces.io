@@ -119,7 +119,72 @@
                 <a href="./index.html/#Juegos_de_mesa">Juegos de mesa</a>
             </div>
             <div class="contenedorJuego">
-                <div class="turno">
+                <div class="contenedor">
+                    <div class="integrantes">
+            
+                        <div class="margen">
+                            <!--h1 class="display-1">A jugar!</h1-->
+                           
+                            <p id="ganador"></p>
+                            <p id="jugador1" hidden></p>
+                            <p id="jugador2" hidden></p>
+                        </div>
+            
+                        <div class="margen">
+                            <h4 id="turno"></h4>
+                        </div>
+                        <!--hr-->
+                        <div class="margen">
+                            <h4 id="countdown"></h4>
+                        </div>
+                        <div>
+                            <h3 id="turno"></h3>
+                        </div>
+            
+                        <!--hr-->
+            
+                        <div class="botones">
+                             
+                            <button class="btn jugarBtn" type="button" id="partida" value="Nueva Partida">Jugadores</button>
+                            <!--hr-->
+            
+                            <button class="btn jugarBtn" type="button" id="tipo">Fichas</button>
+            
+                            <!--hr-->
+            
+                            <h4>Seleccione Tablero</h4>
+                            <button class="Tamtablero btn jugarBtn" id="cuatro" type="button" value="7" onclick="cargarParametros(value);">Fácil</button>
+                            <button class="Tamtablero btn jugarBtn" id="cinco" type="button" value="8" onclick="cargarParametros(value);">Normal</button>
+                            <button class="Tamtablero btn jugarBtn" id="seis" type="button" value="9" onclick="cargarParametros(value);">Difícil</button>
+                            <button class="Tamtablero btn jugarBtn" id="siete" type="button" value="10" onclick="cargarParametros(value);">Muy difícil</button>
+                            <!--hr-->
+                            <button class="btn comprarBtn" type="button" id="inicio" value="iniciarPartida">Jugar</button>
+                            <button class="btn jugarBtn" type="button" id="reset" value="Reiniciar">Reiniciar</button>
+                        </div>
+            
+                    </div>
+                    <div class="divCanvas">
+                        <canvas id="canvas" width="800" height="500"> </canvas>
+                    </div>
+                    <aside class="der">
+                        <h2 class="instrucciones">Instrucciones</h2>
+                        <h3 class="instrucciones">Posición inicial y objetivo del juego</h3>
+                        <p class="instrucciones">El objetivo de este juego consiste en colocar cuatro fichas en una fila contínua vertical,
+                            horizontal
+                            o diagonalmente. </p>
+                        <h3 class="instrucciones">Colocar las fichas</h3>
+                        <p>La regla para colocarlas consiste en Arrastrar la ficha hasta la parte superior y soltarla para
+                            que
+                            caiga “hasta abajo".</p>
+                        <h3 class="instrucciones">Finalizar partida</h3>
+                        <p class="instrucciones">Gana el jugador que coloca 4 fichas en linea.Es empate si se acaban las posiciones o si el
+                            contador de
+                            tiempo llega a cero.</p>
+                       
+                    </aside>
+            
+                </div>
+                <!--   <div class="turno">
                     <h2>Turno del jugador 1</h2>
                 </div>
                 <aside class="izq">

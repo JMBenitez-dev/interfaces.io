@@ -1,0 +1,176 @@
+body{
+    overflow-x: hidden;
+}
+#canvas {
+    border: solid black 1px;
+    
+}
+
+.divCanvas{
+    /*width: 50rem;*/
+    margin-left: 3rem;
+}
+/*p.instrucciones{
+    text-align: center;
+}*/
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 10, 3, 0);
+    width: 90%;
+}
+
+.integrantes {
+    width: 20rem;
+    align-items: center;
+}
+
+.botones {
+    width: 300px;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background-color: turquoise !important;
+    color: rgb(0, 8, 8) !important;
+    font-size: 15px !important;
+    padding: 0px !important;
+}
+
+.btn-success {
+    background-color: orange !important;
+    color: #000 !important;
+    font-size: 15px !important;
+    padding: 0px !important;
+}
+
+#countdown {
+    font-size: 20px !important;
+    color: rgb(7, 5, 0);
+}
+.botones h4{
+    text-align: center;
+    margin-bottom: -10px;
+    -webkit-text-stroke: 1px black;
+    font-size: large;
+    margin-top: 22px;
+    margin-left: 28px;
+}
+
+h1,
+h4,
+#cuatro,
+#cinco,
+#seis,
+#siete,
+#inicio,
+#partida,
+#tipo,
+#reset {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: rgb(10, 1, 1);
+    /*font-family: 'IM Fell English SC', serif;*/
+    
+    
+}
+
+h1,
+h4{
+    color: white;
+}
+
+#sticky-footer {
+    height: 70px !important;
+    background-color: black;
+}
+
+p.nombre{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+/*img {
+    border-radius: 50%;
+}*/
+
+
+/*estilo de fichas*/
+
+.tanque1 {
+    background-image: url(../img/Img4enLinea/tanke4.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.tanque2 {
+    background-image: url(../img/Img4enLinea/tanqueMs.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.tanque3 {
+    background-image: url(../img/Img4enLinea/tanke17-m.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.swal-button{
+    padding: 10px;
+    background-color:black;
+    margin: 10px;
+
+}
+
+.swal-button:hover{
+    color: #5A5A5A !important;
+}
+
+.swal-modal {
+    background-color:#5A5A5A ;
+    border: solid black 2px;
+}
+
+.swal-title{
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.11em;
+}
+.swal-footer {
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+span.hora, span.fecha{
+    font-size: 15px;
+}
+h4#turno{
+    text-align: center;
+    font-size: 20px;
+}
+
+h4#countdown{
+    text-align: center;
+    color: white;
+}
