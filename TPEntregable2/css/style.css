@@ -905,7 +905,7 @@ button {
 
 .boton3 .right3 {
     position: absolute;
-    right: 0.2em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -2012,6 +2012,9 @@ p {
         width: 260px;
         height: 260px;
 
+    }
+    .contenedorCom{
+        padding-bottom: 20px;
     }
 
 }

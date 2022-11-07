@@ -219,7 +219,7 @@ function cargarTipo(value) {
     }
 
     if (tipo == "cartas") {
-        imagen1 = "img/img4enLinea/tanke14-m.png";
+        imagen1 = "img/img4enLinea/tanqueMs.png";
         imagen2 = "img/img4enLinea/tanque12-m.png";
         drawTipo(casW, cant, imagen1, imagen2);
     }
