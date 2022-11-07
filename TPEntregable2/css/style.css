@@ -844,7 +844,7 @@ button.boton5:hover {
 
 .boton .right {
     position: absolute;
-    right: 1em;
+    right: -0.4em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -858,7 +858,7 @@ button.boton5:hover {
 
 .boton .left {
     position: absolute;
-    left: 1em;
+    left: -0.1em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -878,7 +878,7 @@ button {
 
 .boton2 .right2 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -892,7 +892,7 @@ button {
 
 .boton2 .left2 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -905,7 +905,7 @@ button {
 
 .boton3 .right3 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -919,7 +919,7 @@ button {
 
 .boton3 .left3 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -932,7 +932,7 @@ button {
 
 .boton4 .right4 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -946,7 +946,7 @@ button {
 
 .boton4 .left4 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -959,7 +959,7 @@ button {
 
 .boton5 .right5 {
     position: absolute;
-    right: 1em;
+    right: -0.2em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -973,7 +973,7 @@ button {
 
 .boton5 .left5 {
     position: absolute;
-    left: 1em;
+    left: -0.05em;
     top: 4em;
     background: none;
     color: #EE0382;
@@ -1025,6 +1025,7 @@ button {
     align-content: center;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .footer li {
@@ -1052,6 +1053,7 @@ footer div nav ul li {
 
 
 footer main {
+    margin-top: 50px;
     height: 30%;
     display: flex;
     justify-content: center;
@@ -1080,6 +1082,7 @@ footer main .transp {
 }
 
 
+
 .transp div li a {
     text-decoration: none;
     color: #272222;
@@ -1100,6 +1103,9 @@ footer main .transp {
 .transp {
     display: flex;
     flex-wrap: wrap;
+}
+.transp h2 {
+    margin: 0;
 }
 
 .suscribir,
@@ -1140,13 +1146,18 @@ div.tanques p {
 }
 
 .campo {
-    background-image: url("/img/campo.png");
+    background-image: url("../img/campo.jpg");
+    background-size: cover;
+    margin-left: 4rem;
+    width: 100%;
+    margin: 0 auto;
 
 }
 
 .transparente {
     width: 100%;
     height: 100%;
+    margin: 0px;
     background-color: rgba(255, 255, 255, 0.138);
 
 }
@@ -1163,11 +1174,11 @@ div.tanques p {
     object-fit: contain;
 }
 
-.contenedorJuego {
+/*.contenedorJuego {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+}*/
 
 .contenedorJuego div.turno,
 .estrellas {
@@ -1176,12 +1187,22 @@ div.tanques p {
 }
 
 
-aside.izq,
+/*aside.izq,*/
 aside.der {
-    align-self: center;
-    width: 20%;
-    min-width: 200px;
+    width: 25rem;
     color: white;
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.instrucciones{
+    width: 15rem;
+}
+h2.instrucciones, h3.instrucciones{
+    -webkit-text-stroke: 1px black;
 }
 
 .contenedorJuego div.turno {
@@ -1206,9 +1227,9 @@ aside.izq {
     font-family: 'Noto Sans', sans-serif;
     letter-spacing: 0.4em;
     color: black;
-    padding: 13px 20px 13px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 8px 15px 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     background: #0DFF34;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -1216,8 +1237,8 @@ aside.izq {
 }
 
 
-a.comprarBtn,
-a.jugarBtn {
+button.comprarBtn,
+button.jugarBtn {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -1229,10 +1250,10 @@ a.jugarBtn {
     /*background: #2E2E2E;*/
 }
 
-a.comprarBtn:after,
-a.comprarBtn:before,
-a.jugarBtn:after,
-a.jugarBtn:before {
+button.comprarBtn:after,
+button.comprarBtn:before,
+button.jugarBtn:after,
+button.jugarBtn:before {
     width: 282px;
     height: 72px;
     content: '';
@@ -1246,38 +1267,38 @@ a.jugarBtn:before {
     cursor: pointer;
 }
 
-a.comprarBtn:before,
-a.jugarBtn:before {
+button.comprarBtn:before,
+button.jugarBtn:before {
     left: -48%;
 }
 
-a.comprarBtn:hover {
+button.comprarBtn:hover {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     background: #0DFF34;
 }
 
-a.jugarBtn:hover {
+button.jugarBtn:hover {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     background: #898989;
     background: #EE0382;
 }
 
-a.comprarBtn:hover:after,
-a.comprarBtn:hover:before,
-a.jugarBtn:hover:after,
-a.jugarBtn:hover:before {
+button.comprarBtn:hover:after,
+button.comprarBtn:hover:before,
+button.jugarBtn:hover:after,
+button.jugarBtn:hover:before {
     transform: rotate(45deg), scaleX(130%);
     background: rgba(255, 255, 255, 0.1);
     transition: all ease 0.5s;
 }
 
-a.comprarBtn:hover:after,
-a.jugarBtn:hover:after {
+button.comprarBtn:hover:after,
+button.jugarBtn:hover:after {
     right: 130%;
 }
 
-a.comprarBtn:hover:before,
-a.jugarBtn:hover:before {
+button.comprarBtn:hover:before,
+button.jugarBtn:hover:before {
     left: 130%;
 }
 
@@ -1348,6 +1369,7 @@ input[type="radio"]:checked~label {
     color: white;
     width: 90%;
     height: 50%;
+    margin: 0 auto;
 }
 
 .captsJuego img {
@@ -1366,11 +1388,16 @@ input[type="radio"]:checked~label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 5px;
+    align-items: center;
 }
 
 .links p {
     color: white;
     padding: 0 0.1vw 0 10vw;
+}
+.links a {
+    color: white;
 }
 
 /****************** fin links******************/
@@ -1389,10 +1416,17 @@ input[type="radio"]:checked~label {
     margin: 0 0 1% 0;
 }
 
-.imgPerf img,
-.imgPerfResp img {
+.imgPerf img{
     width: 70px;
+    height: 70px;
     padding: 2vh;
+    border-radius: 100%;
+}
+.imgPerfResp img {
+    width: 50px;
+    height: 50px;
+    padding: 2vh;
+    border-radius: 100%;
 }
 
 .imgPerf,
@@ -1409,11 +1443,14 @@ input[type="radio"]:checked~label {
     color: white;
     width: 100%;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .comentarios h2 {
+    margin: 0;
     background-color: #000;
     color: white;
+    font-size: 40px;
 }
 
 .comentar {
@@ -1424,8 +1461,12 @@ input[type="radio"]:checked~label {
 
 .comentar input {
     width: 90%;
-    height: 5vh;
+    height: 4vh;
     border-radius: 15px;
+    background-color: #2E2E2E;
+    color: #cccccc;
+    border: none;
+    font-size: 20px;
 }
 
 .coment,
@@ -1455,6 +1496,7 @@ input[type="radio"]:checked~label {
     display: flex;
     justify-content: end;
     padding-right: 5%;
+    display: none;
 }
 
 .cometarioSimple {
@@ -1472,11 +1514,14 @@ p.comentadoResp {
     width: 50.6vw;
     height: 30px;
     align-content: center;
-    padding: 10px 0 0 10px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+    /*padding: 10px 0 0 10px;*/
 }
 
 p.comentadoResp {
-    width: 40vw;
+    width: 50vw;
 }
 
 .cometarioSimple span,
@@ -1607,8 +1652,29 @@ p {
 }
 
 /**************fin loader ***********/
+.b1 {
+    display: none;
+}
 
+.b2 {
+    display: none;
+}
 
+.b3 {
+    display: none;
+}
+
+.b4 {
+    display: none;
+}
+
+.b5 {
+    display: none;
+}
+
+.ocultar{
+    display: none;
+}
 @media (min-width: 700px) {
     /*footer*/
 
@@ -1646,6 +1712,13 @@ p {
         padding: 0 5%;
     }
 
+    
+.transp .mob{
+    display: list-item;
+}
+.transp .desk{
+    display: none;
+}
     /*footer fin*/
 
     header {
@@ -1870,7 +1943,8 @@ p {
         display: none;
     }
 
-    .boton {
+
+    /*.boton {
         display: none;
     }
 
@@ -1888,7 +1962,7 @@ p {
 
     .boton5 {
         display: none;
-    }
+    }*/
 
 
 }
@@ -1938,6 +2012,9 @@ p {
         width: 260px;
         height: 260px;
 
+    }
+    .contenedorCom{
+        padding-bottom: 20px;
     }
 
 }
