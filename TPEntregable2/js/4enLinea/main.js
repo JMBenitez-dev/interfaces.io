@@ -222,7 +222,7 @@ function cargarTipo(value) {
     cant = 21;
     if (tipo == "tanque1") {
         imagen1 = 'img/Img4enLinea/tanke4.png';
-        imagen2 = 'img/Img4enLinea/tanque1.png';
+        imagen2 = 'img/Img4enLinea/tanque1.PNG';
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
