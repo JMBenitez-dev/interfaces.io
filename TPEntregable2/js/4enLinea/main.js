@@ -220,20 +220,20 @@ function cargarTipo(value) {
     casW = 7;
     cant = 21;
     if (tipo == "tanque1") {
-        imagen1 = 'img/img4enLinea/tanke4.png';
-        imagen2 = 'img/img4enLinea/tanque1.png';
+        imagen1 = 'img/Img4enLinea/tanke4.png';
+        imagen2 = 'img/Img4enLinea/tanque1.png';
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
     if (tipo == "tanque2") {
-        imagen1 = 'img/img4enLinea/tanqueMs.png';
+        imagen1 = 'img/Img4enLinea/tanqueMs.png';
         imagen2 = 'img/Img4enLinea/tanque12-m.png';
         drawTipo(casW, cant, imagen1, imagen2);
     }
 
     if (tipo == "tanque3") {
-        imagen1 = 'img/img4enLinea/tanke15-m.png';
-        imagen2 = 'img/img4enLinea/tanke17-m.png';
+        imagen1 = 'img/Img4enLinea/tanke15-m.png';
+        imagen2 = 'img/Img4enLinea/tanke17-m.png';
         drawTipo(casW, cant, imagen1, imagen2);
     }
 }
