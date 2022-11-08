@@ -215,6 +215,7 @@ function mostrarBotones() {
         })
 }
 
+
 function cargarTipo(value) {
     tipo = value;
     casW = 7;
