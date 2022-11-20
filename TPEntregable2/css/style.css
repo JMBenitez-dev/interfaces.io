@@ -20,7 +20,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 65px;
     background-color: black;
     align-items: center;
@@ -42,9 +42,25 @@ section.logoYmenu a {
     display: none;
 }
 
+.menuDesktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 2rem;
+    top: 6rem;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
 /*Efecto Hover para el boton menu*/
 .menu {
     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*cursor: pointer;*/
+    transition: 0.4s ease-out;
     background-color: black;
     color: #0DFF34;
     font-size: 50px;
@@ -55,6 +71,31 @@ section.logoYmenu a {
     position: relative;
     z-index: 0;
     border-radius: 10px;
+}
+
+.linea-1,
+.linea-2,
+.linea-3 {
+  width: 50px;
+  height: 10px;
+  background-color: #0DFF34;
+  margin: 3px 0px;
+  transition: 0.4s ease-out;
+}
+
+.change .linea-1 {
+  transform: rotate(-45deg) translate(3px, -2px);
+  background-color: #0DFF34;
+  position: absolute;
+}
+
+.change .linea-2 {
+  opacity: 0;
+}
+
+.change .linea-3 {
+  background-color: #0DFF34;
+  transform: rotate(45deg) translate(-6px, -7px);
 }
 
 .menu:before {
@@ -116,7 +157,7 @@ section.logoYmenu a {
 /*--------------------Menu extendido--------------------------*/
 
 /* The Modal (background) */
-.modal {
+.modalOpen {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -178,7 +219,7 @@ h1 {
 }
 
 .fotoPerfil {
-    height: 50px;
+    display: none;
 
 }
 
@@ -405,7 +446,9 @@ a.cat:hover:before {
         background-position: 0 0;
     }
 }
-
+.corazon, .campana{
+    display: none;
+}
 /*************SlideBanners***********************/
 .slideBanner {
     position: relative;
@@ -1739,11 +1782,25 @@ p {
 
     header {
         display: flex;
-        flex-flow: row-reverse;
+        /*flex-flow: row-reverse;*/
+        flex-direction: row;
         justify-content: space-between;
-        padding: 10px;
+        /*padding: 10px;*/
     }
 
+    .menuDesktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        left: 2rem;
+        top: 6rem;
+        background-color: rgb(0, 0, 0); 
+    }
+    
+    .modal{
+        width: 100%;
+    }
     .logo img {
         display: flex;
         justify-content: space-between;
@@ -1756,13 +1813,15 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-left: 7rem
 
     }
 
     .fotoPerfil {
+        display: flex;
         height: 50px;
         width: 50px;
-
+        ;
     }
 
     .nav-link {
@@ -1770,8 +1829,12 @@ p {
         font-size: 35px;
         margin-right: 15px;
     }
+    
 
-    .modal {
+    .corazon, .campana{
+        display: flex;
+    }
+    .modalOpen {
         display: none;
         /* Hidden by default */
         position: fixed;
@@ -1795,6 +1858,11 @@ p {
         z-index: 8;
     }
 
+    .ocultar{
+        display: none
+    }
+
+   
     /* Modal Content */
     .modal-content {
         margin: 0;

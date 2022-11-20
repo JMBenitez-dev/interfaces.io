@@ -32,32 +32,38 @@
 <!--loader-->
 
     <header>
-        <nav>
-            <a href="" class="nav-link redIcon">
-                <iconify-icon icon="material-symbols:favorite"></iconify-icon>
-            </a>
-            <a href="" class="nav-link redIcon">
-                <iconify-icon icon="material-symbols:notifications-rounded"></iconify-icon>
-            </a>
-            <a href="" class="nav-link redIcon"><img class="fotoPerfil" src="img/Iconos/fotoPerfil.png"
-                    alt="imagen Logo"></a>
-        </nav>
-        <h1 class="namePage">GameStore</h1>
-        <section class="logoYmenu">
-            <a href="" class="logo">
-                <img src="img/LogoSinFondo.png" alt="imagen Logo">
-            </a>
-            <button id="myBtn" class="menu">
-                <iconify-icon icon="heroicons-solid:menu"></iconify-icon>
-            </button>
-        </section>
+        
         <!-- The Modal -->
         <div id="myModal" class="modal">
             <!-- Modal content -->
-            <aside class="modal-content">
-                <button class="menu" id="close">
-                    <iconify-icon icon="mingcute:close-fill"></iconify-icon>
-                </button>
+            <aside id="mContent">
+               
+                    <section class="logoYmenu">
+                        <a href="" class="logo" id="logo">
+                            <img src="img/LogoSinFondo.png" alt="imagen Logo">
+                        </a>
+                        <div id="myBtn" class="menu"onclick="myFunction()">
+                
+                            <div class="linea-1"></div>
+                            <div class="linea-2"></div>
+                            <div class="linea-3"></div>
+                
+                        </div>
+                    </section>
+                <div class="menuDesktop" id="desktop" >
+                    <h1 class="namePage">GameStore</h1>
+                    <nav>
+                        <a href="" class="nav-link redIcon corazon">
+                            <iconify-icon icon="material-symbols:favorite"></iconify-icon>
+                        </a>
+                        <a href="" class="nav-link redIcon campana">
+                            <iconify-icon icon="material-symbols:notifications-rounded"></iconify-icon>
+                        </a>
+                        <a href="" class="nav-link redIcon"><img class="fotoPerfil" src="img/Iconos/fotoPerfil.png" alt="imagen Logo"></a>
+                    </nav>
+        
+                </div>
+                <div id="ocultar" class="ocultar">
                 <div class="perfil">
                     <a class="redIcon" href=""><img class="fotoPerfilOpen" src="img/Iconos/fotoPerfil.png"
                             alt="imagen Logo"></a>
@@ -117,6 +123,7 @@
                     <a class="redIcon" href="">
                         <iconify-icon icon="teenyicons:twitch-solid"></iconify-icon>
                     </a>
+                </div>
                 </div>
             </aside>
         </div>

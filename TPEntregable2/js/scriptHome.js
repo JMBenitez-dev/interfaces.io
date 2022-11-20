@@ -1,7 +1,9 @@
 //Funcionamiento del Menu
 // Get the modal
 var modal = document.getElementById("myModal");
-
+var ocultar= document.getElementById("ocultar");
+var desktop = document.getElementById("desktop");
+var mContent = document.getElementById("mContent");
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
@@ -9,23 +11,58 @@ var btn = document.getElementById("myBtn");
 var close = document.getElementById("close");
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <button> (x), close the modal
-close.onclick = function() {
-  modal.style.display = "none";
-}
+/*btn.onclick = function(x) {
+ 
+  /*modal.classList.replace('modal', 'modalOpen');
+  let modalOpen = document.querySelector('.modalOpen');*/
+  /*modalOpen.style.display = "block";
+  
+}*/
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   console.log(event.target)
-  if (event.target == modal) {
-
-    modal.style.display = "none";
-  }
+  let modalOpen = document.querySelector('.modalOpen');
+  if (event.target == modalOpen) {
+    modalOpen.style.display = "none";
+    modalOpen.classList.remove("modalOpen");
+    modalOpen.classList.add("modal");
+    modal.style.display = "block";
+    ocultar.style.display = "none";
+    desktop.style.display = "flex";
+    mContent.classList.remove("modal-content");
+    }
 }
+
+function myFunction() {
+  if(btn.classList.contains('menu')){
+      btn.classList.remove("menu");
+      btn.classList.add("change");
+      modal.classList.remove("modal");
+      modal.classList.add("modalOpen");
+      let modalOpen = document.querySelector('.modalOpen');
+      modalOpen.style.display = "block";
+      ocultar.style.display = "block";
+      desktop.style.display = "none";
+      mContent.classList.add("modal-content");
+      let logo = document.getElementById("logo");
+      logo.style.display = "none";
+   }else{
+      btn.classList.remove("change");
+      btn.classList.add("menu");
+      modal.classList.remove("modalOpen");
+      modal.classList.add("modal");
+      let modalClose = document.querySelector('.modal');
+      modalClose.style.display = "flex";
+      ocultar.style.display = "none";
+      desktop.style.display = "flex";
+      mContent.classList.remove("modal-content");
+      let logo = document.getElementById("logo");
+      logo.style.display = "flex";
+   }
+}
+
+
 
 //Codigo para la slideBanner de la sección Home
 let myIndex = 0;
