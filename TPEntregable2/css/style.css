@@ -42,6 +42,34 @@ section.logoYmenu a {
     display: none;
 }
 
+/*lineas menu */
+.linea-1,
+.linea-2,
+.linea-3 {
+  width: 50px;
+  height: 10px;
+  background-color: #0DFF34;
+  margin: 3px 0px;
+  transition: 0.4s ease-out;
+  border-radius: 5px;
+}
+
+.change .linea-1 {
+  transform: translate(0px, 1px) rotate(-45deg) ;
+  background-color: #0DFF34;
+  position: absolute;
+}
+
+.change .linea-2 {
+  opacity: 0;
+}
+
+.change .linea-3 {
+  background-color: #0DFF34;
+  transform: translate(1px, -7px) rotate(45deg);
+
+}
+
 /*Efecto Hover para el boton menu*/
 .menu {
     display: flex;
@@ -53,8 +81,12 @@ section.logoYmenu a {
     outline: none;
     cursor: pointer;
     position: relative;
-    z-index: 0;
+    z-index: 100;
     border-radius: 10px;
+    transition: 0.8s ease-out;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu:before {
@@ -1585,7 +1617,7 @@ p {
     justify-content: center;
     top: -900px;
 
-    z-index: 100;
+    z-index: 110;
 }
 
 .modalLoader {
