@@ -54,20 +54,62 @@ div.parallax {
     z-index: 2;
     background-repeat: no-repeat;
     margin-left: 20px;
+   /* will-change: opacity, transform; 
+    opacity: 0.08; 
+    transform: translate3d(0px, 119.6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
     /*animation: scroll 24s linear infinite;*/
     
 
 }
 
-.caja3 {
+.caja3{
     position: absolute;
     top: -13%;
     left: 27%;
     background: url('../img/parallax/Avengers-Logo-2012-PhotoRoom\ \(3\).png')/*repeat-x*/;
-    /*animation: scroll 15s linear infinite;*/
+    animation: moveTitleImg 3s;
     background-repeat: no-repeat;
     z-index: 5;
 }
+.move{
+    
+    animation: moveImg 4s linear;
+}
+@keyframes moveTitleImg {
+    0% {
+        opacity: 1;
+        transform:  scale(100%);
+        
+      } 
+      50% {
+        opacity: 0;
+        transform: scale(50%);
+        
+      }
+      100% {
+        opacity: 1;
+        transform: scale(100%);
+        
+      }
+  }
+  @keyframes moveImg {
+    0% {
+        opacity: 1;
+        transform:  scale(100%);
+        
+      } 
+      50% {
+        opacity: 0;
+        transform: scale(50%);
+        
+      }
+      100% {
+        opacity: 1;
+        transform: scale(100%);
+        
+      }
+  }
 
 .fondo{
     position: absolute;
@@ -186,10 +228,10 @@ div.parallax {
     /*box-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;*/   
 }
 
-.slides{
+/*.slides{
     position: absolute;
        
-}
+}*/
 
 
 
@@ -296,6 +338,13 @@ button.botonP{
     margin-left: 45%;
     margin-top: 60px;
     padding-top: 30px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+
+    
+
 }
 
 .text{
@@ -361,6 +410,11 @@ button.botonP{
         letter-spacing: 0.11em;
         color: white;
         margin-left: 35%;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+
    
 }
 .features{
@@ -372,7 +426,7 @@ button.botonP{
     text-align: center;
     flex-direction: row;
     justify-content: space-around;
-   
+
 }
 .features .feat{
     position: relative;
@@ -500,6 +554,7 @@ button.botonP{
     max-width: 100%;
     font-family: 'Birthstone Bounce', cursive;
     font-family: 'Noto Sans', sans-serif;
+    
 }
 
 .parrafos{
@@ -515,6 +570,11 @@ button.botonP{
     margin-top:0px;
     letter-spacing: 0.11em;
     color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+
 
 }
 .hist1, .hist2, .hist3, .hist4{
@@ -537,6 +597,130 @@ button.botonP{
     height: 70%;
     margin: 0px auto;
  }
+.pj{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+/****Animación Titulo sección heroes*****/
+
+#hero {
+    
+    height: auto;
+    top: 2%;
+   
+}
+
+#subtitle {
+    
+   font-size: 30px;
+    
+    
+    color: #040e08;
+     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+}
 
 
+/*@keyframes moveSub {
+    0% {top: 0;opacity: 0;}
+    25% {top: -50;opacity: 0;}
+    50%{top: -100;opacity: 0;}
+    75%{top: -150;opacity: 0;}
+    100%{top:-200;opacity: 1;}
+  }*/
+  
+  @keyframes moveTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+     }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
 
+  }
+@keyframes moveSub {
+    0% {
+        opacity: 0;
+        transform:  scale(70%);
+        
+      } 
+      100% {
+        opacity: 1;
+        transform: translateY(8%) scale(100%);
+        
+      }
+  }   
+  .titulos {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.moveRight{
+   
+    animation: moveTitle 2s linear ;
+   
+ }
+ 
+ .moveUp{
+    
+    
+     animation: moveSub 2s linear  ;
+     
+ }
+ @keyframes moveLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+     }
+      100% {
+        opacity: 0;
+        transform: translateX(-200%);
+      }
+
+  }
+@keyframes moveDown {
+    0% {
+        opacity: 1;
+        transform: scale(100%);
+        
+      } 
+      100% {
+        opacity: 0;
+        transform: translateY(8%) scale(70%);
+        
+      }
+  }  
+
+  .moveLeft{
+    
+    animation: moveLeft 1s linear forwards  ;
+    /*overflow-x: visible;*/
+ }
+ 
+ .moveDown{
+    
+     animation: moveDown 2s forwards ;
+     
+ }

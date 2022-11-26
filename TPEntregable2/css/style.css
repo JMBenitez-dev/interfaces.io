@@ -50,7 +50,7 @@ section.logoYmenu a {
   height: 10px;
   background-color: #0DFF34;
   margin: 3px 0px;
-  transition: 0.4s ease-out;
+  transition: 0.2s ease-out;
   border-radius: 5px;
 }
 
@@ -69,6 +69,8 @@ section.logoYmenu a {
   transform: translate(1px, -7px) rotate(45deg);
 
 }
+
+
 
 /*Efecto Hover para el boton menu*/
 .menu {
@@ -435,8 +437,66 @@ a.cat:hover:before {
 
     100% {
         background-position: 0 0;
-    }
+
+ }   }   
+
+ /************Animación Items Menú***************/
+.uno{
+    position: relative;
+    animation: mymove 0.4s linear;
+   
 }
+.dos{
+    position: relative;
+    animation: mymove 0.6s linear;
+    
+}
+.tres{
+    position: relative;
+    animation: mymove 0.8s linear;
+  }   
+.cuatro{
+    position: relative;
+    animation: mymove 1s linear;
+    
+}
+.cinco{
+    position: relative;
+    animation: mymove 1.2s linear;
+    
+}
+.seis{
+    position: relative;
+    animation: mymove 1.4s linear;
+    
+}
+.siete{
+    position: relative;
+    animation: mymove 1.6s linear;
+    
+}
+.ocho{
+    position: relative;
+    animation: mymove 1.8s linear;
+    
+}
+.nueve{
+    position: relative;
+    animation: mymove 2s linear;
+    
+     
+}
+.listaItems {
+    overflow: hidden;
+}
+  @keyframes mymove {
+    0% {left: -700px;border-right: #000 3px solid;}
+    25% {left: -525px;border-right: #000 3px solid;}
+    50%{left: -350px;border-right: #000 3px solid;}
+    75%{left: -175px;border-right: #000 3px solid;}
+    100%{left: 0px;border-right: #000 3px solid;}
+  }
+
 
 /*************SlideBanners***********************/
 .slideBanner {
@@ -1803,6 +1863,10 @@ p {
         margin-right: 15px;
     }
 
+    .change{
+        position: fixed;
+    }
+
     .modal {
         display: none;
         /* Hidden by default */
@@ -1833,6 +1897,30 @@ p {
         width: 564px;
         z-index: 9;
     }
+
+    /************Header sticky***************/ 
+.headerSticky{
+    position: fixed;
+    z-index: 120;
+    animation: myMenu 1s linear forwards;
+    width: 100%;
+}
+
+.navSticky a, .titleSticky, .logoSticky a, .logoSticky .menu{
+    animation: logos 1s linear forwards;
+    
+}
+
+@keyframes myMenu {
+    
+    from {height: 65px;}
+    to {height: 34px;}
+     }
+
+@keyframes logos {
+        from {transform: scale(100%);}
+        to {transform:scale(80%) ;}
+        }
 
     /*************SlideBanners***********************/
     .titulo {

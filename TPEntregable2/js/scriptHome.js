@@ -17,11 +17,34 @@ btn.onclick = function () {
   } else {
     btn.classList.add("change");
     modal.style.display = "block";
-    btn.style.marginLeft = "350px";
+    btn.style.marginLeft = "950px";
     btn.style.height = "60px";
   }
 }
 
+/***Header Sticky*****/
+
+var header= document.getElementById("headerSticky");
+var nav= document.getElementById("navSticky");
+var title= document.getElementById("nameSticky");
+var section= document.getElementById("logoSticky");
+
+window.onscroll = function() {madeSticky()};
+
+function madeSticky() {
+  if (document.documentElement.scrollTop > 50) {
+    header.classList.add("headerSticky");
+    nav.classList.add("navSticky");
+    title.classList.add("titleSticky");
+    section.classList.add("logoSticky");
+  } else {
+    header.classList.remove("headerSticky");
+    nav.classList.remove("navSticky");
+    title.classList.remove("titleSticky"),
+    section.classList.remove("logoSticky");
+
+  }
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
@@ -32,6 +55,7 @@ window.onclick = function (event) {
     btn.classList.remove("change");
   }
 }
+
 
 //Codigo para la slideBanner de la sección Home
 let myIndex = 0;
