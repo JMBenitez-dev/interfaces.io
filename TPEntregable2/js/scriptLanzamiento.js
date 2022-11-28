@@ -33,6 +33,41 @@ window.onclick = function (event) {
   }
 }
 
+/***Header Sticky*****/
+
+var header= document.getElementById("headerSticky");
+var nav= document.getElementById("navSticky");
+var title= document.getElementById("nameSticky");
+var section= document.getElementById("logoSticky");
+
+//window.onscroll = function() {madeSticky()};
+ var parent=document.getElementById("body")
+ //parent.addEventListener('wheel', function() {
+ 
+  //window.onscroll = function() {madeSticky()};
+  window.addEventListener('scroll', function(){
+  //function madeSticky() {
+    if (document.documentElement.scrollTop > 0) {
+      //header.classList.remove("headerBack");
+      nav.classList.remove("navBack");
+      title.classList.remove("titleBack"),
+      section.classList.remove("logoBack");
+      header.classList.add("headerSticky");
+      nav.classList.add("navSticky");
+      title.classList.add("titleSticky");
+      section.classList.add("logoSticky");
+    } else if(document.documentElement.scrollTop <300){
+      header.classList.remove("headerSticky");
+      nav.classList.remove("navSticky");
+      title.classList.remove("titleSticky"),
+      section.classList.remove("logoSticky");
+      //header.classList.add("headerBack");
+      nav.classList.add("navBack");
+      title.classList.add("titleBack"),
+      section.classList.add("logoBack");
+  
+    }
+  });
 /***Move title onscroll*****/
 
 var scrollPos = 0;
@@ -42,16 +77,11 @@ window.addEventListener('scroll', function(){
   let titleImg= document.getElementById("titleImg");
   console.log((document.body.getBoundingClientRect()).top);
   if ((document.body.getBoundingClientRect()).top > scrollPos ){
-   
-  /*if (document.documentElement.scrollTop > 300 && document.documentElement.scrollTop<1200 ) {*/
-  titleH.classList.remove("moveRight");
-  subtitle.classList.remove("moveUp");
-  //img.classList.remove("moveUp");
-  titleH.classList.add("moveLeft");
-  subtitle.classList.add("moveDown");
-  //titleImg.classList.add("move");
-  titleImg.style.animation ="moveTitleImg 3s forwards";
-  scrollPos = (document.body.getBoundingClientRect()).top;
+    titleH.classList.remove("moveRight");
+    subtitle.classList.remove("moveUp");
+    titleH.classList.add("moveLeft");
+    subtitle.classList.add("moveDown");
+    scrollPos = (document.body.getBoundingClientRect()).top;
     console.log("entró");
   }
     // ARRIBA
@@ -59,37 +89,44 @@ window.addEventListener('scroll', function(){
     // ABAJO
     titleH.classList.remove("moveLeft");
     subtitle.classList.remove("moveDown");
-   
     titleH.classList.add("moveRight");
     subtitle.classList.add("moveUp");
-    //img.classList.add("moveUp");
-   console.log("entro"+document.documentElement.scrollTop); 
-  scrollPos = (document.body.getBoundingClientRect()).top;
+    console.log("entro"+document.documentElement.scrollTop); 
+    scrollPos = (document.body.getBoundingClientRect()).top;
    } 
 });
 
 /*****Move Title section Hero onload*****/
-var scrollPosI = 0;
-window.addEventListener('scroll', function(){
-  
-  
-  let titleImg= document.getElementById("titleImg");
-  console.log((document.body.getBoundingClientRect()).top + "hola");
-  if ((document.body.getBoundingClientRect()).top > scrollPosI &&(document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop<670 )){
+window.onload = function() {moveTitleImg()};
+window.onscroll = function() {moveTitleImg()};
+function moveTitleImg(){ 
 
-  //img.classList.remove("moveUp");
- 
-  titleImg.classList.add("move");
-  //titleImg.style.animation ="moveTitleImg 3s forwards";
-  scrollPosI = (document.body.getBoundingClientRect()).top;
-    console.log("entró test");
-    console.log("entro"+document.documentElement.scrollTop); 
-    console.log("entroP"+document.documentElement.scrollTop); 
+  let titleImg= document.getElementById("titleImg");
+  let lucha= document.getElementById("lucha");
+  let prep = document.getElementById("prep");
+  if ( document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop<250 ){
+
+    titleImg.classList.add("move");
+    lucha.classList.add("move");
+    //prep.classList.add("move");
+    console.log("entroP "+document.documentElement.scrollTop); 
+
   }else{
+
     titleImg.classList.remove("move");
-    scrollPosI = (document.body.getBoundingClientRect()).top;
+    lucha.classList.remove("move");
+    //prep.classList.remove("move");
+    console.log("entró test");
+    
   }
- });
+ };
+
+ /*var parent=document.getElementById("parallax")
+ parent.addEventListener('wheel', function() {
+  let titleImg= document.getElementById("titleImg");
+  titleImg.classList.add("move");
+  console.log('El boton intermedio (rueda) del ratón ha sido activado');
+});*/
 
 //Countdown
 

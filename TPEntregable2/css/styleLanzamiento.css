@@ -12,7 +12,7 @@ div.parallax {
 
     width: 1440px;
     height: 900px;
-    margin: .5% auto;
+    margin: 5% auto;
     margin-top: 25px;
     position: relative;
     /*box-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;*/
@@ -43,7 +43,7 @@ div.parallax {
     background-repeat: repeat-x;
     background: url('../img/parallax/stars.jpg');
     z-index: 1;
-    animation: scroll 29s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 .caja2 {
@@ -54,13 +54,6 @@ div.parallax {
     z-index: 2;
     background-repeat: no-repeat;
     margin-left: 20px;
-   /* will-change: opacity, transform; 
-    opacity: 0.08; 
-    transform: translate3d(0px, 119.6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
-    transform-style: preserve-3d;
-    /*animation: scroll 24s linear infinite;*/
-    
-
 }
 
 .caja3{
@@ -68,49 +61,72 @@ div.parallax {
     top: -13%;
     left: 27%;
     background: url('../img/parallax/Avengers-Logo-2012-PhotoRoom\ \(3\).png')/*repeat-x*/;
-    animation: moveTitleImg 3s;
+    /*animation: moveTitleImg 5s ease-in;*/
     background-repeat: no-repeat;
     z-index: 5;
 }
 .move{
     
-    animation: moveImg 4s linear;
+    animation: moveTitleImg 3s ease;
 }
+
 @keyframes moveTitleImg {
     0% {
         opacity: 1;
-        transform:  scale(100%);
-        
+        transform:  scale(100%);   
       } 
-      50% {
-        opacity: 0;
-        transform: scale(50%);
-        
-      }
-      100% {
+    50% {
+       opacity: 0;
+       transform: translateX(-17%) scale(50%);
+     }
+    100% {
         opacity: 1;
-        transform: scale(100%);
-        
-      }
-  }
-  @keyframes moveImg {
-    0% {
-        opacity: 1;
-        transform:  scale(100%);
-        
-      } 
-      50% {
-        opacity: 0;
-        transform: scale(50%);
-        
-      }
-      100% {
-        opacity: 1;
-        transform: scale(100%);
-        
+        transform: scale(100%);   
       }
   }
 
+/************Header sticky***************/ 
+.headerSticky{
+    position: fixed;
+    /*z-index: 120;*/
+    animation: myMenu 1s ease-in forwards;
+    width: 100%;
+}
+.headerBack{
+    position: fixed;
+    /*z-index: 120;*/
+    animation: myMenuBack 1s ease-in forwards;
+    width: 100%;
+}
+.navSticky a, .titleSticky, .logoSticky a, .logoSticky .menu{
+    animation: logos 1s ease-in forwards;
+    
+}
+.navBack a, .titleBack, .logoBack a, .logoBack .menu{
+    animation: logosBack 1s ease-in forwards;
+    
+}
+@keyframes myMenu {
+    
+    from {height: 65px;}
+    to {height: 34px;}
+     }
+
+@keyframes logos {
+        from {transform: scale(100%);}
+        to {transform:scale(80%) ;}
+        }
+@keyframes myMenuBack {
+    
+    from {height: 34px;}
+    to {height: 65px;}
+     }
+
+@keyframes logosBack {
+        from {transform: scale(80%);}
+        to {transform:scale(100%) ;}
+        }
+/**************************/
 .fondo{
     position: absolute;
     z-index: 4;
@@ -333,19 +349,7 @@ button.botonP{
     
 }
 
-.heroe{
 
-    margin-left: 45%;
-    margin-top: 60px;
-    padding-top: 30px;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
-    -webkit-text-fill-color: #040e08;
-    -webkit-text-stroke-color: #110c13;
-    -webkit-text-stroke-width: 0.5px;
-
-    
-
-}
 
 .text{
     position: relative;
@@ -463,9 +467,6 @@ button.botonP{
     animation: float 6s ease-in-out infinite;
 }   
 
-/*.featP:hover {
-	animation: flip 2s linear infinite;
-}*/
 
 @keyframes float {
     0% {
@@ -483,16 +484,6 @@ button.botonP{
         transform: translatey(0px);
     }
 }
-
-/*@keyframes flip {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}*/
 .fondoF{
     position: absolute;
     z-index: 2;
@@ -502,10 +493,6 @@ button.botonP{
     height: 30%;
     justify-content: center;
     bottom: 0;
-   
-    /*bottom: 85%;*/
-   /* margin-left: 23%;*/
-    /* or 57px */
     background: rgba(14, 8, 71, 0.603);
 }
 
@@ -515,15 +502,11 @@ button.botonP{
     display: flex;
     text-align: center;
     align-items: center;
-   
     width: 200px;
     height: 100%;
-    /*bottom: 85%;*/
-    /*margin-left: 23%;*/
     font-family: 'Birthstone Bounce', cursive;
     font-family: 'Noto Sans', sans-serif;
     font-size: 75%;
-    /* or 57px */
     letter-spacing: 0.11em;
     color: #FFFFFF;
 }
@@ -612,36 +595,45 @@ button.botonP{
     -webkit-text-stroke-color: #110c13;
     -webkit-text-stroke-width: 0.5px;
 }
+.heroe{
 
+    margin-left: 10%;
+    font-size: 30px;
+    
+    /*padding-top: 30px;*/
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.heroe2{
+    margin-left: 0%;
+    font-size: 40px;
+    margin-top: 0;
+    /*padding-top: 30px;*/
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px; 
+}
 /****Animación Titulo sección heroes*****/
 
 #hero {
-    
+    margin-top: 0;
     height: auto;
-    top: 2%;
-   
 }
 
 #subtitle {
     
    font-size: 30px;
-    
-    
+   padding-top: 0;
     color: #040e08;
      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
     -webkit-text-fill-color: #040e08;
     -webkit-text-stroke-color: #110c13;
     -webkit-text-stroke-width: 0.5px;
 }
-
-
-/*@keyframes moveSub {
-    0% {top: 0;opacity: 0;}
-    25% {top: -50;opacity: 0;}
-    50%{top: -100;opacity: 0;}
-    75%{top: -150;opacity: 0;}
-    100%{top:-200;opacity: 1;}
-  }*/
   
   @keyframes moveTitle {
     0% {
@@ -674,6 +666,7 @@ button.botonP{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
    
 }
 
@@ -724,3 +717,83 @@ button.botonP{
      animation: moveDown 2s forwards ;
      
  }
+/***Personajes con animación****/
+.sprite {
+    z-index: 30;
+    height: 355px;
+    position: absolute;
+    top: 265px;
+    
+}
+.martillo {
+    width: 355px;
+    margin: 0;
+    background: url('../img/pageLanzamiento/martilloSS.png');
+    animation: moveMartillo 3s steps(8) infinite;
+    
+}
+
+@keyframes moveMartillo {
+    0% {
+        background-position: 0px;
+         left: 0%;
+    }
+    25% {
+        background-position: -3000px;
+        left: 100%;
+    }
+    50% {
+        background-position: 0px;
+        left: 200%;
+     }
+    75% {
+        background-position: -3000px;
+        left: 300%;
+    }
+    100% {
+        background-position: 0px;
+        left:400%;
+    }
+}
+
+
+.pj1 {
+    width: 300px;
+    background: url('../img/pageLanzamiento/BWSS.png');
+    animation: player 1.5s steps(5) infinite;
+    left: 5%;
+    height: 365px;
+    position: absolute;
+   
+}
+
+@keyframes player {
+    0% {
+        background-position: 0
+    }
+    100% {
+        background-position: -1500px
+    }
+}
+
+
+.pj2 {
+    width: 325px;
+    background: url('../img/pageLanzamiento/ssCap.png');
+    animation: player2 1.5s steps(5) infinite;
+    right: 2%;
+    padding-left: 10px;
+    height: 350px;
+    position: absolute;
+    
+   
+}
+
+@keyframes player2 {
+    0% {
+        background-position: 0
+    }
+    100% {
+        background-position: -1625px
+    }
+}

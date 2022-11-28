@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleLanzamiento.css">
     <title>Lanzamiento</title>
+    <link rel="icon" href="LogoSinFondo.ico">
 </head>
 <body>
-    <header>
-        <nav>
+    <header  id="headerSticky">
+        <nav id="navSticky">
             <a href="" class="nav-link redIcon">
                 <iconify-icon icon="material-symbols:favorite"></iconify-icon>
             </a>
@@ -23,9 +24,9 @@
             <a href="" class="nav-link redIcon"><img class="fotoPerfil" src="img/Iconos/fotoPerfil.png"
                     alt="imagen Logo"></a>
         </nav>
-        <h1 class="namePage">GameStore</h1>
-        <section class="logoYmenu">
-            <a href="" class="logo">
+        <h1 id="nameSticky" class="namePage">GameStore</h1>
+        <section   id="logoSticky"class="logoYmenu">
+            <a href="index.html" class="logo">
                 <img src="img/LogoSinFondo.png" alt="imagen Logo">
             </a>
             <button id="myBtn" class="menu">
@@ -104,16 +105,17 @@
 
     </header>
 
-   
-        <div class="parallax">
+         <div class="martillo sprite"></div>
+        <div id="parallax" class="parallax">
             <div class="animation caja1"></div>
             <div class="animation  caja2"></div>
             <div class="fondo"></div>
             <div id="titleImg" class="animation caja3"></div>
+            
             <div class="animation lanzamientoB">
-                <h2 class="frase1">¡La lucha está por empezar! 15/12/2022</h2>
+                <h2 id="lucha" class="frase1">¡La lucha está por empezar! 15/12/2022</h2>
                 
-                <h2 class="frase1 prep">¡Preparate para la batalla!</h2>
+                <h2 id="prep" class="frase1 prep">¡Preparate para la batalla!</h2>
                 <a href="lanzamiento.html" class="new">Reservar</a>
                 <p id="el">Faltan:</p>
                 <p id="regresiva" class="countdowm-item flex">test</p> 
@@ -155,7 +157,7 @@
             </div>
         </section>    
         
-        <h2 class="frase2 heroe">Lista de Héroes</h2>
+        <h2 class="heroe">Lista de Héroes</h2>
             <div class="imgBtn">
 
                 <div class="fotoB">
@@ -246,7 +248,7 @@
 
 
             <section class="features">
-                <h2 class="histF">FEATURES</h2>
+                <h2 class="heroe2">FEATURES</h2>
                 <div class="feat">
                     <div class="featP">
                         <img class="demoF" src="img/Capitana-Marvel-8.gif">
@@ -288,9 +290,11 @@
             </section>
 
             <section class="video">
+                <div class="pj1"></div>
                 <div class="videoC">
                     <iframe width="660" height="415" src="https://www.youtube.com/embed/6MKiLy3Y32k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+                <div class="pj2"></div>
             </section>
 
             <section class="historia">

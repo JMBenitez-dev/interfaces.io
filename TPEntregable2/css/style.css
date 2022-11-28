@@ -20,6 +20,7 @@ body {
 
 header {
     display: flex;
+   /* position: fixed;*/
     justify-content: space-between;
     height: 65px;
     background-color: black;
@@ -1834,6 +1835,7 @@ p {
         flex-flow: row-reverse;
         justify-content: space-between;
         padding: 10px;
+        box-shadow: 0 5px 15px 0px rgba(90, 86, 86, 0.9);
     }
 
     .logo img {
@@ -1901,13 +1903,26 @@ p {
     /************Header sticky***************/ 
 .headerSticky{
     position: fixed;
-    z-index: 120;
-    animation: myMenu 1s linear forwards;
+    z-index: 20;
+    animation: myMenu 1s ease forwards;
     width: 100%;
+    box-shadow: 0 5px 15px 0px rgba(90, 86, 86, 0.9);
 }
 
+.headerBack{
+    position: fixed;
+    z-index: 20;
+    animation: myMenuBack 1s ease forwards;
+    width: 100%;
+    box-shadow: 0 5px 15px 0px rgba(90, 86, 86, 0.9);
+}
 .navSticky a, .titleSticky, .logoSticky a, .logoSticky .menu{
-    animation: logos 1s linear forwards;
+    animation: logos 1s ease forwards;
+    
+}
+
+.navBack a, .titleBack, .logoBack a, .logoBack .menu{
+    animation: logosBack 1s ease forwards;
     
 }
 
@@ -1921,7 +1936,16 @@ p {
         from {transform: scale(100%);}
         to {transform:scale(80%) ;}
         }
+@keyframes myMenuBack {
+    
+    from {height: 34px;}
+    to {height: 60px;}
+     }
 
+@keyframes logosBack {
+        from {transform: scale(80%);}
+        to {transform:scale(100%) ;}
+        }
     /*************SlideBanners***********************/
     .titulo {
         font-size: 25px;
