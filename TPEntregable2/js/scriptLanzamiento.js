@@ -9,21 +9,87 @@ var btn = document.getElementById("myBtn");
 var close = document.getElementById("close");
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <button> (x), close the modal
-close.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+btn.onclick = function () {
+  if (btn.classList.contains('change')) {
     modal.style.display = "none";
+    btn.style.marginLeft = "0px";
+    btn.classList.remove("change");
+  } else {
+    btn.classList.add("change");
+    modal.style.display = "block";
+    btn.style.marginLeft = "950px";
+    btn.style.height = "60px";
   }
 }
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  console.log(event.target)
+  if (event.target == modal) {
+    modal.style.display = "none";
+    btn.style.marginLeft = "0px";
+    btn.classList.remove("change");
+  }
+}
+
+/***Move title onscroll*****/
+
+var scrollPos = 0;
+window.addEventListener('scroll', function(){
+  let titleH= document.getElementById("hero");
+  let subtitle= document.getElementById("subtitle");
+  let titleImg= document.getElementById("titleImg");
+  console.log((document.body.getBoundingClientRect()).top);
+  if ((document.body.getBoundingClientRect()).top > scrollPos ){
+   
+  /*if (document.documentElement.scrollTop > 300 && document.documentElement.scrollTop<1200 ) {*/
+  titleH.classList.remove("moveRight");
+  subtitle.classList.remove("moveUp");
+  //img.classList.remove("moveUp");
+  titleH.classList.add("moveLeft");
+  subtitle.classList.add("moveDown");
+  //titleImg.classList.add("move");
+  titleImg.style.animation ="moveTitleImg 3s forwards";
+  scrollPos = (document.body.getBoundingClientRect()).top;
+    console.log("entró");
+  }
+    // ARRIBA
+  else if((document.body.getBoundingClientRect()).top < scrollPos &&(document.documentElement.scrollTop > 340 && document.documentElement.scrollTop<850 )){ 
+    // ABAJO
+    titleH.classList.remove("moveLeft");
+    subtitle.classList.remove("moveDown");
+   
+    titleH.classList.add("moveRight");
+    subtitle.classList.add("moveUp");
+    //img.classList.add("moveUp");
+   console.log("entro"+document.documentElement.scrollTop); 
+  scrollPos = (document.body.getBoundingClientRect()).top;
+   } 
+});
+
+/*****Move Title section Hero onload*****/
+var scrollPosI = 0;
+window.addEventListener('scroll', function(){
+  
+  
+  let titleImg= document.getElementById("titleImg");
+  console.log((document.body.getBoundingClientRect()).top + "hola");
+  if ((document.body.getBoundingClientRect()).top > scrollPosI &&(document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop<670 )){
+
+  //img.classList.remove("moveUp");
+ 
+  titleImg.classList.add("move");
+  //titleImg.style.animation ="moveTitleImg 3s forwards";
+  scrollPosI = (document.body.getBoundingClientRect()).top;
+    console.log("entró test");
+    console.log("entro"+document.documentElement.scrollTop); 
+    console.log("entroP"+document.documentElement.scrollTop); 
+  }else{
+    titleImg.classList.remove("move");
+    scrollPosI = (document.body.getBoundingClientRect()).top;
+  }
+ });
 
 //Countdown
 
