@@ -1,22 +1,29 @@
 //Funcionamiento del Menu
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+let btn = document.getElementById("myBtn");
 
 // Get the <button> element that closes the modal
-var close = document.getElementById("close");
-
+let close = document.getElementById("close");
+let linea1=document.querySelector(".linea-1");
+let linea2=document.querySelector(".linea-3");
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
   if (btn.classList.contains('change')) {
     modal.style.display = "none";
-    btn.style.marginLeft = "0px";
+    btn.classList.add("sinChange");
+    linea1.classList.remove("cruz1");
+    linea2.classList.remove("cruz2");
+    /*btn.style.marginLeft = "0px";*/
     btn.classList.remove("change");
   } else {
     btn.classList.add("change");
     modal.style.display = "block";
+    linea1.classList.add("cruz1");
+    linea2.classList.add("cruz2");
+    /*btn.style.marginLeft = "350px";*/
     btn.style.marginLeft = "950px";
     btn.style.height = "60px";
   }
@@ -68,7 +75,7 @@ window.onclick = function (event) {
   console.log(event.target)
   if (event.target == modal) {
     modal.style.display = "none";
-    btn.style.marginLeft = "0px";
+    /*btn.style.marginLeft = "0px";*/
     btn.classList.remove("change");
   }
 }
@@ -280,8 +287,6 @@ function showDivs5(n) {
     }
     x[slideIndex5 - 1].style.display = "flex";
   }
-
-
 }
 
 document.querySelector(".suscribir .desk").addEventListener("click", () => {

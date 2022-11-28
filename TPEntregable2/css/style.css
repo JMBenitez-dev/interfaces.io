@@ -55,17 +55,68 @@ section.logoYmenu a {
   border-radius: 5px;
 }
 
-.change .linea-1 {
+@keyframes burguerMenu {
+    from {
+        margin-left: 0;
+    }
+    to{
+        margin-left: 350px;
+    }
+}
+@keyframes burguerMenuCerrar {
+    from {
+        margin-left: 350px;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+@keyframes burguer {
+    from {
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    to{
+        transform: translate(0px, 1px) rotate(-45deg) ;
+  background-color: #0DFF34;
+  position: absolute;
+    }
+}
+.cruz1{
+    animation: burguer 0.5s linear forwards;
+}
+
+@keyframes burguer2 {
+    from {
+        transform: translate(0px,0px) rotate(0deg);
+    }
+    to{
+        background-color: #0DFF34;
+        transform: translate(1px, -7px) rotate(45deg);
+    }
+}
+.cruz2{
+    animation: burguer2 0.5s linear forwards;
+}
+
+
+
+.sinChange{
+    animation: burguerMenuCerrar 0.5s linear forwards;
+}
+.change{
+    animation: burguerMenu 0.5s linear forwards;
+}
+/*.change .linea-1 {
   transform: translate(0px, 1px) rotate(-45deg) ;
   background-color: #0DFF34;
   position: absolute;
-}
+}*/
 
 .change .linea-2 {
   opacity: 0;
 }
 
-.change .linea-3 {
+/*.change .linea-3 {
   background-color: #0DFF34;
   transform: translate(1px, -7px) rotate(45deg);
 

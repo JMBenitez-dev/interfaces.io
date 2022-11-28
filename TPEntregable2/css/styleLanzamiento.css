@@ -624,6 +624,74 @@ button.botonP{
     height: auto;
 }
 
+/*************carrusel animado **************/
+.contPrincipal {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+.contPrincipal .containerL input {
+    display: none;
+}
+
+.contPrincipal .containerL {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contPrincipal .cardsL {
+    position: relative;
+    height: 500px;
+    width: 430px;
+    margin-bottom: 20px;
+    perspective:1000px;
+    transform-style: preserve-3d;
+}
+
+article.contPrincipal .cardsL label {
+    position: absolute;
+    width: 430px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform  0.55s ease;
+}
+.cardsL .card .image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+article.contPrincipal .cardsL .card{
+    position: relative;
+    height: 30em;
+    background-color: #323444;
+    border-radius: 10px;
+    padding: 30px 40px;
+   
+}
+
+article.contPrincipal .card .image img{
+    border-radius: 5px;
+    margin-top: 20px;
+    width:100%;
+    height: 220px;
+    object-fit: cover;
+}
 #subtitle {
     
    font-size: 30px;
@@ -634,6 +702,129 @@ button.botonP{
     -webkit-text-stroke-color: #110c13;
     -webkit-text-stroke-width: 0.5px;
 }
+
+article.contPrincipal .card .infos{
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.infos span{
+    display: block;
+}
+
+.infos .name{
+    font-size: 30px;
+    color: var(--current-color1);
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    transition: all .6s ease;
+}
+
+.infos .lorem{
+    font-size: 15.5px;
+    color: #ECEAED;
+    letter-spacing: 3px;
+}
+
+article.contPrincipal .card .image img.imgRellena{
+    position: relative;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+}
+article.contPrincipal .card .image img.imgVacia{
+
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 20px;
+    width:100%;
+    height: 220px;
+    object-fit: cover;
+}
+#s1:checked ~ .cardsL #slide4,
+#s2:checked ~ .cardsL #slide5,
+#s3:checked ~ .cardsL #slide1,
+#s4:checked ~ .cardsL #slide2,
+#s5:checked ~ .cardsL #slide3 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+
+}
+
+#s1:checked ~ .cardsL #slide5,
+#s2:checked ~ .cardsL #slide1,
+#s3:checked ~ .cardsL #slide2,
+#s4:checked ~ .cardsL #slide3,
+#s5:checked ~ .cardsL #slide4 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked ~ .cardsL #slide1,
+#s2:checked ~ .cardsL #slide2,
+#s3:checked ~ .cardsL #slide3,
+#s4:checked ~ .cardsL #slide4,
+#s5:checked ~ .cardsL #slide5 {
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(0, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #ECEAED;
+}
+
+#s1:checked ~ .cardsL #slide2,
+#s2:checked ~ .cardsL #slide3,
+#s3:checked ~ .cardsL #slide4,
+#s4:checked ~ .cardsL #slide5,
+#s5:checked ~ .cardsL #slide1 {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked ~ .cardsL #slide3,
+#s2:checked ~ .cardsL #slide4,
+#s3:checked ~ .cardsL #slide5,
+#s4:checked ~ .cardsL #slide1,
+#s5:checked ~ .cardsL #slide2 {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+.goodClass{
+    animation: good 0.7s linear ;
+}
+
+@keyframes good {
+    0%{
+        transform: scale(5);
+    }
+    25%{
+        transform: scale(4);
+    }
+    50%{
+        transform: scale(3);
+    }
+    75%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/********** fin carrusel animado ***********/
+/*@keyframes moveSub {
+    0% {top: 0;opacity: 0;}
+    25% {top: -50;opacity: 0;}
+    50%{top: -100;opacity: 0;}
+    75%{top: -150;opacity: 0;}
+    100%{top:-200;opacity: 1;}
+  }*/
   
   @keyframes moveTitle {
     0% {
