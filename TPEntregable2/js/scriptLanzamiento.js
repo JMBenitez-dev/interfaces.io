@@ -274,3 +274,28 @@ function showDivsP(n) {
 
 })
   /**********fin seccion carrusel animado   ***********/
+
+
+  window.addEventListener("scroll", () => {
+ 
+    let img1Alt = document.querySelector(".contHistoria .imgHist").getBoundingClientRect().height;
+  console.log(img1Alt);
+    let parrafo1 = document.querySelector(".contHistoria .hist1").getBoundingClientRect().top;
+    let parrafo2 = document.querySelector(".contHistoria .hist2").getBoundingClientRect().top;
+    let parrafo3 = document.querySelector(".contHistoria .hist3").getBoundingClientRect().top;
+    let parrafo4 = document.querySelector(".contHistoria .hist4").getBoundingClientRect().top;
+  
+    if (parrafo1<img1Alt-150) {
+      document.querySelector(".imgHist").setAttribute("src","img/pageLanzamiento/hulk2.jpg")
+    }
+    if (parrafo2<img1Alt) {
+      document.querySelector(".imgHist").setAttribute("src","img/pageLanzamiento/loki.jpg")
+    }
+    if (parrafo3<img1Alt) {
+      document.querySelector(".imgHist").setAttribute("src","img/pageLanzamiento/Nick Fury2.jpg")
+    }
+    if (parrafo4<img1Alt) {
+      document.querySelector(".imgHist").setAttribute("src","img/pageLanzamiento/hawkeye.jpg")
+    }
+  })
+  

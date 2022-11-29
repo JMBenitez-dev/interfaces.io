@@ -1092,3 +1092,31 @@ a.pageC{
     border-radius: 15px;
     
 }
+
+
+.contHistoria {
+    display: flex;
+    justify-content: center;
+}
+.imgsHistoria, .parrafos {
+    width: 50%;
+}
+
+.parrafos p {
+    line-height: 35px;
+    margin-right: 10%;
+    font-size: 20px;
+    padding-left: 30%;
+    padding-right: 5%;
+}
+
+.stick{
+    position: sticky;
+}
+
+.imgHist {
+    left: 10%;
+    top: 170px;
+    width: auto;
+    height: 20em;
+}
