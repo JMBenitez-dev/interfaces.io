@@ -24,7 +24,7 @@ btn.onclick = function () {
     linea1.classList.add("cruz1");
     linea2.classList.add("cruz2");
     /*btn.style.marginLeft = "350px";*/
-    btn.style.marginLeft = "950px";
+    //btn.style.marginLeft = "950px";
     btn.style.height = "60px";
   }
 }
@@ -36,39 +36,31 @@ var nav= document.getElementById("navSticky");
 var title= document.getElementById("nameSticky");
 var section= document.getElementById("logoSticky");
 
-window.onscroll = function() {madeSticky()};
-window.onload = function() {madeSticky()};
-function madeSticky() {
-  if (document.documentElement.scrollTop > 10) {
-    header.classList.remove("headerBack");
-    nav.classList.remove("navBack");
-    title.classList.remove("titleBack"),
-    section.classList.remove("logoBack");
-    header.classList.add("headerSticky");
-    nav.classList.add("navSticky");
-    title.classList.add("titleSticky");
-    section.classList.add("logoSticky");
-  } else if(document.documentElement.scrollTop <300){
-    header.classList.remove("headerSticky");
-    nav.classList.remove("navSticky");
-    title.classList.remove("titleSticky"),
-    section.classList.remove("logoSticky");
-    header.classList.add("headerBack");
-    nav.classList.add("navBack");
-    title.classList.add("titleBack"),
-    section.classList.add("logoBack");
-
-  }else{
-    header.classList.remove("headerSticky");
-    nav.classList.remove("navSticky");
-    title.classList.remove("titleSticky"),
-    section.classList.remove("logoSticky");
-    header.classList.remove("headerBack");
-    nav.classList.remove("navBack");
-    title.classList.remove("titleBack"),
-    section.classList.remove("logoBack");
-  }
-}
+ var parent=document.getElementById("body")
+ 
+  window.addEventListener('scroll', function(){
+  
+    if (document.documentElement.scrollTop > 0) {
+      //header.classList.remove("headerBack");
+      nav.classList.remove("navBack");
+      title.classList.remove("titleBack"),
+      section.classList.remove("logoBack");
+      header.classList.add("headerSticky");
+      nav.classList.add("navSticky");
+      title.classList.add("titleSticky");
+      section.classList.add("logoSticky");
+    } else if(document.documentElement.scrollTop <300){
+      header.classList.remove("headerSticky");
+      nav.classList.remove("navSticky");
+      title.classList.remove("titleSticky"),
+      section.classList.remove("logoSticky");
+      //header.classList.add("headerBack");
+      nav.classList.add("navBack");
+      title.classList.add("titleBack"),
+      section.classList.add("logoBack");
+  
+    }
+  });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {

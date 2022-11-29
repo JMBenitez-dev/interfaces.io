@@ -51,7 +51,7 @@ section.logoYmenu a {
   height: 10px;
   background-color: #0DFF34;
   margin: 3px 0px;
-  transition: 0.2s ease-out;
+  /*transition: 0.2s ease-out;*/
   border-radius: 5px;
 }
 
@@ -1916,9 +1916,9 @@ p {
         margin-right: 15px;
     }
 
-    .change{
+    /*.change{
         position: fixed;
-    }
+    }*/
 
     .modal {
         display: none;
