@@ -40,13 +40,10 @@ var nav= document.getElementById("navSticky");
 var title= document.getElementById("nameSticky");
 var section= document.getElementById("logoSticky");
 
-//window.onscroll = function() {madeSticky()};
  var parent=document.getElementById("body")
- //parent.addEventListener('wheel', function() {
  
-  //window.onscroll = function() {madeSticky()};
   window.addEventListener('scroll', function(){
-  //function madeSticky() {
+  
     if (document.documentElement.scrollTop > 0) {
       //header.classList.remove("headerBack");
       nav.classList.remove("navBack");
@@ -108,25 +105,39 @@ function moveTitleImg(){
 
     titleImg.classList.add("move");
     lucha.classList.add("move");
-    //prep.classList.add("move");
     console.log("entroP "+document.documentElement.scrollTop); 
 
   }else{
 
     titleImg.classList.remove("move");
     lucha.classList.remove("move");
-    //prep.classList.remove("move");
     console.log("entró test");
     
   }
  };
 
- /*var parent=document.getElementById("parallax")
- parent.addEventListener('wheel', function() {
-  let titleImg= document.getElementById("titleImg");
-  titleImg.classList.add("move");
-  console.log('El boton intermedio (rueda) del ratón ha sido activado');
-});*/
+
+
+/**********Cards Animadas************/
+
+var text1= document.getElementById("text1");
+var text2= document.getElementById("text2");
+var text3= document.getElementById("text3");
+
+  window.addEventListener('scroll', function(){
+  
+    if (document.documentElement.scrollTop >2300||document.documentElement.scrollTop<1800 ) {
+     
+      text1.classList.remove("cardAnimada1");
+      text2.classList.remove("cardAnimada2"),
+      text3.classList.remove("cardAnimada3");
+  
+    } else if(document.documentElement.scrollTop > 1800 && document.documentElement.scrollTop<2300) {
+      text1.classList.add("cardAnimada1");
+      text2.classList.add("cardAnimada2");
+      text3.classList.add("cardAnimada3");
+    }
+  });
 
 //Countdown
 

@@ -232,7 +232,7 @@ div.parallax {
     position: relative;
     width: 100%;
     height: 450px;
-    top: 45px;
+    top: -20px;
     overflow: hidden;
     display: flex;
     margin: 0px auto;
@@ -620,13 +620,13 @@ button.botonP{
 /****Animación Titulo sección heroes*****/
 
 #hero {
-    margin-top: 0;
+    margin-top: -10px;
     height: auto;
 }
 
 /*************carrusel animado **************/
 .contPrincipal {
-    margin-top: 5%;
+    margin-top: -7%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -818,13 +818,6 @@ article.contPrincipal .card .image img.imgVacia{
     }
 }
 /********** fin carrusel animado ***********/
-/*@keyframes moveSub {
-    0% {top: 0;opacity: 0;}
-    25% {top: -50;opacity: 0;}
-    50%{top: -100;opacity: 0;}
-    75%{top: -150;opacity: 0;}
-    100%{top:-200;opacity: 1;}
-  }*/
   
   @keyframes moveTitle {
     0% {
@@ -852,7 +845,7 @@ article.contPrincipal .card .image img.imgVacia{
   .titulos {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -955,6 +948,7 @@ article.contPrincipal .card .image img.imgVacia{
     left: 5%;
     height: 365px;
     position: absolute;
+    margin-top: 20px;
    
 }
 
@@ -976,6 +970,7 @@ article.contPrincipal .card .image img.imgVacia{
     padding-left: 10px;
     height: 350px;
     position: absolute;
+    margin-top: 10px;
     
    
 }
@@ -986,5 +981,95 @@ article.contPrincipal .card .image img.imgVacia{
     }
     100% {
         background-position: -1625px
+    }
+}
+
+.cardAnimada1{
+
+    left: 130%;
+    animation: cardAnimada1 2.5s ease-in forwards ;
+
+}
+.cardAnimada2{
+
+    left: 160%;
+    animation: cardAnimada2 3s ease-in forwards ;
+     
+}
+.cardAnimada3{
+
+    left: 190%;
+    animation: cardAnimada3 3.5s ease-in forwards ;
+     
+}
+@keyframes cardAnimada1 {
+    0%{
+        transform:translateX(0%) translateY(0%) scale(0);
+        opacity: 0.5;
+    }
+    25%{
+        transform:translateX(-100%) translateY(50%) scale(0.5);
+        opacity: 0.75;
+    }
+    50%{
+        transform:translateX(-200%) translateY(100%) scale(1);
+        opacity: 1;
+    }
+    75%{
+        transform:translateX(-500%) translateY(50%) scale(1.5);
+        opacity: 1;
+    }
+    100%{
+        transform:translateX(-410%) translateY(0%) scale(1);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes cardAnimada2 {
+    0%{
+        transform:translateX(0%) translateY(0%) scale(0);
+        opacity: 0.5;
+    }
+    25%{
+        transform:translateX(-125%) translateY(50%) scale(0.5);
+        opacity: 0.75;
+    }
+    50%{
+        transform:translateX(-250%) translateY(100%) scale(1);
+        opacity: 1;
+    }
+    75%{
+        transform:translateX(-605%) translateY(50%) scale(1.5);
+        opacity: 1;
+    }
+    100%{
+        transform:translateX(-510%) translateY(0%) scale(1);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes cardAnimada3 {
+    0%{
+        transform:translateX(0%) translateY(0%) scale(0);
+        opacity: 0.5;
+    }
+    25%{
+        transform:translateX(-150%) translateY(50%) scale(0.5);
+        opacity: 0.75;
+    }
+    50%{
+        transform:translateX(-300%) translateY(100%) scale(1);
+        opacity: 1;
+    }
+    75%{
+        transform:translateX(-800%) translateY(50%) scale(1.5);
+        opacity: 1;
+    }
+    100%{
+        transform:translateX(-610%) translateY(0%) scale(1);
+        opacity: 1;
+        
     }
 }
