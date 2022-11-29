@@ -98,11 +98,11 @@ div.parallax {
     animation: myMenuBack 1s ease-in forwards;
     width: 100%;
 }
-.navSticky a, .titleSticky, .logoSticky a, .logoSticky .menu{
+.navSticky a, .titleSticky, .logoSticky a, .logoSticky .logoS{
     animation: logos 1s ease-in forwards;
     
 }
-.navBack a, .titleBack, .logoBack a, .logoBack .menu{
+.navBack a, .titleBack, .logoBack a, .logoBack .logoS{
     animation: logosBack 1s ease-in forwards;
     
 }
@@ -1072,4 +1072,23 @@ article.contPrincipal .card .image img.imgVacia{
         opacity: 1;
         
     }
+}
+
+.pageC{
+    color: rgb(50, 191, 40);
+    font-size: 30px;
+    font-weight: 20px;
+}
+
+a.pageC{
+    font-size: 45px;
+    font-weight: 20px;
+    text-decoration: none;
+    background-color: #EE0382;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+    border-radius: 15px;
+    
 }
