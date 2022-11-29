@@ -20,6 +20,7 @@ btn.onclick = function () {
     btn.classList.remove("change");
   } else {
     section.classList.remove("logoBack");
+    section.classList.remove("logoSticky");
     btn.classList.add("change");
     modal.style.display = "block";
     linea1.classList.add("cruz1");
