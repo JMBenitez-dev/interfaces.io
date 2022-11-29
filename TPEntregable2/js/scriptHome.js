@@ -11,16 +11,19 @@ let linea1=document.querySelector(".linea-1");
 let linea2=document.querySelector(".linea-3");
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
+  console.log("se clickeo boton")
   if (btn.classList.contains('change')) {
-    modal.style.display = "none";
+    /*modal.style.display = "none";*/
     btn.classList.add("sinChange");
     linea1.classList.remove("cruz1");
     linea2.classList.remove("cruz2");
     /*btn.style.marginLeft = "0px";*/
+    console.log("se agregó SINchange")
     btn.classList.remove("change");
   } else {
     btn.classList.add("change");
-    modal.style.display = "block";
+    /*modal.style.display = "block";*/
+    console.log("se agregó change")
     linea1.classList.add("cruz1");
     linea2.classList.add("cruz2");
     /*btn.style.marginLeft = "350px";*/

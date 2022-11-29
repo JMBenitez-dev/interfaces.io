@@ -46,65 +46,73 @@ section.logoYmenu a {
 .linea-1,
 .linea-2,
 .linea-3 {
-  width: 50px;
-  height: 10px;
-  background-color: #0DFF34;
-  margin: 3px 0px;
-  transition: 0.2s ease-out;
-  border-radius: 5px;
+    width: 50px;
+    height: 10px;
+    background-color: #0DFF34;
+    margin: 3px 0px;
+    transition: 0.2s ease-out;
+    border-radius: 5px;
 }
 
 @keyframes burguerMenu {
     from {
         margin-left: 0;
     }
-    to{
-        margin-left: 350px;
+
+    to {
+        margin-left: 950px;
     }
 }
+
 @keyframes burguerMenuCerrar {
     from {
-        margin-left: 350px;
+        margin-left: 950px;
     }
-    to{
+
+    to {
         margin-left: 0;
     }
 }
+
 @keyframes burguer {
     from {
-        transform: translate(0px,0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
     }
-    to{
-        transform: translate(0px, 1px) rotate(-45deg) ;
-  background-color: #0DFF34;
-  position: absolute;
+
+    to {
+        transform: translate(0px, 1px) rotate(-45deg);
+        background-color: #0DFF34;
+        position: absolute;
     }
 }
-.cruz1{
+
+.cruz1 {
     animation: burguer 0.5s linear forwards;
 }
 
 @keyframes burguer2 {
     from {
-        transform: translate(0px,0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
     }
-    to{
+
+    to {
         background-color: #0DFF34;
         transform: translate(1px, -7px) rotate(45deg);
     }
 }
-.cruz2{
+
+.cruz2 {
     animation: burguer2 0.5s linear forwards;
 }
 
-
-
-.sinChange{
+.sinChange {
     animation: burguerMenuCerrar 0.5s linear forwards;
 }
-.change{
+
+.change {
     animation: burguerMenu 0.5s linear forwards;
 }
+
 /*.change .linea-1 {
   transform: translate(0px, 1px) rotate(-45deg) ;
   background-color: #0DFF34;
@@ -112,7 +120,7 @@ section.logoYmenu a {
 }*/
 
 .change .linea-2 {
-  opacity: 0;
+    opacity: 0;
 }
 
 /*.change .linea-3 {
@@ -120,7 +128,7 @@ section.logoYmenu a {
   transform: translate(1px, -7px) rotate(45deg);
 
 }
-
+*/
 
 
 /*Efecto Hover para el boton menu*/
@@ -138,8 +146,8 @@ section.logoYmenu a {
     border-radius: 10px;
     transition: 0.8s ease-out;
     flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu:before {
@@ -489,64 +497,94 @@ a.cat:hover:before {
     100% {
         background-position: 0 0;
 
- }   }   
+    }
+}
 
- /************Animación Items Menú***************/
-.uno{
+/************Animación Items Menú***************/
+.uno {
     position: relative;
     animation: mymove 0.4s linear;
-   
+
 }
-.dos{
+
+.dos {
     position: relative;
     animation: mymove 0.6s linear;
-    
+
 }
-.tres{
+
+.tres {
     position: relative;
     animation: mymove 0.8s linear;
-  }   
-.cuatro{
+}
+
+.cuatro {
     position: relative;
     animation: mymove 1s linear;
-    
+
 }
-.cinco{
+
+.cinco {
     position: relative;
     animation: mymove 1.2s linear;
-    
+
 }
-.seis{
+
+.seis {
     position: relative;
     animation: mymove 1.4s linear;
-    
+
 }
-.siete{
+
+.siete {
     position: relative;
     animation: mymove 1.6s linear;
-    
+
 }
-.ocho{
+
+.ocho {
     position: relative;
     animation: mymove 1.8s linear;
-    
+
 }
-.nueve{
+
+.nueve {
     position: relative;
     animation: mymove 2s linear;
-    
-     
+
+
 }
+
 .listaItems {
     overflow: hidden;
 }
-  @keyframes mymove {
-    0% {left: -700px;border-right: #000 3px solid;}
-    25% {left: -525px;border-right: #000 3px solid;}
-    50%{left: -350px;border-right: #000 3px solid;}
-    75%{left: -175px;border-right: #000 3px solid;}
-    100%{left: 0px;border-right: #000 3px solid;}
-  }
+
+@keyframes mymove {
+    0% {
+        left: -700px;
+        border-right: #000 3px solid;
+    }
+
+    25% {
+        left: -525px;
+        border-right: #000 3px solid;
+    }
+
+    50% {
+        left: -350px;
+        border-right: #000 3px solid;
+    }
+
+    75% {
+        left: -175px;
+        border-right: #000 3px solid;
+    }
+
+    100% {
+        left: 0px;
+        border-right: #000 3px solid;
+    }
+}
 
 
 /*************SlideBanners***********************/
@@ -840,7 +878,9 @@ a.cat:hover:before {
     border-radius: 10px;
     text-align: center;
 }
-.jugarBtn:disabled, .comprarBtn:disabled{
+
+.jugarBtn:disabled,
+.comprarBtn:disabled {
     background-color: #2E2E2E;
 }
 
@@ -1159,9 +1199,6 @@ button {
 
 
 /****************************************************************************/
-
-
-
 .contenido {
     width: 400px;
     height: 300px;
@@ -1200,9 +1237,6 @@ footer div nav ul li {
     /* 11px segun figma , preguntar */
 }
 
-
-
-
 footer main {
     margin-top: 50px;
     height: 30%;
@@ -1232,8 +1266,6 @@ footer main .transp {
     font-size: 24px;
 }
 
-
-
 .transp div li a {
     text-decoration: none;
     color: #272222;
@@ -1255,6 +1287,7 @@ footer main .transp {
     display: flex;
     flex-wrap: wrap;
 }
+
 .transp h2 {
     margin: 0;
 }
@@ -1348,12 +1381,15 @@ aside.der {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-   
+
 }
-.instrucciones{
+
+.instrucciones {
     width: 15rem;
 }
-h2.instrucciones, h3.instrucciones{
+
+h2.instrucciones,
+h3.instrucciones {
     -webkit-text-stroke: 1px black;
 }
 
@@ -1388,7 +1424,6 @@ aside.izq {
     border-radius: 10px;
     text-align: center;
 }
-
 
 button.comprarBtn,
 button.jugarBtn {
@@ -1431,7 +1466,8 @@ button.comprarBtn:hover {
 }
 
 
-button.comprarBtn:hover:disabled,button.jugarBtn:hover:disabled  {
+button.comprarBtn:hover:disabled,
+button.jugarBtn:hover:disabled {
     background: #2E2E2E;
 }
 
@@ -1555,6 +1591,7 @@ input[type="radio"]:checked~label {
     color: white;
     padding: 0 0.1vw 0 10vw;
 }
+
 .links a {
     color: white;
 }
@@ -1575,12 +1612,13 @@ input[type="radio"]:checked~label {
     margin: 0 0 1% 0;
 }
 
-.imgPerf img{
+.imgPerf img {
     width: 70px;
     height: 70px;
     padding: 2vh;
     border-radius: 100%;
 }
+
 .imgPerfResp img {
     width: 50px;
     height: 50px;
@@ -1641,7 +1679,6 @@ input[type="radio"]:checked~label {
 .cancelar:hover {
     color: whitesmoke;
 }
-
 
 .coment {
     color: #b4f2bf;
@@ -1713,12 +1750,8 @@ p {
 
 /*******************************fin 4 en linea *************************/
 
-
-
-
 /***********loader************/
 .contLoader {
-
     position: fixed;
     width: 100%;
     height: 300vh;
@@ -1727,7 +1760,6 @@ p {
     display: flex;
     justify-content: center;
     top: -900px;
-
     z-index: 110;
 }
 
@@ -1831,9 +1863,10 @@ p {
     display: none;
 }
 
-.ocultar{
+.ocultar {
     display: none;
 }
+
 @media (min-width: 700px) {
     /*footer*/
 
@@ -1871,13 +1904,15 @@ p {
         padding: 0 5%;
     }
 
-    
-.transp .mob{
-    display: list-item;
-}
-.transp .desk{
-    display: none;
-}
+
+    .transp .mob {
+        display: list-item;
+    }
+
+    .transp .desk {
+        display: none;
+    }
+
     /*footer fin*/
 
     header {
@@ -1914,7 +1949,7 @@ p {
         margin-right: 15px;
     }
 
-    .change{
+    .change {
         position: fixed;
     }
 
@@ -1949,29 +1984,42 @@ p {
         z-index: 9;
     }
 
-    /************Header sticky***************/ 
-.headerSticky{
-    position: fixed;
-    z-index: 120;
-    animation: myMenu 1s linear forwards;
-    width: 100%;
-}
+    /************Header sticky***************/
+    .headerSticky {
+        position: fixed;
+        z-index: 120;
+        animation: myMenu 1s linear forwards;
+        width: 100%;
+    }
 
-.navSticky a, .titleSticky, .logoSticky a, .logoSticky .menu{
-    animation: logos 1s linear forwards;
-    
-}
+    .navSticky a,
+    .titleSticky,
+    .logoSticky a,
+    .logoSticky .menu {
+        animation: logos 1s linear forwards;
 
-@keyframes myMenu {
-    
-    from {height: 65px;}
-    to {height: 34px;}
-     }
+    }
 
-@keyframes logos {
-        from {transform: scale(100%);}
-        to {transform:scale(80%) ;}
+    @keyframes myMenu {
+
+        from {
+            height: 65px;
         }
+
+        to {
+            height: 34px;
+        }
+    }
+
+    @keyframes logos {
+        from {
+            transform: scale(100%);
+        }
+
+        to {
+            transform: scale(80%);
+        }
+    }
 
     /*************SlideBanners***********************/
     .titulo {
@@ -2200,7 +2248,8 @@ p {
         height: 260px;
 
     }
-    .contenedorCom{
+
+    .contenedorCom {
         padding-bottom: 20px;
     }
 

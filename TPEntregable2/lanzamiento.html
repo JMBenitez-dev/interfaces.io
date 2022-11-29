@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Noto+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleLanzamiento.css">
     <title>Lanzamiento</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -38,7 +41,7 @@
         <div id="myModal" class="modal">
             <!-- Modal content -->
             <aside class="modal-content listaItems">
-              
+
                 <div class="perfil">
                     <a class="redIcon" href=""><img class="fotoPerfilOpen" src="img/Iconos/fotoPerfil.png"
                             alt="imagen Logo"></a>
@@ -104,413 +107,461 @@
 
     </header>
 
-   
-        <div class="parallax">
-            <div class="animation caja1"></div>
-            <div class="animation  caja2"></div>
-            <div class="fondo"></div>
-            <div id="titleImg" class="animation caja3"></div>
-            <div class="animation lanzamientoB">
-                <h2 class="frase1">¡La lucha está por empezar! 15/12/2022</h2>
-                
-                <h2 class="frase1 prep">¡Preparate para la batalla!</h2>
-                <a href="lanzamiento.html" class="new">Reservar</a>
-                <p id="el">Faltan:</p>
-                <p id="regresiva" class="countdowm-item flex">test</p> 
+
+    <div class="parallax">
+        <div class="animation caja1"></div>
+        <div class="animation  caja2"></div>
+        <div class="fondo"></div>
+        <div id="titleImg" class="animation caja3"></div>
+        <div class="animation lanzamientoB">
+            <h2 class="frase1">¡La lucha está por empezar! 15/12/2022</h2>
+
+            <h2 class="frase1 prep">¡Preparate para la batalla!</h2>
+            <a href="lanzamiento.html" class="new">Reservar</a>
+            <p id="el">Faltan:</p>
+            <p id="regresiva" class="countdowm-item flex">test</p>
+        </div>
+    </div>
+     <!--section carrusel animado-->
+     <article class="contPrincipal">
+        <div class="containerL">
+            <input type="radio" name="slider" class="d-none" id="s1" checked>
+            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s3">
+            <input type="radio" name="slider" class="d-none" id="s4">
+            <input type="radio" name="slider" class="d-none" id="s5">
+
+            <div class="cardsL">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <div class="image">
+                            <img class="imgRellena" src="img/pageLanzamiento/blackwV.png" alt="">
+                            <img class="imgVacia" src="img/pageLanzamiento/blackwR.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Black Widow</span>
+                            <span class="lorem"><cite>Cuando me uní a S.H.I.E.L.D. creí que me enderezaría, pero creo
+                                    que solo cambié la KGB por HYDRA."</cite></blockquote> </span>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/pageLanzamiento/capV.png" alt="">
+                            <img class="imgVacia" src="img/pageLanzamiento/capR.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Capitan America</span>
+                            <span class="lorem"><cite>El precio de la libertad es alto. Siempre lo ha sido y estoy
+                                    dispuesto a pagar el precio.</cite></span>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/pageLanzamiento/ironManV.png" alt="">
+                            <img class="imgVacia" src="img/pageLanzamiento/ironManR.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Iron Man</span>
+                            <span class="lorem"><cite>Seguir las reglas nunca ha sido mi estilo.</cite></span>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s4" id="slide4">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/pageLanzamiento/thorV.png" alt="">
+                            <img class="imgVacia" src="img/pageLanzamiento/thorR.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Thor Odinson</span>
+                            <span class="lorem"><cite>Quien sostenga este martillo, si es digno, poseerá el poder de
+                                    Thor.</cite></span>
+                        </div>
+                    </div>
+                </label>
+
+                <label for="s5" id="slide5">
+                    <div class="card">
+                        <div class="image">
+                            <img src="img/pageLanzamiento/hulk2V.png" alt="">
+                            <img class="imgVacia" src="img/pageLanzamiento/hulk2R.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <span class="name">Hulk</span>
+                            <span class="lorem"><cite>¿No te lo ha dicho nadie? Soy el mas fuerte que
+                                    existe.</cite></span>
+                        </div>
+                    </div>
+                </label>
             </div>
         </div>
-        <section id="titulos" class="titulos">
-            <h2 class="hero" id="hero"> HEROES</h2>
-            <h2 class="frase2" id="subtitle">¡Elegí entre los más fuertes del Multiverso de Marvel!</h2>
-           
-       
-            <div class="content" id="img" style="max-width:800px; text-align: center">
-                <div class="pj">
-                    <img class="slides tony" src="img/pageLanzamiento/tony.webp" style="width:100%">
-                </div>
-                <div class="pj">
-                    <img class="slides black" src="img/pageLanzamiento/blackW.webp" style="width:100%;display:none">
-                </div>
-                <div class="pj">
-                    <img class="slides capi" src="img/pageLanzamiento/CapitanAmerica.webp" style="width:100%;display:none">
-                </div>
-                <div class="pj">
-                    <img class="slides hulk" src="img/pageLanzamiento/hulk.webp" style="width:100%;display:none">
-                </div>
-                <div class="pj">
-                    <img class="slides thor" src="img/pageLanzamiento/thor.webp" style="width:100%;display:none">
-                </div>
-                <div class="pj">
-                    <img class="slides loki" src="img/pageLanzamiento/loki-avengers-hy-1536x864.jpg" style="width:100%;display:none">
-                </div>
-                <div class="pj">
-                    <img class="slides nick" src="img/pageLanzamiento/Nick Fury.webp" style="width:100%;display:none">
-                </div>
-                <div class="pj">     
-                    <img class="slides hawk" src="img/pageLanzamiento/hawkeyeW.jpg" style="width:100%;display:none">
-                </div> 
-                <div class="pj">
-                    <img class="slides loki" src="img/pageLanzamiento/loki-avengers-hy-1536x864.jpg" style="width:100%;display:none">
-                </div>  
+    </article>
+    <!-- fin section carrusel animado-->
+
+    <section id="titulos" class="titulos">
+        <h2 class="hero" id="hero"> HEROES</h2>
+        <h2 class="frase2" id="subtitle">¡Elegí entre los más fuertes del Multiverso de Marvel!</h2>
+
+
+        <div class="content" id="img" style="max-width:800px; text-align: center">
+            <div class="pj">
+                <img class="slides tony" src="img/pageLanzamiento/tony.webp" style="width:100%">
             </div>
-            
-        <!--section carrusel animado-->
-        <article class="contPrincipal">
-            <div class="containerL">
-                <input type="radio" name="slider" class="d-none" id="s1" checked>
-                <input type="radio" name="slider" class="d-none" id="s2">
-                <input type="radio" name="slider" class="d-none" id="s3">
-                <input type="radio" name="slider" class="d-none" id="s4">
-                <input type="radio" name="slider" class="d-none" id="s5">
-    
-                <div class="cardsL">
-                    <label for="s1" id="slide1">
-                        <div class="card">
-                            <div class="image">
-                                <img class="imgRellena" src="img/pageLanzamiento/blackwV.png" alt="">
-                                <img class="imgVacia" src="img/pageLanzamiento/blackwR.png" alt="">
-                            </div>
-                            <div class="infos">
-                                <span class="name">Black Widow</span>
-                                <span class="lorem"><cite>Cuando me uní a S.H.I.E.L.D. creí que me enderezaría, pero creo
-                                        que solo cambié la KGB por HYDRA."</cite></blockquote> </span>
-                            </div>
-                        </div>
-                    </label>
-    
-                    <label for="s2" id="slide2">
-                        <div class="card">
-                            <div class="image">
-                                <img src="img/pageLanzamiento/capV.png" alt="">
-                                <img class="imgVacia" src="img/pageLanzamiento/capR.png" alt="">
-                            </div>
-                            <div class="infos">
-                                <span class="name">Capitan America</span>
-                                <span class="lorem"><cite>El precio de la libertad es alto. Siempre lo ha sido y estoy
-                                        dispuesto a pagar el precio.</cite></span>
-                            </div>
-                        </div>
-                    </label>
-    
-                    <label for="s3" id="slide3">
-                        <div class="card">
-                            <div class="image">
-                                <img src="img/pageLanzamiento/ironManV.png" alt="">
-                                <img class="imgVacia" src="img/pageLanzamiento/ironManR.png" alt="">
-                            </div>
-                            <div class="infos">
-                                <span class="name">Iron Man</span>
-                                <span class="lorem"><cite>Seguir las reglas nunca ha sido mi estilo.</cite></span>
-                            </div>
-                        </div>
-                    </label>
-    
-                    <label for="s4" id="slide4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="img/pageLanzamiento/thorV.png" alt="">
-                                <img class="imgVacia" src="img/pageLanzamiento/thorR.png" alt="">
-                            </div>
-                            <div class="infos">
-                                <span class="name">Thor Odinson</span>
-                                <span class="lorem"><cite>Quien sostenga este martillo, si es digno, poseerá el poder de
-                                        Thor.</cite></span>
-                            </div>
-                        </div>
-                    </label>
-    
-                    <label for="s5" id="slide5">
-                        <div class="card">
-                            <div class="image">
-                                <img src="img/pageLanzamiento/hulk2V.png" alt="">
-                                <img class="imgVacia" src="img/pageLanzamiento/hulk2R.png" alt="">
-                            </div>
-                            <div class="infos">
-                                <span class="name">Hulk</span>
-                                <span class="lorem"><cite>¿No te lo ha dicho nadie? Soy el mas fuerte que
-                                        existe.</cite></span>
-                            </div>
-                        </div>
-                    </label>
-                </div>
+            <div class="pj">
+                <img class="slides black" src="img/pageLanzamiento/blackW.webp" style="width:100%;display:none">
             </div>
-        </article>
-        <!-- fin section carrusel animado-->
+            <div class="pj">
+                <img class="slides capi" src="img/pageLanzamiento/CapitanAmerica.webp" style="width:100%;display:none">
+            </div>
+            <div class="pj">
+                <img class="slides hulk" src="img/pageLanzamiento/hulk.webp" style="width:100%;display:none">
+            </div>
+            <div class="pj">
+                <img class="slides thor" src="img/pageLanzamiento/thor.webp" style="width:100%;display:none">
+            </div>
+            <div class="pj">
+                <img class="slides loki" src="img/pageLanzamiento/loki-avengers-hy-1536x864.jpg"
+                    style="width:100%;display:none">
+            </div>
+            <div class="pj">
+                <img class="slides nick" src="img/pageLanzamiento/Nick Fury.webp" style="width:100%;display:none">
+            </div>
+            <div class="pj">
+                <img class="slides hawk" src="img/pageLanzamiento/hawkeyeW.jpg" style="width:100%;display:none">
+            </div>
+            <div class="pj">
+                <img class="slides loki" src="img/pageLanzamiento/loki-avengers-hy-1536x864.jpg"
+                    style="width:100%;display:none">
+            </div>
+        </div>
+
 
 
 
 
         <h2 class="frase2 heroe">HEROES</h2>
-        </section>    
+    </section>
+
+    <h2 class="frase2 heroe">Lista de Héroes</h2>
+    <div class="imgBtn">
+
+        <div class="fotoB">
+            <div class="text">
+                <p class="desc" onclick="currentDiv(1)">
+                    Su armadura es capaz de levantar hasta 100 toneladas y puede alcanzar niveles más altos de fuerza
+                    cuando está alimentad
+                    por una fuente suficientemente más potente.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/Iron Man2.jpg" onclick="currentDiv(1)">
+                <div class="fondoP"></div>
+            </div>
+            <div class="text">
+                <p class="desc" onclick="currentDiv(2)">
+                    Es una antigua agente de la KGB y también una agente de alto nivel de S.H.I.E.L.D., la principal
+                    espía de Nick Fury.
+                    Astuta, atlética, ingeniosa, carismática, fuerte.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/Black Widow.jpg" onclick="currentDiv(2)">
+                <div class="fondoP"></div>
+            </div>
+            <div class="text">
+                <p class="desc" onclick="currentDiv(3)">
+                    Usa un traje de agua y retardante de fuego, que está hecho de kevlar, nomex y titanio liviano.
+                    El traje ofrece un nivel medio de resistencia a los choques eléctricos e impactos de fuerza
+                </p>
+                <img class="demo" src="img/pageLanzamiento/capi.jpg" onclick="currentDiv(3)">
+                <div class="fondoP"></div>
+            </div>
+        </div>
+
+        <div class="fotoB">
+            <div class="text">
+                <p class="desc" onclick="currentDiv(4)">
+                    Súper fuerza. Esta conlleva por defecto: Súper velocidad, súper resistencia, súper salto,
+                    invulnerabilidad, regeneración, longevidad, factor de curación acelerado.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/hulk2.jpg" onclick="currentDiv(4)">
+                <div class="fondoP"></div>
+            </div>
+            <div class="text">
+                <p class="desc" onclick="currentDiv(5)">
+                    Thor posee una gran fuerza y ​​resistencia. Sin embargo, lo que lo distingue como hijo de Odín es su
+                    capacidad
+                    para controlar las fuerzas de la naturaleza, especialmente los rayos y los truenos.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/thor2.jpg" onclick="currentDiv(5)">
+                <div class="fondoP"></div>
+            </div>
+            <div class="text">
+                <p class="desc" onclick="currentDiv(6)">
+                    Proyección astral, el cambio de forma, la hipnosis, la reorganización molecular, la levitación, la
+                    conjuración,
+                    la telequinesis y la teletransportación.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/loki.jpg" onclick="currentDiv(6)">
+                <div class="fondoP"></div>
+            </div>
+        </div>
+
+        <div class="fotoB solo2" onclick="currentDiv(7)">
+            <div class="text">
+                <p class="desc">
+                    Experto en todo tipo de combate mano a mano, donde se destaca en el boxeo. Su conocimiento en
+                    armamento es extenso,
+                    dado que su incorporación a S.H.I.E.L.D. le brinda información y uso de tecnologías avanzadas.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/NickFury.jpg" onclick="currentDiv(7)">
+                <div class="fondoP"></div>
+            </div>
+            <div class="text">
+                <p class="desc" onclick="currentDiv(8)">
+                    Arquero excepcional, con una puntería perfecta, una excelente percepción y reflejos extraordinarios.
+                    Acróbata experto. Buen combatiente cuerpo a cuerpo
+                </p>
+                <img class="demo" src="img/pageLanzamiento/hawkeye.jpg" onclick="currentDiv(8)">
+                <div class="fondoP"></div>
+            </div>
+            <div class="text">
+                <p class="desc">
+                    Proyección astral, el cambio de forma, la hipnosis, la reorganización molecular, la levitación, la
+                    conjuración,
+                    la telequinesis y la teletransportación.
+                </p>
+                <img class="demo" src="img/pageLanzamiento/loki.jpg" onclick="currentDiv(9)">
+                <div class="fondoP"></div>
+            </div>
+        </div>
+
+        <button class="botonP" onclick="plusDivsP(-1)">
+            <iconify-icon class="leftP" icon="bi:arrow-left-circle-fill"></iconify-icon>
+        </button>
+        <button class="botonP" onclick="plusDivsP(+1)">
+            <iconify-icon class="rightP" icon="bi:arrow-right-circle-fill"></iconify-icon>
+        </button>
+
+    </div>
+
+
+    <section class="features">
+        <h2 class="histF">FEATURES</h2>
+        <div class="feat">
+            <div class="featP">
+                <img class="demoF" src="img/Capitana-Marvel-8.gif">
+                <div class="fondoF">
+                    <p class="descF">
+                        Modo: Un jugador, estilo de juego unico.
+                    </p>
+                </div>
+            </div>
+            <div class="featP">
+
+                <img class="demoF" src="img/teen.PNG">
+                <div class="fondoF">
+                    <p class="descF">
+                        Lenguaje adulto - Sangre leve - Violencia
+                    </p>
+                </div>
+            </div>
+            <div class="featP">
+
+                <img class="demoF" src="img/keys-to-success.gif">
+                <div class="fondoF">
+                    <p class="descF">
+                        Controles fáciles. Configuracion personalizada.
+                    </p>
+                </div>
+            </div>
+            <div class="featP">
+
+                <img class="demoF" src="img/infinityRun.gif">
+                <div class="fondoF">
+                    <p class="descF">
+                        Diversión asegurada con todos los héroes
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="video">
+        <div class="videoC">
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/6MKiLy3Y32k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="historia">
+        <h2 class="hist">HISTORIA</h2>
+        <div class="contHistoria">
+            <div class="imgsHistoria">
+                <img class="imgHist stick" src="img/pageLanzamiento/hulk2.jpg">
+               
+            </div>
         
-        <h2 class="frase2 heroe">Lista de Héroes</h2>
-            <div class="imgBtn">
+        <div class="parrafos">
+            <p class="hist1">
+                Cuando un enemigo inesperado amenaza con poner en peligro la seguridad mundial, Nick Furia, Director de
+                la agencia
+                internacional para el mantenimiento de la paz, conocida con el nombre de S.H.I.E.L.D., necesita
+                encontrar urgentemente un
+                equipo que salve al mundo del mayor de los desastres. Así empieza una búsqueda por todo el mundo para
+                reclutar a superhéroes
+                como Iron Man, Hulk, Thor, el Capitán América y Viuda Negra para formar un grupo conocido como "Los
+                Vengadores".
+                <br>
+                <br>
+            </p>
+            <p class="hist2">
+                En ésta ocasión, el dios asgardiano exiliado Loki se encuentra con El Otro,7​ un líder de una raza
+                extraterrestre conocida como los Chitauri. Llega a un trato con ellos; a cambio de recuperar el
+                Teseracto, una fuente de poderosa energía de potencial desconocido, el Otro le promete a Loki un
+                ejército con el que pueda subyugar a la Tierra.
+                <br>
+                <br>
+            </p>
+            <p class="hist3">
+                Nick Fury, director de la Agencia de espionaje S.H.I.E.L.D. y su teniente, la agente María Hill, llegan
+                a un centro de investigación remoto donde se empieza una evacuación inmediata de las instalaciones y
+                donde el físico Dr. Erik Selvig está liderando la investigación del Teseracto. Inesperadamente el cubo
+                abre un agujero de gusano, permitiendo a Loki llegar a la tierra. Loki consigue robar el Teseracto y
+                utiliza su cetro para lavar el cerebro a Selvig, a un par de agentes y a Clint Barton, quienes huyen con
+                él.
+                <br>
+                <br>
 
-                <div class="fotoB">
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(1)">
-                            Su armadura es capaz de levantar hasta 100 toneladas y puede alcanzar niveles más altos de fuerza cuando está alimentad
-                            por una fuente suficientemente más potente.
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/Iron Man2.jpg" onclick="currentDiv(1)">
-                        <div class="fondoP"></div>
-                    </div>
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(2)">
-                            Es una antigua agente de la KGB y también una agente de alto nivel de S.H.I.E.L.D., la principal espía de Nick Fury.
-                            Astuta, atlética, ingeniosa, carismática, fuerte. 
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/Black Widow.jpg"  onclick="currentDiv(2)">
-                        <div class="fondoP"></div>
-                    </div>
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(3)">
-                            Usa un traje de agua y retardante de fuego, que está hecho de kevlar, nomex y titanio liviano. 
-                            El traje ofrece un nivel medio de resistencia a los choques eléctricos e impactos de fuerza
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/capi.jpg"  onclick="currentDiv(3)">
-                        <div class="fondoP"></div>
-                    </div>  
-                </div>
-            
-                <div class="fotoB">
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(4)">
-                            Súper fuerza. Esta conlleva por defecto: Súper velocidad, súper resistencia, súper salto,
-                            invulnerabilidad, regeneración, longevidad, factor de curación acelerado.
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/hulk2.jpg"  onclick="currentDiv(4)">
-                        <div class="fondoP"></div>
-                    </div>
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(5)">
-                            Thor posee una gran fuerza y ​​resistencia. Sin embargo, lo que lo distingue como hijo de Odín es su capacidad 
-                            para controlar las fuerzas de la naturaleza, especialmente los rayos y los truenos.
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/thor2.jpg"  onclick="currentDiv(5)">
-                        <div class="fondoP"></div>
-                    </div>
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(6)">
-                            Proyección astral, el cambio de forma, la hipnosis, la reorganización molecular, la levitación, la conjuración,
-                            la telequinesis y la teletransportación.
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/loki.jpg"  onclick="currentDiv(6)">
-                        <div class="fondoP"></div>
-                    </div>    
-                </div>
-
-                <div class="fotoB solo2" onclick="currentDiv(7)">
-                    <div class="text">
-                        <p class="desc">
-                            Experto en todo tipo de combate mano a mano, donde se destaca en el boxeo. Su conocimiento en armamento es extenso,
-                            dado que su incorporación a S.H.I.E.L.D. le brinda información y uso de tecnologías avanzadas.   
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/NickFury.jpg"  onclick="currentDiv(7)">
-                        <div class="fondoP"></div>
-                    </div>
-                    <div class="text">
-                        <p class="desc" onclick="currentDiv(8)">
-                            Arquero excepcional, con una puntería perfecta, una excelente percepción y reflejos extraordinarios. 
-                            Acróbata experto. Buen combatiente cuerpo a cuerpo
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/hawkeye.jpg"  onclick="currentDiv(8)">
-                        <div class="fondoP"></div>
-                    </div>
-                    <div class="text">
-                        <p class="desc">
-                            Proyección astral, el cambio de forma, la hipnosis, la reorganización molecular, la levitación, la conjuración,
-                            la telequinesis y la teletransportación.
-                        </p>
-                        <img class="demo" src="img/pageLanzamiento/loki.jpg" onclick="currentDiv(9)">
-                        <div class="fondoP"></div>
-                    </div>    
-                </div>
-
-               <button class="botonP" onclick="plusDivsP(-1)"><iconify-icon class="leftP" icon="bi:arrow-left-circle-fill"></iconify-icon></button>
-               <button class="botonP" onclick="plusDivsP(+1)"><iconify-icon class="rightP" icon="bi:arrow-right-circle-fill"></iconify-icon></button>
-              
-            </div>
-
-
-            <section class="features">
-                <h2 class="histF">FEATURES</h2>
-                <div class="feat">
-                    <div class="featP">
-                        <img class="demoF" src="img/Capitana-Marvel-8.gif">
-                        <div class="fondoF">
-                            <p class="descF">
-                                Modo: Un jugador, estilo de juego unico.
-                            </p>
-                        </div>
-                    </div>    
-                    <div class="featP">
-                       
-                        <img class="demoF" src="img/teen.PNG" >
-                        <div class="fondoF">
-                            <p class="descF">
-                                Lenguaje adulto - Sangre leve - Violencia
-                            </p>
-                        </div>
-                    </div>    
-                    <div class="featP">
-                        
-                        <img class="demoF" src="img/keys-to-success.gif" >
-                        <div class="fondoF">
-                            <p class="descF">
-                                Controles fáciles. Configuracion personalizada.
-                            </p>
-                        </div>
-                    </div>    
-                    <div class="featP">
-                        
-                        <img class="demoF" src="img/infinityRun.gif" >
-                        <div class="fondoF">
-                            <p class="descF">
-                                Diversión asegurada con todos los héroes
-                            </p>
-                        </div>
-                    </div>    
-                </div>
-
-            </section>
-
-            <section class="video">
-                <div class="videoC">
-                    <iframe width="660" height="415" src="https://www.youtube.com/embed/6MKiLy3Y32k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </section>
-
-            <section class="historia">
-                <h2 class="hist">HISTORIA</h2>
-                <div class="parrafos">
-                    <p class="hist1">
-                        Cuando un enemigo inesperado amenaza con poner en peligro la seguridad mundial, Nick Furia, Director de la agencia
-                        internacional para el mantenimiento de la paz, conocida con el nombre de S.H.I.E.L.D., necesita encontrar urgentemente un
-                        equipo que salve al mundo del mayor de los desastres. Así empieza una búsqueda por todo el mundo para reclutar a superhéroes
-                        como Iron Man, Hulk, Thor, el Capitán América y Viuda Negra para formar un grupo conocido como "Los Vengadores".
-                    </p>
-                    <p class="hist2">
-                        En ésta ocasión, el dios asgardiano exiliado Loki se encuentra con El Otro,7​ un líder de una raza extraterrestre conocida como los Chitauri. Llega a un trato con ellos; a cambio de recuperar el Teseracto, una fuente de poderosa energía de potencial desconocido, el Otro le promete a Loki un ejército con el que pueda subyugar a la Tierra.
-                    </p>
-                    <p class="hist3">
-                        Nick Fury, director de la Agencia de espionaje S.H.I.E.L.D. y su teniente, la agente María Hill, llegan a un centro de investigación remoto donde se empieza una evacuación inmediata de las instalaciones y donde el físico Dr. Erik Selvig está liderando la investigación del Teseracto. Inesperadamente el cubo abre un agujero de gusano, permitiendo a Loki llegar a la tierra. Loki consigue robar el Teseracto y utiliza su cetro para lavar el cerebro a Selvig, a un par de agentes y a Clint Barton, quienes huyen con él.
-
-                    </p>
-                    <p class="hist4">
-                        En respuesta al ataque, Fury decide reactivar la Iniciativa Vengadores. La agente Natasha Romanoff es contactada por Coulson, quien le informa que Barton ha sido secuestrado y la envía a Calcuta, India a reclutar al Dr. Bruce Banner para que los ayude a rastrear el Teseracto a través de sus emisiones de radiación gamma, mientras, Coulson visita a Anthony "Tony" Stark en la Torre Stark para entregarle una revisión de la investigación de Selvig y finalmente Fury le informa a Steve Rogers y le asigna la tarea de recuperar el Teseracto.
-                    </p>
-               </div>  
-            </section>
-
-            <div class="imgPie">
-                <img class="imgP" src="img/pageLanzamiento/escudos-PhotoRoom (2).png" alt="">
-            </div>
+            </p>
+            <p class="hist4">
+                En respuesta al ataque, Fury decide reactivar la Iniciativa Vengadores. La agente Natasha Romanoff es
+                contactada por Coulson, quien le informa que Barton ha sido secuestrado y la envía a Calcuta, India a
+                reclutar al Dr. Bruce Banner para que los ayude a rastrear el Teseracto a través de sus emisiones de
+                radiación gamma, mientras, Coulson visita a Anthony "Tony" Stark en la Torre Stark para entregarle una
+                revisión de la investigación de Selvig y finalmente Fury le informa a Steve Rogers y le asigna la tarea
+                de recuperar el Teseracto.
+            </p>
       
-            
-        
-            <footer>
-                <main>
-                    <div class="transp">
-          
-                        <div class="suscribir">
-                            <h2>Suscribirse <span class="desk">▼</span></h2>
-                            <li class="mob ocultar"><a href="http://"> Foros </a></li>
-                            <li class="mob ocultar"><a href="http://"> Ofertas </a></li>
-                        </div>
-        
-                        <div class="favoritos">
-                            <h2>Favoritos <span class="desk">▼</span></h2>
-                            <li class="mob ocultar"><a href="http://"> Deportes </a></li>
-                            <li class="mob ocultar"><a href="http://"> Estrategia </a></li>
-                            <li class="mob ocultar"><a href="http://"> Aventuras </a></li>
-                        </div>
-        
-                        <div class="ayuda">
-                            <h2>Ayuda <span class="desk">▼</span></h2>
-                            <li class="mob ocultar"><a href="http://"> Reglas de la comunidad </a></li>
-                            <li class="mob ocultar"><a href="http://"> Cómo comprar un juego </a></li>
-                            <li class="mob ocultar"><a href="http://"> Recursos </a></li>
-                        </div>
-                    
-                        <div class="redes2">
-                            <h2>Nuestras Redes</h2>
-                            <li><a href="http://">
-                                    <iconify-icon class="iconRed" icon="akar-icons:facebook-fill"></iconify-icon>
-                                </a></li>
-                            <li><a href="http://">
-                                    <iconify-icon class="iconRed" icon="mdi:instagram"></iconify-icon>
-                                </a></li>
-                            <li><a href="http://">
-                                    <iconify-icon class="iconRed" icon="mdi:twitter"></iconify-icon>
-                                </a></li>
-                            <li><a href="http://">
-                                    <iconify-icon class="iconRed" icon="mdi:twitch"></iconify-icon>
-                                </a></li>
-                        </div>
-        
-                        <div class="select">
-                            <select name="idioma" id="idioma">
-                                <option value="es">Español</option>
-                                <option value="en">English</option>
-                                <option value="nl">Dutch</option>
-                                <option value="pl">Polish</option>
-                                <option value="it">Italian</option>
-                                <option value="fr">French</option>
-                                <option value="ru">Russian</option>
-                                <option value="pt">Portuguese</option>
-                                <option value="tr">Turkish</option>
-                                <option value="de">German</option>
-                            </select>
-                        </div>
-        
-                        <div class="idioma">
-                            <h2>Idiomas</h2>
-                            <ul>
-                                <li><a href="http://"> Español </a></li>
-                                <li><a href="http://"> English </a></li>
-                                <li><a href="http://"> Dutch </a></li>
-                                <li><a href="http://"> Polish </a></li>
-                                <li><a href="http://"> Italian </a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="http://"> French </a></li>
-                                <li><a href="http://"> Rusian </a></li>
-                                <li><a href="http://"> Portuguese </a></li>
-                                <li><a href="http://"> Turkish </a></li>
-                                <li><a href="http://"> German </a></li>
-                            </ul>
-                        </div>
-                        <div class="cyl">
-                            <div class="contacto">
-                                <h2>Contáctanos</h2>
-                                <a href="mailto:contacto@gamestore.com">contacto@gamestore.com</a>
-        
-                            </div>
-        
-                            <div class="logof">
-                                <a href="#top"><img src="./img/NombrePagina.png" alt="Marca de la página"></a>
-        
-                            </div>
-                        </div>
-        
-                    </div>
-        
-                </main>
-                <div>
-                    <nav>
-                        <ul class="footer">
-                            <li>Acerca de</li>
-                            <li>Soporte</li>
-                            <li>Comunidad</li>
-                            <li>@ 2022 Todos los derechos reservados</li>
-                        </ul>
-                    </nav>
-                </div>
-            </footer>
+        </div>
+    </div>
+    </section>
 
-    
-<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script> 
-<script src="js/scriptLanzamiento.js"></script>  
+    <div class="imgPie">
+        <img class="imgP" src="img/pageLanzamiento/escudos-PhotoRoom (2).png" alt="">
+    </div>
+
+
+
+    <footer>
+        <main>
+            <div class="transp">
+
+                <div class="suscribir">
+                    <h2>Suscribirse <span class="desk">▼</span></h2>
+                    <li class="mob ocultar"><a href="http://"> Foros </a></li>
+                    <li class="mob ocultar"><a href="http://"> Ofertas </a></li>
+                </div>
+
+                <div class="favoritos">
+                    <h2>Favoritos <span class="desk">▼</span></h2>
+                    <li class="mob ocultar"><a href="http://"> Deportes </a></li>
+                    <li class="mob ocultar"><a href="http://"> Estrategia </a></li>
+                    <li class="mob ocultar"><a href="http://"> Aventuras </a></li>
+                </div>
+
+                <div class="ayuda">
+                    <h2>Ayuda <span class="desk">▼</span></h2>
+                    <li class="mob ocultar"><a href="http://"> Reglas de la comunidad </a></li>
+                    <li class="mob ocultar"><a href="http://"> Cómo comprar un juego </a></li>
+                    <li class="mob ocultar"><a href="http://"> Recursos </a></li>
+                </div>
+
+                <div class="redes2">
+                    <h2>Nuestras Redes</h2>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="akar-icons:facebook-fill"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="mdi:instagram"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="mdi:twitter"></iconify-icon>
+                        </a></li>
+                    <li><a href="http://">
+                            <iconify-icon class="iconRed" icon="mdi:twitch"></iconify-icon>
+                        </a></li>
+                </div>
+
+                <div class="select">
+                    <select name="idioma" id="idioma">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="nl">Dutch</option>
+                        <option value="pl">Polish</option>
+                        <option value="it">Italian</option>
+                        <option value="fr">French</option>
+                        <option value="ru">Russian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="tr">Turkish</option>
+                        <option value="de">German</option>
+                    </select>
+                </div>
+
+                <div class="idioma">
+                    <h2>Idiomas</h2>
+                    <ul>
+                        <li><a href="http://"> Español </a></li>
+                        <li><a href="http://"> English </a></li>
+                        <li><a href="http://"> Dutch </a></li>
+                        <li><a href="http://"> Polish </a></li>
+                        <li><a href="http://"> Italian </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="http://"> French </a></li>
+                        <li><a href="http://"> Rusian </a></li>
+                        <li><a href="http://"> Portuguese </a></li>
+                        <li><a href="http://"> Turkish </a></li>
+                        <li><a href="http://"> German </a></li>
+                    </ul>
+                </div>
+                <div class="cyl">
+                    <div class="contacto">
+                        <h2>Contáctanos</h2>
+                        <a href="mailto:contacto@gamestore.com">contacto@gamestore.com</a>
+
+                    </div>
+
+                    <div class="logof">
+                        <a href="#top"><img src="./img/NombrePagina.png" alt="Marca de la página"></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <div>
+            <nav>
+                <ul class="footer">
+                    <li>Acerca de</li>
+                    <li>Soporte</li>
+                    <li>Comunidad</li>
+                    <li>@ 2022 Todos los derechos reservados</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="js/scriptLanzamiento.js"></script>
 </body>
+
 </html>

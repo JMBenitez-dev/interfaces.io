@@ -3,20 +3,15 @@ body {
     margin: 0%;
     padding: 0;
     width: 100%;
-    height: 100%;
-   
-    
-    
+    height: 100%;    
 }
 div.parallax {
-
     width: 1440px;
     height: 900px;
     margin: .5% auto;
     margin-top: 25px;
     position: relative;
     /*box-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;*/
-    
 }
 
 @keyframes scroll {
@@ -29,7 +24,6 @@ div.parallax {
 }
 
 .animation {
-
     width: 100%;
     height: 100%;
     position: absolute;
@@ -59,8 +53,6 @@ div.parallax {
     transform: translate3d(0px, 119.6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
     transform-style: preserve-3d;
     /*animation: scroll 24s linear infinite;*/
-    
-
 }
 
 .caja3{
@@ -80,34 +72,28 @@ div.parallax {
     0% {
         opacity: 1;
         transform:  scale(100%);
-        
       } 
       50% {
         opacity: 0;
         transform: scale(50%);
-        
       }
       100% {
         opacity: 1;
         transform: scale(100%);
-        
       }
   }
   @keyframes moveImg {
     0% {
         opacity: 1;
         transform:  scale(100%);
-        
       } 
       50% {
         opacity: 0;
         transform: scale(50%);
-        
       }
       100% {
         opacity: 1;
         transform: scale(100%);
-        
       }
   }
 
@@ -142,7 +128,6 @@ div.parallax {
     position: absolute;
     left: 52%;
     top: 26.5%;
-
 }
 
 .frase1{
@@ -233,8 +218,6 @@ div.parallax {
        
 }*/
 
-
-
 div.imgBtn {
     position: relative;
     /*z-index: 1;*/
@@ -252,9 +235,6 @@ div.imgBtn {
 }
     /*box-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;*/   
 
-
-
-
 .imgBtn .text:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(236, 230, 230, 0.295);
@@ -268,7 +248,6 @@ div.imgBtn {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
 
 button.botonP{
@@ -334,7 +313,6 @@ button.botonP{
 }
 
 .heroe{
-
     margin-left: 45%;
     margin-top: 60px;
     padding-top: 30px;
@@ -342,9 +320,6 @@ button.botonP{
     -webkit-text-fill-color: #040e08;
     -webkit-text-stroke-color: #110c13;
     -webkit-text-stroke-width: 0.5px;
-
-    
-
 }
 
 .text{
@@ -387,14 +362,12 @@ button.botonP{
 }
 
 .fotoB .text .demo{
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    height: auto;
-    
+    height: auto;   
 }
 
 .content:hover {
@@ -413,9 +386,7 @@ button.botonP{
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
     -webkit-text-fill-color: #040e08;
     -webkit-text-stroke-color: #110c13;
-    -webkit-text-stroke-width: 0.5px;
-
-   
+    -webkit-text-stroke-width: 0.5px;  
 }
 .features{
     max-width: 100%;
@@ -502,10 +473,6 @@ button.botonP{
     height: 30%;
     justify-content: center;
     bottom: 0;
-   
-    /*bottom: 85%;*/
-   /* margin-left: 23%;*/
-    /* or 57px */
     background: rgba(14, 8, 71, 0.603);
 }
 
@@ -515,15 +482,11 @@ button.botonP{
     display: flex;
     text-align: center;
     align-items: center;
-   
     width: 200px;
     height: 100%;
-    /*bottom: 85%;*/
-    /*margin-left: 23%;*/
     font-family: 'Birthstone Bounce', cursive;
     font-family: 'Noto Sans', sans-serif;
     font-size: 75%;
-    /* or 57px */
     letter-spacing: 0.11em;
     color: #FFFFFF;
 }
@@ -539,50 +502,9 @@ button.botonP{
 .videoC{
     max-width: 60%;
     height: 25em;
-    /*background: violet;*/
-   
     margin: 0px auto;
 }
 
-.historia{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin-top:0px;
-    max-width: 100%;
-    font-family: 'Birthstone Bounce', cursive;
-    font-family: 'Noto Sans', sans-serif;
-    
-}
-
-.parrafos{
-    max-width: 80%;
-    font-size: 16px;
-    
-}
-
-.hist{
-    font-size: 30px;
-    text-align: center;
-    width: 400px;
-    margin-top:0px;
-    letter-spacing: 0.11em;
-    color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
-    -webkit-text-fill-color: #040e08;
-    -webkit-text-stroke-color: #110c13;
-    -webkit-text-stroke-width: 0.5px;
-
-
-}
-.hist1, .hist2, .hist3, .hist4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .imgPie{
     display: flex;
@@ -616,25 +538,21 @@ button.botonP{
 /****Animación Titulo sección heroes*****/
 
 #hero {
-    
     height: auto;
-    top: 2%;
-   
+    top: 2%;  
 }
 
 /*************carrusel animado **************/
 .contPrincipal {
-    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #000000;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 100vh;
+    height: 40em;
     font-family: 'Urbanist', sans-serif;
 }
-
 
 .contPrincipal .containerL input {
     display: none;
@@ -680,7 +598,6 @@ article.contPrincipal .cardsL .card{
     background-color: #323444;
     border-radius: 10px;
     padding: 30px 40px;
-   
 }
 
 article.contPrincipal .card .image img{
@@ -691,10 +608,7 @@ article.contPrincipal .card .image img{
     object-fit: cover;
 }
 #subtitle {
-    
    font-size: 30px;
-    
-    
     color: #040e08;
      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
     -webkit-text-fill-color: #040e08;
@@ -731,7 +645,6 @@ article.contPrincipal .card .image img.imgRellena{
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
 }
 article.contPrincipal .card .image img.imgVacia{
-
     position: absolute;
     border-radius: 5px;
     margin-top: 20px;
@@ -748,7 +661,6 @@ article.contPrincipal .card .image img.imgVacia{
     transform: translate3d(-70%, 0, -220px);
     --current-color1: #ECEAED;
     --current-color2: #404457;
-
 }
 
 #s1:checked ~ .cardsL #slide5,
@@ -817,13 +729,6 @@ article.contPrincipal .card .image img.imgVacia{
     }
 }
 /********** fin carrusel animado ***********/
-/*@keyframes moveSub {
-    0% {top: 0;opacity: 0;}
-    25% {top: -50;opacity: 0;}
-    50%{top: -100;opacity: 0;}
-    75%{top: -150;opacity: 0;}
-    100%{top:-200;opacity: 1;}
-  }*/
   
   @keyframes moveTitle {
     0% {
@@ -866,11 +771,10 @@ article.contPrincipal .card .image img.imgVacia{
  }
  
  .moveUp{
-    
-    
      animation: moveSub 2s linear  ;
      
  }
+
  @keyframes moveLeft {
     0% {
         opacity: 1;
@@ -896,13 +800,74 @@ article.contPrincipal .card .image img.imgVacia{
   }  
 
   .moveLeft{
-    
     animation: moveLeft 1s linear forwards  ;
-    /*overflow-x: visible;*/
  }
  
  .moveDown{
-    
      animation: moveDown 2s forwards ;
-     
  }
+
+ /***********historia *************** */
+
+
+ .historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top:0px;
+    max-width: 100%;
+    font-family: 'Birthstone Bounce', cursive;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.parrafos p{
+    /*max-width: 80%;*/
+    line-gap-override: 20%;
+    line-height: 35px;
+    margin-right: 10%;
+    font-size: 20px;
+    padding-left: 30%;
+    padding-right: 5%;
+}
+
+.hist{
+    font-size: 30px;
+    text-align: center;
+    width: 400px;
+    margin-top:0px;
+    letter-spacing: 0.11em;
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(12 0 0), 0 0 20px #f6feff, 0 0 25px #ecf1ed;
+    -webkit-text-fill-color: #040e08;
+    -webkit-text-stroke-color: #110c13;
+    -webkit-text-stroke-width: 0.5px;
+}
+.hist1, .hist2, .hist3, .hist4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+ .contHistoria{
+    display:flex;
+    justify-content: center;
+   }
+   .imgsHistoria, .parrafos{
+    width: 50%;
+   }
+   .imgHist{
+    left: 10%;
+    top: 170px;
+    width: auto;
+    height: 20em;
+   }
+
+.stick{
+    position:sticky;
+}
+
